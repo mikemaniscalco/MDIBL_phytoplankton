@@ -1,0 +1,148 @@
+anecdata_columns,access_db_columns,measurementType,Darwin unique columns,measurementTypeID,measurementID,measurementUnit,measurementUnitID,Definition,darwin_file,parameter
+id,,id,,,,,,Row identifier,all,id
+,,eventID,,,,,,"locationID ""_"" eventDate",event,eventID
+observed,,eventDate,,,,,,date time GMT,event,eventDate
+,,geodeticDatum,,,,,,code indicating format of eventDate,event,geodeticDatum
+,,countryCode,,,,,,"always ""US"" in this dataset",event,countryCode
+,,eventRemarks,,,,,,"Concatenated Lab_Comments, Field_comments and Comments into eventRemarks",event,eventRemarks
+lat,,decimalLatitude,,,,,,decimal degrees,event,decimalLatitude
+lng,,decimalLongitude,,,,,,decimal degrees,event,decimalLongitude
+,,coordinateUncertaintyInMeters,,,,,,uncertainty of coordinates,event,minimumDepthInMeters
+,,minimumDepthInMeters,,,,,,minimum sampling depth ,event,maximumDepthInMeters
+,Tow Depth    Meters,maximumDepthInMeters,,,,,,maximum sampling depth,event,coordinateUncertaintyInMeters
+,,,basisOfRecord,,,,,Darwin core term for how sample was taken,occurrence,basisOfRecord
+row_id,,NULL,,,,,,NULL,occurrence,organismName
+username,,NULL,,,,,,NULL,occurrence,organismQuantity
+license,,NULL,,,,,,NULL,occurrence,organismQuantityType
+license_url,,NULL,,,,,,NULL,occurrence,occurrenceID
+,Program,NULL,,,,,,name of site,occurrence,occurrenceStatus
+hotspot,,NULL,,,,,,"split into ""site"" and ""locationID""",occurrence,scientificName
+,Site Name,site,,,,,,site name,occurrence,scientificNameID
+,Station Number,locationID,,,,,,alphanumeric site ID,event,locationID
+event,,NA,,,,,,NULL,occurrence,kingdom
+,Date,NULL,,,,,,Date and Time 24Hrs combined into eventDate,,
+,Time 24Hrs,NULL,,,,,,Date and Time 24Hrs combined into eventDate,,
+country,,NULL,,,,,,NULL,,
+county,,NULL,,,,,,NULL,,
+state,,NULL,,,,,,NULL,,
+municipality,,NULL,,,,,,NULL,,
+postcode,,NULL,,,,,,NULL,,
+Inches_of_Rain_(in),Inches of Rain,rainfall_mm,,http://vocab.nerc.ac.uk/collection/A05/current/EV_RAIN/,http://vocab.nerc.ac.uk/collection/P06/current/UXMM/,millimeters,,rainfall over the previous 48 h,ExtendedMeasurementOrFact,
+observation_notes,,NULL,,,,NULL,,NULL,,
+Comments_Brand_Names,,NULL,,,,NULL,,NULL,,
+Comments,,NULL,,,,,,"Concatenated Lab_Comments, Field_comments and Comments into eventRemarks",,
+Lab_Comments,Lab Comments,NULL,,,,,,"Concatenated Lab_Comments, Field_comments and Comments into eventRemarks",,
+Field_Notes,Field Comments,NULL,,,,,,"Concatenated Lab_Comments, Field_comments and Comments into eventRemarks",,
+Count,,NULL,,,,,,NULL,,
+Abundance,,NULL,,,,,,NULL,,
+,Tide,tide_height,,http://vocab.nerc.ac.uk/collection/P02/current/MBAN/,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,meters,,tide height at time of sampling,ExtendedMeasurementOrFact,
+Tide_in___out,Tide Stage,tide_stage,,,,descriptive,,The terms In and Out are used to describe if the tide is coming in or going out,,
+Time_of_Low_Tide,Time of Low Tide,time_high_tide,,,,,,,,
+Time_of_High_Tide,Time of High Tide,time_low_tide,,,,,,,,
+Wind_Direction,Wind Direction,wind_direction,,,,degrees,,direction of wind in degrees,ExtendedMeasurementOrFact,
+Wind_Speed,,wind_description,,http://vocab.nerc.ac.uk/collection/P07/current/CFV7N45/,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,dimensionless,,Beaufort Wind Scale,ExtendedMeasurementOrFact,
+Wind_Speed_(mph),Wind Speed (Knots),wind_speed_knots,,,,knots,,,ExtendedMeasurementOrFact,
+Weather,Weather,weather,,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,dimensionless,,description of weather conditions,ExtendedMeasurementOrFact,
+Water_Surface,Water Surface,water_surface,,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,dimensionless,,"degrees, 999 = not measured",ExtendedMeasurementOrFact,
+Current_(relative),Current,water_current,,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,dimensionless,,descriptive,ExtendedMeasurementOrFact,
+Water_Temperature_(_C)_(C),Water Temp ¡C,water_temp,,http://vocab.nerc.ac.uk/collection/P25/current/WTEMP/,http://vocab.nerc.ac.uk/collection/P06/current/UPAA/,Celsius,,knots,ExtendedMeasurementOrFact,
+Air_temperature_(_C)_(¡C),Air Temp ¡C,air_temp,,http://vocab.nerc.ac.uk/collection/P25/current/WTEMP/,http://vocab.nerc.ac.uk/collection/P06/current/UPAA/,Celsius,,descriptive,ExtendedMeasurementOrFact,
+Salinity_(ppt),Salinity    ppt,salinity_ppt,,http://vocab.nerc.ac.uk/collection/P01/current/ASLTZZ01/,http://vocab.nerc.ac.uk/collection/P06/current/UPPT/,parts per thousand,,descriptive,ExtendedMeasurementOrFact,
+Water_Depth_(m),,bottom_depth_m,,http://vocab.nerc.ac.uk/collection/P02/current/MBAN/,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,meters,,descriptive,ExtendedMeasurementOrFact,
+pH,,pH,,http://vocab.nerc.ac.uk/collection/P01/current/PHXXPR01/,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,dimensionless,,degrees Celcius,ExtendedMeasurementOrFact,
+Nutrient_bath_temperature_(C),,NULL,,,,,,NULL,,
+Nutrient_Vial_Number,Nutrient Vial #,nutrient_vial_id,,,,,,NULL,,
+,Nitrate + Nitrite,nitrate_plus_nitrite,,http://vocab.nerc.ac.uk/collection/S27/current/CS026905/,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,micromoles per liter,,concentration of Nitrate plus Nitrite  in seawater sample,ExtendedMeasurementOrFact,
+,Ammonia,ammonium,,http://vocab.nerc.ac.uk/collection/S27/current/CS026908/,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,micromoles per liter,,concentration of ammonia in seawater sample,ExtendedMeasurementOrFact,
+,Orthophosphate,orthophosphate,,http://vocab.nerc.ac.uk/collection/S27/current/CS026904/,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,micromoles per liter,,concentration of orthophosphate in seawater sample,ExtendedMeasurementOrFact,
+,Silica,silicate,,http://vocab.nerc.ac.uk/collection/S27/current/CS026903/,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,micromoles per liter,,concentration of Nitrate plus Nitrite,ExtendedMeasurementOrFact,
+Transparency_(m),Transparency Depth Meters,transparency_depth_mean,,http://vocab.nerc.ac.uk/collection/P01/current/SECCSDNX/,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,meters,,average of ascending and descending transparency depths,ExtendedMeasurementOrFact,
+Descending_Transparency_(m),,descending_transparency,,http://vocab.nerc.ac.uk/collection/P01/current/SECCSDNX/,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,meters,,transparency determined via secchi disk descending in water column,ExtendedMeasurementOrFact,
+Ascending_Transparency_(m),,ascending_transparency,,http://vocab.nerc.ac.uk/collection/P01/current/SECCSDNX/,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,meters,,transparency determined via secchi disk ascending in water column,ExtendedMeasurementOrFact,
+Collected_By,Monitor Name,monitor_names,,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,dimensionless,,"pipe separated names of indivuduals involved in sampling and counting i.e. ""LastName FirstName1|LastName FirstName2""",,
+,DO 1 (ppm),DO1_ppm,,http://vocab.nerc.ac.uk/collection/P02/current/DOXY/,http://vocab.nerc.ac.uk/collection/P06/current/UPPM/,ppm,,Dissolved oxygen measurement,ExtendedMeasurementOrFact,
+,DO 2 (ppm),DO2_ppm,,http://vocab.nerc.ac.uk/collection/P02/current/DOXY/,http://vocab.nerc.ac.uk/collection/P06/current/UPPM/,ppm,,Dissolved oxygen measurement,ExtendedMeasurementOrFact,
+Dissolved_Oxygen,DO Avg.,DOavg_ppm,,http://vocab.nerc.ac.uk/collection/P02/current/DOXY/,http://vocab.nerc.ac.uk/collection/P06/current/UPPM/,ppm,,Average of two dissolved oxygen measurements,ExtendedMeasurementOrFact,
+,DO(5) 1,DO1_day5_ppm,,http://vocab.nerc.ac.uk/collection/P02/current/DOXY/,http://vocab.nerc.ac.uk/collection/P06/current/UPPM/,ppm,,Dissolved oxygen measurementat day 5 ,ExtendedMeasurementOrFact,
+,DO(5) 2,DO2_day5_ppm,,http://vocab.nerc.ac.uk/collection/P02/current/DOXY/,http://vocab.nerc.ac.uk/collection/P06/current/UPPM/,ppm,,Dissolved oxygen measurement at day 5 ,ExtendedMeasurementOrFact,
+,DO(5) Avg.,DO2_day5_avg,,http://vocab.nerc.ac.uk/collection/P02/current/DOXY/,http://vocab.nerc.ac.uk/collection/P06/current/UPPM/,ppm,,Average of two day 5 dissolved oxygen measurements,ExtendedMeasurementOrFact,
+,BOD Date,NULL,,,,,,NULL,,
+,BOD,bod,,http://vocab.nerc.ac.uk/collection/P01/current/BODZZZZZ/,http://vocab.nerc.ac.uk/collection/P06/current/UPPM/,ppm,,Biological oxygen demand,ExtendedMeasurementOrFact,
+Phytoplanton_Sample_Method,Sample Method,sampling_method,,,,,,NULL,,
+Date_e_mailed_to_DMR,Date E-Mailed to DMR,date_emailed_to_DMR,,,,,,NULL,,
+__of_Alexandrium,Alexandrium,alexandrium,,,,,,organismName value,occurrence,organismName
+,Ceratium,ceratium,,,,,,organismName value,occurrence,organismName
+,Chaetoceros,chaetoceros_spp,,,,,,organismName value,occurrence,organismName
+,Chaetoceros socialis,chaetoceros_socialis,,,,,,organismName value,occurrence,organismName
+,Coscinodiscus,coscinodiscus,,,,,,organismName value,occurrence,organismName
+,Dictyocha,dictyocha,,,,,,organismName value,occurrence,organismName
+,Didylum,ditylum,,,,,,organismName value,occurrence,organismName
+__of_Dinophysis_spp__(unknown),Dinophysis,dinophysis_spp,,,,,,organismName value,occurrence,organismName
+__of_Dinophysis_acuminata,,dinophysis_acuminata,,,,,,organismName value,occurrence,organismName
+__of_Dinophysis_norvegica,,dinophysis_norvegica,,,,,,organismName value,occurrence,organismName
+,Eucampia,eucampia,,,,,,organismName value,occurrence,organismName
+,Gonyaulax,gonyaulax,,,,,,organismName value,occurrence,organismName
+,Guinardia,guinardia,,,,,,organismName value,occurrence,organismName
+,Gyrosigma,gyrosigma,,,,,,organismName value,occurrence,organismName
+,Lycomorpha,licmophora,,,,,,organismName value,occurrence,organismName
+,Leptocylindrus,leptocylindrus,,,,,,organismName value,occurrence,organismName
+__of_Karenia,,karenia,,,,,,organismName value,occurrence,organismName
+__of_Margalefidinium_p_,,margalefidinium_polykrikoides,,,,,,organismName value,occurrence,organismName
+,Melosira,melosira,,,,,,organismName value,occurrence,organismName
+,Navicula,navicula,,,,,,organismName value,occurrence,organismName
+,Nitzchia,nitzschia,,,,,,organismName value,occurrence,organismName
+__of_Prorocentrum_lima,Phaeocystis,phaeocystis,,,,,,organismName value,occurrence,organismName
+,Pleurosigma,pleurosigma,,,,,,organismName value,occurrence,organismName
+,Prorocentrum,prorocentrum,,,,,,organismName value,occurrence,organismName
+__of_SMALL_Pseudo_nitzschia,Prorocentrum lima,prorocentrum_lima,,,,,,organismName value,occurrence,organismName
+__of_LARGE_Pseudo_nitzschia,Protoperidinium,protoperidinium,,,,,,organismName value,occurrence,organismName
+,Pseudo-nitzchia,pseudo_nitzchia_spp,,,,,,organismName value,occurrence,organismName
+,P.nitzschia small,pseudo_nitzschia_small,,,,,,organismName value,occurrence,organismName
+,P.nitzschia large,pseudo_nitzschia_large,,,,,,organismName value,occurrence,organismName
+,Rhizosolenia,rhizosolenia,,,,,,organismName value,occurrence,organismName
+,Thalassionema,thalassionema,,,,,,organismName value,occurrence,organismName
+,Thalassiosira,thalassiosira,,,,,,organismName value,occurrence,organismName
+,Gymnodinium,gymnodinium,,,,,,organismName value,occurrence,organismName
+,Other,other_phytoplankton,,,,,,organismName value,occurrence,organismName
+,Total Phytoplankton,total_phytoplankton,,,,,,Sum of the individual phytoplankton counts within a row,,
+PS_TNTC_reached_at_cell__,TNTC at cell,too_numerous_to_count_grid_num,,,,,,NULL,,
+__Grid_Cells_Counted,,grids_counted,,,,,,NULL,,
+Amount_of_Water_Filtered_(L),,water_filtered_L,,,,,,NULL,,
+Phytoplankton_(Dominant_Species_1),Dominant Species 1,NULL,,,,,,NULL,,
+Phytoplankton_(Dominant_Species_2),Dominant Species 2,NULL,,,,,,NULL,,
+Phytoplankton_(Dominant_Species_3),Dominant Species 3,NULL,,,,,,NULL,,
+Frequency_(Dominant_Species_1),,NULL,,,,,,NULL,,
+Frequency_(Dominant_Species_2),,NULL,,,,,,NULL,,
+Image 1,,NULL,,,,,,NULL,,
+Image 2,,NULL,,,,,,NULL,,
+Image 3,,NULL,,,,,,NULL,,
+Image 4,,NULL,,,,,,NULL,,
+Image 5,,NULL,,,,,,NULL,,
+Zooplankton_Frequency,,NULL,,,,,,NULL,,
+Microplastics_Sampling_Type,,NULL,,,,,,NULL,,
+Blue__Round,,NULL,,,,,,NULL,,
+Blue__Filament,,NULL,,,,,,NULL,,
+Blue__Angular,,NULL,,,,,,NULL,,
+Blue__Other_Shape,,NULL,,,,,,NULL,,
+Red__Round,,NULL,,,,,,NULL,,
+Red__Filament,,NULL,,,,,,NULL,,
+Red__Angular,,NULL,,,,,,NULL,,
+Red__Other_Shape,,NULL,,,,,,NULL,,
+Transparent_White__Round,,NULL,,,,,,NULL,,
+Transparent_White__Filament,,NULL,,,,,,NULL,,
+Transparent_White__Angular,,NULL,,,,,,NULL,,
+Transparent_White__Other_Shape,,NULL,,,,,,NULL,,
+Black__Round,,NULL,,,,,,NULL,,
+Black__Filament,,NULL,,,,,,NULL,,
+Black__Angular,,NULL,,,,,,NULL,,
+Black__Other_Shape,,NULL,,,,,,NULL,,
+Green__Round,,NULL,,,,,,NULL,,
+Green__Filament,,NULL,,,,,,NULL,,
+Green__Angular,,NULL,,,,,,NULL,,
+Green__Other_Shape,,NULL,,,,,,NULL,,
+Other_Colors__Round,,NULL,,,,,,NULL,,
+Other_Colors__Filament,,NULL,,,,,,NULL,,
+Other_Colors__Angular,,NULL,,,,,,NULL,,
+Other_Colors__Other_Shape,,NULL,,,,,,NULL,,
+Microplastics_Notes,,NULL,,,,,,NULL,,
+__of_Copepods,,NULL,,,,,,NULL,,

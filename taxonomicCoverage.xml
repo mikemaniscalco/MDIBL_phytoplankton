@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="d0a99074-f3df-4cb3-8d52-94ab0a66d9bc" system="uuid" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <taxonomicClassification>
+    <taxonRankName>Kingdom</taxonRankName>
+    <taxonRankValue>Animalia</taxonRankValue>
+    <commonName>animals</commonName>
+    <taxonId provider="http://marinespecies.org">2</taxonId>
+    <taxonomicClassification>
+      <taxonRankName>Phylum</taxonRankName>
+      <taxonRankValue>Chordata</taxonRankValue>
+      <taxonId provider="http://marinespecies.org">1821</taxonId>
+      <taxonomicClassification>
+        <taxonRankName>Subphylum</taxonRankName>
+        <taxonRankValue>Vertebrata</taxonRankValue>
+        <commonName>vertebrates</commonName>
+        <taxonId provider="http://marinespecies.org">146419</taxonId>
+        <taxonomicClassification>
+          <taxonRankName>Infraphylum</taxonRankName>
+          <taxonRankValue>Gnathostomata</taxonRankValue>
+          <taxonId provider="http://marinespecies.org">1828</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Parvphylum</taxonRankName>
+            <taxonRankValue>Osteichthyes</taxonRankValue>
+            <taxonId provider="http://marinespecies.org">152352</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Gigaclass</taxonRankName>
+              <taxonRankValue>Actinopterygii</taxonRankValue>
+              <commonName>ray-finned fishes</commonName>
+              <taxonId provider="http://marinespecies.org">10194</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+                <taxonRankValue>Actinopteri</taxonRankValue>
+                <taxonId provider="http://marinespecies.org">843664</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Subclass</taxonRankName>
+                  <taxonRankValue>Teleostei</taxonRankValue>
+                  <taxonId provider="http://marinespecies.org">293496</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Salmoniformes</taxonRankValue>
+                    <taxonId provider="http://marinespecies.org">10305</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Family</taxonRankName>
+                      <taxonRankValue>Salmonidae</taxonRankValue>
+                      <commonName>salmonids</commonName>
+                      <taxonId provider="http://marinespecies.org">125587</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Subfamily</taxonRankName>
+                        <taxonRankValue>Salmoninae</taxonRankValue>
+                        <taxonId provider="http://marinespecies.org">154188</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Genus</taxonRankName>
+                          <taxonRankValue>Oncorhynchus</taxonRankValue>
+                          <taxonId provider="http://marinespecies.org">126140</taxonId>
+                          <taxonomicClassification>
+                            <taxonRankName>Species</taxonRankName>
+                            <taxonRankValue>Oncorhynchus tshawytscha</taxonRankValue>
+                            <commonName>Chinook salmon</commonName>
+                            <commonName>king salmon</commonName>
+                            <commonName>spring salmon</commonName>
+                            <taxonId provider="http://marinespecies.org">158075</taxonId>
+                          </taxonomicClassification>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicClassification>
+    </taxonomicClassification>
+  </taxonomicClassification>
+  <taxonomicClassification>
+    <taxonRankName>Kingdom</taxonRankName>
+    <taxonRankValue>Animalia</taxonRankValue>
+    <commonName>animals</commonName>
+    <taxonId provider="http://marinespecies.org">2</taxonId>
+    <taxonomicClassification>
+      <taxonRankName>Phylum</taxonRankName>
+      <taxonRankValue>Chordata</taxonRankValue>
+      <taxonId provider="http://marinespecies.org">1821</taxonId>
+      <taxonomicClassification>
+        <taxonRankName>Subphylum</taxonRankName>
+        <taxonRankValue>Vertebrata</taxonRankValue>
+        <commonName>vertebrates</commonName>
+        <taxonId provider="http://marinespecies.org">146419</taxonId>
+        <taxonomicClassification>
+          <taxonRankName>Infraphylum</taxonRankName>
+          <taxonRankValue>Gnathostomata</taxonRankValue>
+          <taxonId provider="http://marinespecies.org">1828</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Parvphylum</taxonRankName>
+            <taxonRankValue>Osteichthyes</taxonRankValue>
+            <taxonId provider="http://marinespecies.org">152352</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Gigaclass</taxonRankName>
+              <taxonRankValue>Actinopterygii</taxonRankValue>
+              <commonName>ray-finned fishes</commonName>
+              <taxonId provider="http://marinespecies.org">10194</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+                <taxonRankValue>Actinopteri</taxonRankValue>
+                <taxonId provider="http://marinespecies.org">843664</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Subclass</taxonRankName>
+                  <taxonRankValue>Teleostei</taxonRankValue>
+                  <taxonId provider="http://marinespecies.org">293496</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Salmoniformes</taxonRankValue>
+                    <taxonId provider="http://marinespecies.org">10305</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Family</taxonRankName>
+                      <taxonRankValue>Salmonidae</taxonRankValue>
+                      <commonName>salmonids</commonName>
+                      <taxonId provider="http://marinespecies.org">125587</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Subfamily</taxonRankName>
+                        <taxonRankValue>Salmoninae</taxonRankValue>
+                        <taxonId provider="http://marinespecies.org">154188</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Genus</taxonRankName>
+                          <taxonRankValue>Oncorhynchus</taxonRankValue>
+                          <taxonId provider="http://marinespecies.org">126140</taxonId>
+                          <taxonomicClassification>
+                            <taxonRankName>Species</taxonRankName>
+                            <taxonRankValue>Oncorhynchus nerka</taxonRankValue>
+                            <commonName>kokanee</commonName>
+                            <commonName>red salmon</commonName>
+                            <commonName>sockeye salmon</commonName>
+                            <taxonId provider="http://marinespecies.org">254569</taxonId>
+                          </taxonomicClassification>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicClassification>
+    </taxonomicClassification>
+  </taxonomicClassification>
+</eml:eml>

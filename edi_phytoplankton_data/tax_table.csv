@@ -1,0 +1,38 @@
+organismName,scientificName,scientificNameID,taxonID,kingdom
+Akashiwo_sanguinea,Akashiwo sanguinea,(urn:lsid:marinespecies.org:taxname:232546),,Chromista
+Alexandrium,Alexandrium,(urn:lsid:marinespecies.org:taxname:109470),NCBI:txid2924,Chromista
+Ceratium,Ceratium,(urn:lsid:marinespecies.org:taxname:109506),NCBI:txid2915,Chromista
+Chaetoceros,Chaetoceros,(urn:lsid:marinespecies.org:taxname:148985),NCBI:txid49237,Chromista
+Chaetoceros socialis,Chaetoceros socialis,(urn:lsid:marinespecies.org:taxname:149123),NCBI:txid163503,Chromista
+Coscinodiscus,Coscinodiscus,(urn:lsid:marinespecies.org:taxname:148917),NCBI:txid33641,Chromista
+Dictyocha,Dictyocha,(urn:lsid:marinespecies.org:taxname:157258),NCBI:txid35686,Chromista
+Ditylum,Ditylum,(urn:lsid:marinespecies.org:taxname:149022),NCBI:txid49248,Chromista
+Dinophysis,Dinophysis,(urn:lsid:marinespecies.org:taxname:109462),NCBI:txid47933,Chromista
+dinophysis_acuminata,Dinophysis acuminata,(urn:lsid:marinespecies.org:taxname:109603),NCBI:txid47934,Chromista
+Eucampia,Eucampia,(urn:lsid:marinespecies.org:taxname:149130),NCBI:txid49251,Chromista
+Gonyaulax,Gonyaulax,(urn:lsid:marinespecies.org:taxname:109519),NCBI:txid2912,Chromista
+Guinardia,Guinardia,(urn:lsid:marinespecies.org:taxname:149111),NCBI:txid216800,Chromista
+Gymnodinium,Gymnodinium,(urn:lsid:marinespecies.org:taxname:109475),NCBI:txid2955,Chromista
+Gyrosigma,Gyrosigma,(urn:lsid:marinespecies.org:taxname:149033),NCBI:txid197760,Chromista
+karenia,Karenia,(urn:lsid:marinespecies.org:taxname:231788),NCBI:txid156229,Chromista
+Leptocylindrus,Leptocylindrus,(urn:lsid:marinespecies.org:taxname:149038),NCBI:txid163515,Chromista
+Lycomorpha,Licmophora,(urn:lsid:marinespecies.org:taxname:149342),NCBI:txid210597,Chromista
+Margalefidinium,Margalefidinium,(urn:lsid:marinespecies.org:taxname:990875),NCBI:txid2315349,Chromista
+Margalefidinium polykrikoides   ,Margalefidinium polykrikoides   ,(urn:lsid:marinespecies.org:taxname:990876),NCBI:txid77300,Chromista
+Melosira,Melosira, (urn:lsid:marinespecies.org:taxname:149042),NCBI:txid35124,Chromista
+Navicula,Navicula,(urn:lsid:marinespecies.org:taxname:149142),NCBI:txid50949,Chromista
+Nitzchia,Nitzschia,(urn:lsid:marinespecies.org:taxname:149045),NCBI:txid2857,Chromista
+Other (SAR???),Chromista,(urn:lsid:marinespecies.org:taxname:7),NCBI:txid2698737,Chromista
+P.nitzschia large,Pseudo-nitzschia delicatissima,(urn:lsid:marinespecies.org:taxname:149153),NCBI:txid44447,Chromista
+P.nitzschia small,Pseudo-nitzschia australis,(urn:lsid:marinespecies.org:taxname:246604),NCBI:txid44445,Chromista
+Phaeocystis,Phaeocystis,(urn:lsid:marinespecies.org:taxname:115088),NCBI:txid33656,Chromista
+Pleurosigma,Pleurosigma,(urn:lsid:marinespecies.org:taxname:149181),NCBI:txid197752,Chromista
+Prorocentrum,Prorocentrum,(urn:lsid:marinespecies.org:taxname:109566),NCBI:txid2944,Chromista
+Prorocentrum lima,Prorocentrum lima,(urn:lsid:marinespecies.org:taxname:110301),NCBI:txid39448,Chromista
+Protoperidinium,Protoperidinium,(urn:lsid:marinespecies.org:taxname:109553),NCBI:txid261839,Chromista
+Pseudo-nitzchia,Pseudo-nitzchia,(urn:lsid:marinespecies.org:taxname:149151),NCBI:txid41953,Chromista
+Rhizosolenia,Rhizosolenia,(urn:lsid:marinespecies.org:taxname:149069),NCBI:txid3004,Chromista
+Thalassionema,Thalassionema,(urn:lsid:marinespecies.org:taxname:149092),NCBI:txid33648,Chromista
+Thalassiosira,Thalassiosira,(urn:lsid:marinespecies.org:taxname:148912),NCBI:txid35127,Chromista
+Diatom,Bacillariophyceae,(urn:lsid:marinespecies.org:taxname:148899),NCBI:txid2836,Chromista
+Dinoflagellate,Dinophyceae,(urn:lsid:marinespecies.org:taxname:19542),NCBI:txid2864,Chromista

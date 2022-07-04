@@ -1,0 +1,308 @@
+Program,Site Name,Station #,Date,Time,Rain,Tide,Low Tide,High Tide,Water Temp,Air Temp,Transparency Depth,Salinity,Current,Weather,Water Surface,Field Comments,DO 1,DO 2,DO Avg.,DO(5) 1,DO(5) 2,DO(5) avg.,Moniter Name,Wind Direction,Nutrient Vial #
+CEHL,MDIBL Dock,22G,6/3/2016,10:30,,,,9:45,12.4,11.8,5.25,31,None,Fog,Calm,,8.4,7.4,7.8,,,,Farrell,SE,
+CEHL,MDIBL Dock,22G,6/9/2016,12:39,,,,12:28,11.9,15.6,3.3,31,High,Partly Cloudy,Whitecaps,,8.1,8.2,8.15,,,,Farrell,NW,
+CEHL,BH Town Pier,22D,6/10/2016,13:10,,,,16:01,10,18.5,3.15,31,Medium,Overcast,Waves,,8.1,8.4,8.25,,,,Farrell,NW,
+CEHL,MDIBL Dock,22G,6/13/2016,9:35,,,,,10.8,12.7,4.5,30,,,,Secchi Disk hit bottom,7.6,7.5,7.55,,,,"Phippen, Maddalone",NW,
+CEHL,BH Town Pier,22D,6/17/2016,9:45,,,,9:40,13,17,4.15,34,,Clear,Calm,,8.8,9.2,9,,,,Edwin Barkdoll,E,
+CEHL,MDIBL Dock,22G,6/20/2016,12:55,,,,11:44,11.6,18,,32,Low,Clear,Waves,No transparency taken,8.3,8.7,8.5,,,,Farrell,W,
+CEHL,BH Town Pier,22D,6/23/2016,11:30,0.03,,,13:41,12,27,2.6,32,Low,Clear,Ripple,,9.4,9.6,9.5,,,,Farrell,W,
+CEHL,MDIBL Dock,22G,6/28/2016,11:02,,,11:35,,12,20,2.3,33,Low,Overcast,Ripple,Secchi disk hit bottom.,7.9,7.8,7.85,,,,"Phippen, Berry-Sandelin",S,
+CEHL,BH Town Pier,22D,7/1/2016,10:00,,,,8:29,15,18,9.1,32,,Clear,Ripple,,9,9.2,9.1,,,,Farrell,E,
+CEHL,MDIBL Dock,22G,7/5/2016,13:05,,,,12:13,14.9,18.4,5.35,32,Low,Partly Cloudy,Calm,,6.6,6.9,6.75,,,,Phippen,SW,
+CEHL,BH Town Pier,22D,7/8/2016,14:00,0.08,,,,13,19,,34,Medium,Overcast,Ripple,,8.8,8.6,8.7,,,,Phippen,SE,
+CEHL,MDIBL Dock,22G,7/11/2016,12:50,,,,17:04,15,18.9,2.9,33,,Clear,Whitecaps,,7.3,7.6,7.45,,,,Phippen,NE,
+CEHL,BH Town Pier,22D,7/15/2016,8:15,0,,14:15,8:10,13.1,22,4,33,,Clear,Ripple,"Sampled on the dinghy float, not the fisherman's float, because of fishsing activity",7,7.1,7.05,,,,Edwin,NE,
+CEHL,MDIBL Dock,22G,7/21/2016,10:32,0,,6:25,12:34,16.5,23.9,3.9,32,Low,Clear,Ripple,,8.2,8,8.1,,,,Stephanie Phippen,NW,
+CEHL,BH Town Pier,22D,7/22/2016,10:50,0,,7:06,12:00,14.1,25.8,2.95,31,Low,Partly Cloudy,Ripple,,8.6,8.4,8.5,,,,Stephanie Phippen,S,
+CEHL,MDIBL Dock,22G,7/25/2016,9:30,0.06,,9:25,15:39,16.2,23,,33,,,,,8.2,8.4,8.3,,,,Phippen,S,
+CEHL,BH Town Pier,22D,7/29/2016,9:35,0.02,,,7:13,15.5,20.6,3.85,34,,,,,7.9,8,7.95,,,,Phippen,E,
+CEHL,MDIBL Dock,22G,8/1/2016,10:30,,,,10:16,17.4,23,3,32,None,Partly Cloudy,Ripple,,6.8,7,6.9,,,,Phippen,E,
+CEHL,BH Town Pier,22D,8/5/2016,12:22,,,7:14,13:24,15.5,29.2,3.61,32,,Clear,Ripple,A lot of boat activity in vicinity of pier possibly churning up water,8,8,8,,,,Edwin Barkdoll,S,
+CEHL,MDIBL Dock,22G,8/8/2016,13:50,,,,15:31,17.3,25.8,3.6,32,Medium,Clear,Whitecaps,,7,7,7,,,,Farrell,NW,
+CEHL,BH Town Pier,22D,8/12/2016,9:50,,,0:21,6:29,15.7,21.2,4.05,32,,,,Secchi disk hit the bottom when measuring descending transparency.,7,7.1,7.05,,,,Edwin Barkdoll,SE,
+CEHL,MDIBL Dock,22G,8/15/2016,11:17,,,,9:10,18,24,3.9,31,Medium,Partly Cloudy,Waves,,7.8,7.9,7.85,,,,Farrell,W,
+CEHL,BH Town Pier,,8/19/2016,10:00,,,5:57,12:04,15,21,3.075,32,,Clear,Ripple,,8.1,8.2,8.15,,,,Edwin Barkdoll,NW,
+CEHL,MDIBL Dock,22G,8/23/2016,13:22,,,,15:18,17.1,23.7,2.9,31,Low,Clear,Ripple,,7.8,7.8,7.8,,,,Farrell,NW,
+CEHL,BH Town Pier,22D,8/26/2016,9:55,,,12:55,5:55,14.9,22.3,3.4,32,,Partly Cloudy,Ripple,Secchi disk hit bottom,6.6,6.8,6.7,,,,Barkdoll,SE,
+CEHL,MDIBL Dock,22G,8/29/2016,9:30,0,,2:56,9:08,16.4,22.9,3.225,31,,,,,6.9,6.8,6.85,,,,Stephanie Phippen,S,
+CEHL,BH Town Pier,22D,9/1/2016,10:44,,,,12:16,15.9,16.9,2.4,32,Low,Partly Cloudy,Waves,Pickle dumped off pier during sampling,8.8,9,8.9,,,,Farrell,NW,
+CEHL,MDIBL Dock,22G,9/6/2016,13:20,0.06,,8:41,14:50,16.1,19.4,2.1,32,,,,,8.3,8.2,8.25,,,,Stephanie Phippen,E,
+CEHL,BH Town Pier,22D,9/9/2016,8:45,,,12:12,6:00,15.3,19.2,1.475,32,,Partly Cloudy,Ripple,Large amount of particulates in the water.  Took longer than 15 minutes to filter 10L of sea water.,7.8,8,7.9,,,,Edwin Barkdoll,E,
+CEHL,MDIBL Dock,22G,9/12/2016,13:20,0.31,,13:43,19:55,16.6,21.6,2.6,31,,,,Secchi Disk hit bottom.,7.8,7.8,7.8,,,,Stephanie Phippen,W,
+CEHL,BH Town Pier,22D,9/16/2016,9:45,0,,17:12,10:59,14.8,15.3,1.9,32,,Clear,Ripple,,7.8,7.8,7.8,,,,Barkdoll,E,
+CEHL,MDIBL Dock,22G,9/21/2016,13:29,,,,14:57,16.4,23.8,3.55,32,Low,Clear,Waves,,5.8,6,5.9,,,,Farrell,W,
+CEHL,BH Town Pier,22D,9/23/2016,9:45,,,10:57,17:07,14.1,17.5,2.7,32,,Drizzle,Ripple,Secchi disk hit the bottom,7.4,7.4,7.4,,,,Barkdoll,W,
+CEHL,MDIBL Dock,22G,9/27/2016,11:00,,,,8:53,13.8,15,4.45,31,Low,Overcast,Ripple,,7.2,7.2,7.2,,,,Farrell,W,
+CEHL,BH Town Pier,22D,9/30/2016,9:49,0,,5:10,11:49,13.3,12.4,2.9,32,,Clear,Waves,Rough water due to boat activity,8,7.9,7.95,,,,Edwin Barkdoll,NW,
+CEHL,MDIBL Dock,22G,10/3/2016,10:45,0.23,,,,14.1,19.1,3.85,32,,,,,6.8,6.8,6.8,,,,,E,
+CEHL,BH Town Pier,22D,10/6/2016,9:30,,,9:39,15:45,13.3,17.8,2.2,32,,Clear,Ripple,Secchi disk hit bottom,8.4,8.4,8.4,,,,Edwin Barkdoll,NW,
+CEHL,MDIBL Dock,22G,10/14/2016,9:28,,,,9:34,12.6,8.9,4.3,33,Medium,Clear,Whitecaps,,7,7.2,7.1,,,,Farrell,NW,
+CEHL,BH Town Pier,22D,10/14/2016,9:45,0,,15:48,9:34,11.9,7.9,2.6,33,,Partly Cloudy,Waves,A lot of boat traffic near pier,7.9,7.6,7.75,,,,Edwin Barkdoll,NW,
+CEHL,MDIBL Dock,22G,10/19/2016,13:40,,,,13:41,13.7,22.5,4.45,32,Low,Clear,Waves,,8,8,8,,,,Farrell,NW,
+CEHL,BH Town Pier,22D,10/21/2016,11:30,0.33,,9:25,3:37,12.8,16.8,2.1,33,,,,,7.6,7.8,7.7,,,,,SE,
+CEHL,MDIBL Dock,22G,10/27/2016,9:30,0,,,9:19,11.4,7.1,,32,,,,Dock was out of water. Sampled from rocks across the cove. Unable to do transpacency on the rocks.,8.4,8.2,8.3,,,,"Farrell, Phippen",E,
+CEHL,BH Town Pier,22D,11/9/2016,13:40,0,,,17:41,10.9,15.3,,33,,,,,8.4,8.4,8.4,,,,Stephanie Phippen,N,
+CEHL,MDIBL Dock,22G,2/27/2017,12:45,,,,11:05,2.3,7.3,,31,,,,Sampled in Salsbury Cove from the lab beach as the MDIBL dock is not in the water yet. No DO or transparency measurements taken. Only counted Pseudo-nitzschia cells. Meltwater flowing into the cove from drainpipe.,,,,,,,Farrell,NW,1022
+CEHL,MDIBL Dock,22G,4/6/2017,9:34,,,,13:12,2.6,3.1,,30,,Overcast,,,,,,,,,Farrell,E,1023
+CEHL,MDIBL Dock,22G,4/13/2017,12:40,,,,,7.2,8.1,,32,,,,,9.4,9.7,9.55,,,,Farrell,NW,1024
+CEHL,MDIBL Dock,22G,4/19/2017,9:44,0,,,4:58,6.2,6.6,,31,,Overcast,Calm,Sampled during low tide at the MDIBL beach,11.2,12,11.6,,,,"Patrianna Anderson, Sara Lowgren",E,1025
+CEHL,MDIBL Dock,22G,4/26/2017,9:51,,,,11:15,6.4,10.3,,31,,Drizzle,Waves,Collected at the MDIBL beach,9.6,9.4,9.5,,,,"Sara Lowgren, Anna Farrell",NE,1026
+CEHL,MDIBL Dock,22G,5/3/2017,9:50,0,,11:47,,9,15,,30,,Clear,Calm,,10.9,11.2,11.05,,,,"Sara Lowgren, Patrianna Anderson, Anna Farrell",NW,1027
+CEHL,MDIBL Dock,22G,5/10/2017,9:50,0.1,,,11:32,9,10,,25,,Drizzle,Calm,Sampled on MDIBL beach,9.2,9.3,9.25,,,,"Sara Lowgren, Patrianna Anderson",NE,1028
+CEHL,MDIBL Dock,22G,5/17/2017,13:55,,,,,11.2,24.6,,30,Low,Clear,Calm,Sampled from the lab beach as the dock still isn't in.,10,10.2,10.1,,,,Anna Farrell,W,1029
+CEHL,BH Town Pier,22D,5/24/2017,8:51,,,,9:59,9.5,12.4,3.4,31,Low,Partly Cloudy,Ripple,,9.6,9.8,9.7,,,,Farrell,W,1030
+CEHL,MDIBL Dock,22G,5/25/2017,9:47,,,,10:59,10.9,13.5,3.35,31,Low,Overcast,Waves,,9.8,9.6,9.7,,,,Farrell,NE,1031
+CEHL,MDIBL Dock,22G,5/30/2017,16:13,,,,15:30,10,10.5,3.1,31,Low,Overcast,Ripple,DA and DNA,9.8,9.6,9.7,,,,Farrell,S,1032
+CEHL,BH Town Pier,22D,5/31/2017,9:02,,,,3:47,9.3,12.9,2.3,31,Low,Overcast,Waves,Secchi disk hit bottom. Oil slick on water. Swells from SE. Stephanie Diane docked at pier.,9.6,9.4,9,,,,Farrell,SE,1033
+CEHL,MDIBL Dock,22G,6/6/2017,11:16,,,,9:41,10.2,13.5,,32,Medium,Overcast,Whitecaps,The water was too rough to do transparency,9.4,9.3,9.35,,,,"Anna, Danny, Ashley",E,1034
+CEHL,BH Town Pier,22D,6/6/2017,13:56,,,,9:41,9.3,14.3,2.8,32,Medium,Overcast,Whitecaps,,9.2,9.2,9.2,,,,Farrell,E,1035
+CEHL,BH Town Pier,22D,6/12/2017,14:07,,,,13:38,11.5,30,3.1,31,,Clear,,,9.2,8.6,8.9,,,,"Ashley, Danny, Anna, Sierra",NE,1037
+CEHL,MDIBL Dock,22G,6/12/2017,13:09,,,,13:38,15,25.5,3.2,30,,Clear,,,9,8.6,8.8,,,,,E,1036
+CEHL,MDIBL Dock,22G,6/19/2017,9:15,,,,6:37,12,17.1,5.3,32,Low,Overcast,Calm,Secchi disk his bottom,8.8,9.2,9,,,,Danny Graves,W,1045
+CEHL,BH Town Pier,22D,6/20/2017,9:45,,,,7:38,10,18.6,2.9,32,Medium,Drizzle,Ripple,,9.4,9.2,9.3,,,,Danny Graves,SW,1046
+CEHL,MDIBL Dock,22G,6/26/2017,9:45,,,,,13,19.5,2.575,31,,,,,9,9,9,,,,Sierra,NE,1052
+CEHL,BH Town Pier,22D,6/27/2017,10:42,,,,,11.7,15.7,2.55,,,,31,,8.4,8.6,8.5,,,,Kyle McGadney,E,1053
+CEHL,BH Town Pier,22D,7/3/2017,9:50,,,,,13,18.6,2.625,32,,,,,8.2,8.4,8.3,,,,Kyle McGadney,E,1055
+CEHL,MDIBL Dock,22G,7/3/2017,10:50,,,,,16.4,24.5,3.55,32,,,,,8.2,8.4,8.3,,,,Kyle McGadney,W,1054
+CEHL,MDIBL Dock,22G,7/10/2017,9:15,,,,12:30,15.4,24.4,3.3,26,,Partly Cloudy,Ripple,,8.8,9,8.9,,,,Sierra and Taylor,W,1069
+CEHL,BH Town Pier,22D,7/10/2017,10:20,,,,12:30,14.5,25.4,2.95,30,,,,,8.6,8.8,8.7,,,,Sierra and Kyle,W,1070
+CEHL,BH Town Pier,22D,7/17/2017,9:55,,,,,13.7,16.8,2.8,31,,,,Transparency disc hit bottom.,9.1,9.2,9.15,,,,"Sierra C, Danny",NW,1086
+CEHL,BH Town Pier,22D,7/18/2017,9:05,,,,,16.4,16,3.6,32,,,,Added 15 m of filtered water to dilute 15 mL of sample. Total 30 mL.,9.2,8.8,9,,,,"Siera, Danny",N,1097
+CEHL,MDIBL Dock,22G,7/24/2017,13:09,,,,12:07,14.1,19.8,2.5,31,,Overcast,,,8.2,8.4,8.3,,,,Danny Graves,,1050
+CEHL,BH Town Pier,22D,7/25/2017,13:30,,,,12:59,14.1,,3,31,,,,,9,9,9,,,,Sierra and Danny,None,1109
+CEHL,MDIBL Dock,22G,7/31/2017,9:20,,,,11:57,15.6,19.3,3.5,32,,,,Secchi disk hit bottom at 3.5m,9,9.2,9.1,,,,Sierra and Danny,,1114
+CEHL,BH Town Pier,22D,8/1/2017,9:30,,,,6:44,14.1,22.4,3.35,30,,,,,8,8.4,8.2,,,,Danny and Sierra,,1115
+CEHL,MDIBL Dock,22G,8/7/2017,9:25,,,,11:28,16.9,20.3,2.55,30,,,,,9,9,9,,,,,,1116
+CEHL,BH Town Pier,22D,8/10/2017,13:37,,,,13:19,16,29,3.65,30,Low,Clear,Ripple,"Silver Spoon, Miss Samantha, Tugg (BH barge) all in sampling area.",9.2,9.2,9.2,,,,"Sierra, Anna",W,1117
+CEHL,MDIBL Dock,22G,8/14/2017,9:06,,,,3:53,15.7,20.6,2.3,31,,,,,7.6,7.8,7.7,,,,Sierra,SW,1118
+CEHL,BH Town Pier,22D,8/15/2017,10:06,,,11:01,,13,15,2.7,32,,Fog,Waves,Secchi disk hit bottom,7.6,7.6,7.6,,,,Sierra,SE,1119
+CEHL,BH Town Pier,22D,8/23/2017,9:45,0,,,12:07,12,23,3.9,31,,,Waves,Very windy! Second Wind and one other boat at dock. Cruise tender running and creating a lot of wash and current.,7.2,7.6,7.4,,,,Farrell,SW,1127
+CEHL,MDIBL Dock,22G,8/25/2017,13:03,,,,14:10,16,23.9,3.3,31,Low,Partly Cloudy,Waves,,8.2,8.4,8.3,,,,A. Farrell,NW,1128
+CEHL,MDIBL Dock,22G,8/29/2017,13:00,0,,11:14,,16.1,24.6,3.2,31,Low,Partly Cloudy,Ripple,Secchi disk hit bottom,8.6,8.4,8.5,,,,"Anna Farrell, Ashley Taylor",W,1129
+CEHL,BH Town Pier,22D,8/30/2017,9:35,,,12:10,,14,17,3.7,31,Medium,Overcast,Ripple,Secchi disk hit bottom. Elaina Jane left some oil on the surface. Switched sides of the dock in the middle of sampling due to boat docking.,8.8,9.2,9,,,,Farrell,NE,1130
+CEHL,BH Town Pier,22D,9/6/2017,8:50,,,,11:31,12,20,4,31,Low,Overcast,Ripple,Secchi disk hit bottom. Sampled from the dory float because of fishermen working (unloading traps) on the other float.,7.8,8.2,8,,,,Anna Farrell,S,1131
+CEHL,MDIBL Dock,22G,9/8/2017,9:25,,,,12:48,11.7,17,3.7,31,Low,Clear,Ripple,Secchi disk hit bottom,8.2,8.2,8.2,,,,Anna Farrell,E,1132
+CEHL,MDIBL Dock,22G,9/12/2017,15:30,,,,16:03,16.1,26.2,4,31,Low,Clear,Ripple,,9.2,9.2,9.2,,,,Anna Farrell,W,1133
+CEHL,BH Town Pier,22D,9/15/2017,8:43,,,,6:54,13.9,20.8,4,32,Low,Partly Cloudy,Calm,,9.4,9.2,9.3,,,,Anna Farrell,S,1134
+CEHL,BH Town Pier,22D,9/20/2017,8:48,,,,11:29,13.9,19,3.2,32,High,Overcast,Waves,Storm surge from Hurricane Jose rolling in. Murky water.,8.8,8.4,8.6,,,,Anna Farrell,None,1135
+CEHL,MDIBL Dock,22D,9/21/2017,9:46,,,,12:13,14.8,17.9,3.1,32,Low,Clear,Whitecaps,Big swells from the east. Did not use an aquascope for transparency due to swells.,8.4,8.4,8.4,,,,Anna Farrell,E,1136
+CEHL,MDIBL Dock,22G,9/26/2017,12:45,,,,15:02,18.3,26.7,3.95,31,,,,,8.2,8,8.1,,,,Farrell,NW,1137
+CEHL,BH Town Pier,22D,9/28/2017,13:17,,,,17:34,14.4,20.1,2.8,31,Medium,Clear,Whitecaps,Swells from the SE.,8,8.2,8.1,,,,Farrell,NW,1138
+CEHL,BH Town Pier,22D,10/4/2017,9:00,,,,10:16,12.9,15.3,5.4,32,Low,Clear,Ripple,Silver Spoon at the dock. Cruise tenders ferrying back and forth. Secchi disk hit bottom.,7.6,7.8,7.7,,,,Farrell,NE,1139
+CEHL,MDIBL Dock,22G,10/5/2017,9:11,,,,10:56,13.1,18.4,4.85,32,Low,Clear,Waves,,7.4,7.6,7.5,,,,Anna Farrell,NW,1140
+CEHL,MDIBL Dock,22G,10/10/2017,13:45,,,,14:45,13.4,24,3.85,32,,Clear,Waves,,8.2,8.4,8.3,,,,Farrell,W,1141
+CEHL,BH Town Pier,22D,10/11/2017,8:52,,,,15:43,13.4,13.8,2.3,32,Low,Clear,Ripple,Secchi disk hit bottom.,7.7,7.7,7.7,,,,Farrell,W,1142
+CEHL,MDIBL Dock,22G,10/18/2017,9:36,,,,10:24,12.4,13.4,3.3,33,Low,Clear,Ripple,,8,8.2,8.1,,,,Farrell,NW,1143
+CEHL,BH Town Pier,22D,10/19/2017,8:58,,,,11:08,12.6,18.8,4.65,32,Medium,Clear,Ripple,Cruise ship tenders motoring back and forth,8.3,8.6,8.45,,,,Farrell,W,1144
+CEHL,MDIBL Dock,22G,10/23/2017,13:23,,,,13:44,13.1,17.6,4.08,32,Low,Clear,Calm,,8.4,8.8,8.6,,,,Farrell/Taylor,S,1145
+CEHL,BH Town Pier,22D,10/25/2017,10:17,,,,15:08,12.8,17.6,2.85,32,Medium,Overcast,Waves,Swells from the east.,7.7,8.1,7.9,,,,Farrell,S,1146
+CEHL,MDIBL Dock,22G,11/2/2017,10:15,,,,9:39,12.4,13.6,4.15,,Low,Overcast,Ripple,Salinity not taken.,7.2,7.6,7.4,,,,Farrell,W,1147
+CEHL,BH Town Pier,22D,11/3/2017,9:08,,,,10:23,12.7,18,4.65,33,Medium,Partly Cloudy,Waves,,7.4,7.2,7.3,,,,Farrell,S,1148
+CEHL,BH Town Pier,22D,12/5/2017,11:30,,,,11:24,8.2,7.4,,31,Medium,Overcast,Waves,Swells.,,,,,,,Farrell/Taylor,SE,1149
+CEHL,MDIBL Dock,22G,12/6/2017,10:55,,,,12:18,7.1,10.4,,32,Low,Overcast,Ripple,Sample collected in knee-deep water,,,,,,,Farrell/Taylor,NW,1150
+CEHL,MDIBL Dock,22G,12/11/2017,15:30,,,,17:30,5.9,0.5,,32,Low,Clear,Calm,Beautiful sunset. Light wind.,,,,,,,Farrell,S,1151
+CEHL,BH Town Pier,22D,12/13/2017,8:45,,,,7:02,6.7,1,,30,Medium,Overcast,Waves,,,,,,,,"Farrell, Taylor",NW,1152
+CEHL,MDIBL Dock,22G,12/19/2017,14:07,,,,11:17,3.3,2,,32,None,Partly Cloudy,Calm,PS only.,,,,,,,Farrell/Taylor,W,1153
+CEHL,BH Town Pier,22D,12/20/2017,8:52,,,,11:53,5.4,3.3,,34,Low,Partly Cloudy,Waves,,,,,,,,Farrell/Taylor,W,1154
+CEHL,MDIBL Dock,22G,1/29/2018,10:10,,,,8:12,1.3,-4.5,,34,Low,Overcast,Waves,"Sampled off the point to the left of Emery Cove. Water in the Cove itself is full of ice, seaweed, and cloudy looking. Dock is not in. Used DO meter for DO and water temp.",,,11.5,,,,Farrell,NE,1156
+CEHL,MDIBL Dock,22G,2/21/2018,16:10,,,,14:27,3.1,9.3,,32,None,Overcast,Calm,Sampled off west side of Blueberry Point.,,,12,,,,Farrell,SW,1157
+CEHL,MDIBL Dock,22G,2/28/2018,9:45,,,,8:59,2.5,5.7,,33,None,Clear,Calm,Sampled off west side of Blueberry Point.,,,10.8,,,,Farrell,NW,1158
+CEHL,MDIBL Dock,22G,3/7/2018,13:25,,,,14:52,2.8,2.5,,33,Low,Overcast,Waves,Nor'easter predicted in the next 24 hours. Sampled from Blueberry Point rocks.,,,11.6,,,,Farrell/Taylor,NE,1159
+CEHL,MDIBL Dock,22G,3/21/2018,11:30,,,,14:17,0.6,1.4,,31,Low,Overcast,Ripple,"Sampled from the rocks at Blueberry Point near the rockweed because of the tide stage. Saw 22 pieces of red, blue, and clear plastic in the 200 cells counted. DO measured with the DO meter.",13.8,,,,,,Farrell,NE,1160
+CEHL,MDIBL Dock,22G,3/28/2018,9:40,,,,8:52,3.1,2.6,,33,Low,Overcast,Calm,Sampled at Blueberry Point. Used DO meter.,,,12,,,,Farrell/Taylor,N,1161
+CEHL,MDIBL Dock,22G,4/4/2018,15:00,,,,14:31,3.9,6.9,,32,Low,Fog,Calm,Sampled from Blueberry Point. Used DO meter.,,,11.3,,,,Farrell,SW,1162
+CEHL,MDIBL Dock,22G,4/11/2018,9:32,,,,8:06,3.9,1.3,,31,None,Clear,Calm,Sampled from Blueberry Point. Used DO meter.,,,11.3,,,,Farrell,NW,1163
+CEHL,MDIBL Dock,22G,4/25/2018,10:33,0,,,7:33,7.8,14,,31,,Overcast,Calm,Lower tide than usual. Sampled off the beach at Blueberry Point in a bed of rockweed. Used the DO meter.,14.9,,,,,,Anna Farrell,W,1164
+CEHL,MDIBL Dock,22G,5/2/2018,11:02,0,,,13:23,10.4,20.1,,30,None,Clear,Ripple,Sampled in rockweed. Samples at Blueberry point.,,,11.8,,,,"Anna Farrell, Analise Wittenberg, Sara Lowgren",W,1165
+CEHL,BH Town Pier,22D,5/9/2018,8:40,,,,6:21,8.2,7.6,4.5,31,Low,Fog,Calm,Secchi disk hit bottom. Fire hydrant open and gushing water on E side of the dock. Used DO meter.,,,9.6,,,,Farrell/Taylor,NE,1166
+CEHL,MDIBL Dock,22G,5/9/2018,10:02,0,,12:43,,11.4,10.8,,30,None,Fog,Calm,Sampled at Blueberry point in a bed of rockweed. Used DO meter.,,,11.6,,,,"Analise Wittenberg, Sara Lowgren",NE,1167
+CEHL,MDIBL Dock,22G,5/16/2018,10:50,,,,12:07,9.9,12.9,,31,None,Clear,Calm,"Blueberry point. Used DO meter, sampled in shaded water. Not in rockweed. Nutrient bottle 1168 dropped in water and shaken off and stil used.",,,10.3,,,,"Analise Wittenberg, Sara Lowgren",E,1168
+CEHL,BH Town Pier,22D,5/17/2018,10:58,,,,12:57,9.3,16,3.95,31,Low,Overcast,Ripple,Used DO meter.,,,9.2,,,,Taylor and Farrell,SE,1172
+CEHL,BH Town Pier,22D,5/23/2018,10:05,,,12:37,6:14,9.7,15.9,3.9,30,None,Clear,Calm,Secchi disk hit bottom. 8 drops test to determine DO.,10,9.6,9.8,,,,"Analise Wittenberg, Sara Lowgren",E,1173
+CEHL,MDIBL Dock,22G,5/23/2018,11:00,,,12:37,6:14,13.1,20.1,,30,None,Clear,Calm,Sampled at Blueberry Point. 8 drops test for DO.,10,10.4,10.2,,,,"Analise Wittenberg, Sara Lowgren",E,1234
+CEHL,BH Town Pier,22D,5/30/2018,9:30,,,,12:20,12.3,16.4,3.8,31,None,Clear,Calm,pH 8.41,,,9.4,,,,Ashley Taylor,NE,1177
+CEHL,MDIBL Dock,22G,5/30/2018,10:15,,,,12:20,13,17.6,4.65,32,None,Clear,Ripple,"Sampled from dock, using DO meter. pH 8.4",,,9.5,,,,"Analise Wittenberg, Sara Lowgren",NE,1178
+CEHL,MDIBL Dock,22G,6/6/2018,12:05,,,11:03,17:20,13.4,16.6,3.5,30,None,Overcast,Ripple,Secci disc hit bottom. Backwashed 20 ml. Measured DO using DO meter.,,,8.4,,,,"Analise Wittenberg, Sara Lowgren",N,1179
+CEHL,BH Town Pier,22D,6/7/2018,8:42,,,,5:33,10.8,16,4.1,32,Low,Partly Cloudy,Ripple,Julie B. motored by briefly in the middle of sampling. Secchi disk hit bottom.,,,9.2,,,,Farrell,E,1180
+CEHL,MDIBL Dock,22G,6/13/2018,10:50,0,,,10:56,11.6,24.4,5.15,32,,,,Forgot cooler for nutrient bottle. DO meter was used.,,,9,,,,Analise Wittenburg,E,1184
+CEHL,BH Town Pier,22D,6/14/2018,10:52,,,,11:46,10.8,14,3.3,31,Low,Overcast,Waves,"Fisherman hooking fish for bait working on leeward side of dock, the DO meter was used to measure DO",,,9.5,,,,Anna Farrell,N,1185
+CEHL,MDIBL Dock,22G,6/19/2018,12:58,,,,16:28,14.2,19.3,2.2,31,Medium,Clear,Waves,"Very windy, only 5 liters were filtered",,,9,,,,Farrell,NW,1187
+CEHL,BH Town Pier,22D,6/20/2018,10:38,,,11:12,4:48,12,28,2.6,31,Low,Clear,Ripple,Forgot the DO meter,,,,,,,Analise Wittenburg,W,1186
+CEHL,BH Town Pier,22D,6/28/2018,9:08,,,,11:58,11.3,15.8,4.4,32,Low,Drizzle,Calm,Secchi disk hit bottom,9.2,9.2,9.2,,,,Anna Farrell,S,1197
+CEHL,MDIBL Dock,22G,6/28/2018,13:09,0.34,,17:58,11:58,12.1,16.6,5.2,30,None,Downpour,Calm,Secchi Disk hit bottom for transperency,,,10,,,,"Analise W.,Anna F.",S,1198
+CEHL,MDIBL Dock,22G,7/3/2018,13:29,,,,15:12,18.5,24,4.4,30,,Clear,Calm,pH 8.43,,,9.1,,,,Taylor/Farrell,NE,1199
+CEHL,BH Town Pier,22D,7/5/2018,9:55,0,,10:21,,16.4,30,2.7,30,Low,Clear,Ripple,Secchi hit bottom.,,,9.7,,,,Ashley Taylor,W,1200
+CEHL,MDIBL Dock,22G,7/11/2018,10:30,,,,9:38,15.9,24,4.95,31,Low,Clear,Ripple,,,,9.2,,,,Wittenberg,NE,1201
+CEHL,BH Town Pier,22D,7/12/2018,8:38,,,,10:36,13.7,16.7,3.4,32,Low,Clear,Ripple,pH: 8.41; Atlanticat steamed by; churned up a lot of sediment and some eelgrass.,,,9.4,,,,Farrell,NW,1202
+CEHL,BH Town Pier,22D,7/18/2018,9:49,0.12,,9:50,16:04,13,20.3,2.2,31,Medium,Partly Cloudy,Ripple,"Cruise tenders, Low tide, lots of smut in the water. The transparency disc hit the bottom.",,,9.2,,,,Farrell,N,1207
+CEHL,MDIBL Dock,22G,7/19/2018,13:16,0,,11:21,17:02,17.6,23,3.2,31,Low,Clear,Calm,PH: 8.34. A lot of slime gunk on the surface of the water. The transparency disc hit the bottom. Nutrient vial #: 1208. The top two phytoplankton species were Dactyliosolen spp. And Dendronula spp.,,,8.6,,,,Amber Wolf and Jade Lee,NE,1208
+CEHL,MDIBL Dock,22G,7/24/2018,9:58,,,,8:23,18.1,19.8,3.55,31,Low,Fog,Calm,pH meter: 8.38,,,8.7,,,,Jade Lee,NW,1209
+CEHL,BH Town Pier,22D,7/25/2018,9:07,0.02,,16:11,10:11,14.8,24,3.6,30,Low,Partly Cloudy,Ripple,pH 8.37 Nutrient vial 1211. Other common phytoplankton was Dactyliosolen,,,9.2,,,,Anna Farrell,NW,1211
+CEHL,MDIBL Dock,22G,7/31/2018,13:50,,,,13:58,20.5,23.5,3,31,Low,Partly Cloudy,Calm,pH: 8.4,,,8.7,,,,Farrell/Lee,E,1221
+CEHL,BH Town Pier,22D,8/1/2018,9:13,,,8:25,14:35,17.2,18,2.6,32,,,,Secchi hit bottom,,,8.2,,,,Farrell,E,1222
+CEHL,BH Town Pier,22D,8/8/2018,9:32,0.14,,14:21,20:37,18.6,25.6,4.1,30,Low,Partly Cloudy,Calm,"pH 8.43 Second wind, captain obvious --> hosing down deck at dock. 2 fishermen on dock.",7.8,7.6,7.7,,,,Farrell,E,1225
+CEHL,MDIBL Dock,22G,8/9/2018,9:48,,,,9:18,18,22.8,2.8,30,Low,Overcast,Calm,pH: 8.38,,,8.5,,,,Farrell,SW,1226
+CEHL,BH Town Pier,22D,8/16/2018,9:25,,,9:23,15:36,15.5,21.6,2.3,32,Medium,Partly Cloudy,Ripple,Secchi hit bottom.,,,8.4,,,,AEF,W,1236
+CEHL,MDIBL Dock,22G,8/16/2018,10:37,,,9:23,15:36,16.7,23.6,2.5,31,Low,Partly Cloudy,Ripple,Secchi hit bottom.,,,8.1,,,,AEF,W,1237
+CEHL,MDIBL Dock,22G,8/21/2018,12:50,,,,8:01,18.8,24.3,2.9,31,Low,Partly Cloudy,Ripple,Secchi hit bottom. pH: 8.48,,,8.5,,,,Farrell,SE,1238
+CEHL,BH Town Pier,22D,8/22/2018,10:25,0.13,,14:44,8:55,15.4,16.7,3.95,31,Low,Overcast,Ripple,,,,,,,,Amber Wolf,E,1239
+CEHL,BH Town Pier,22D,8/29/2018,8:57,0,,7:17,13:24,15.8,26,3.1,31,Low,Clear,Calm,The transparency disc hit bottom.,,,8.2,,,,Farrell,NW,1242
+CEHL,MDIBL Dock,22G,8/30/2018,12:33,,,7:53,14:02,17.2,21.3,4.25,31,Low,Partly Cloudy,Waves,pH: 8.45,,,8.6,,,,Farrell,NE,1243
+CEHL,MDIBL Dock,22G,9/5/2018,15:41,,,,19:18,17.4,27.1,3.55,32,Low,Clear,Ripple,pH: 8.53,,,9.3,,,,Farrell,W,1244
+CEHL,BH Town Pier,22D,9/6/2018,13:20,0,,8:04,14:10,15.9,25.7,2.7,31,,,,2 boats went by. We filtered only 6L instead of 10. There was only 10ml of water instead of 15ml in the falcon tube. The water was really dirty and hard to see through with the microscope.,,,8.2,,,,Farrell,,1246
+CEHL,MDIBL Dock,22G,9/12/2018,14:10,3,,7:13,13:22,17.8,24,2.87,30,,Partly Cloudy,Ripple,Mark Hanscom was rinsing off lobster boat on the otherside of the dock at the same time.,,,8.5,,,,Taylor,NE,1249
+CEHL,BH Town Pier,22D,9/13/2018,9:15,0,,8:02,14:11,14.6,19.4,2.6,28,,Partly Cloudy,Ripple,Hit bottom,,,8.2,,,,Taylor,NW,1250
+CEHL,BH Town Pier,22D,9/19/2018,10:30,2.5,,7:42,13:13,15.2,13.1,3.45,32,,,,pH 8.59,,,8.5,,,,Farrell + Wolf,NE,1253
+CEHL,MDIBL Dock,22G,9/20/2018,11:24,0,,14:25,8:20,15.4,15.8,3.9,33,Low,Partly Cloudy,Calm,pH: 8.4; disk hit bottom                                                                                                            THIS IS A DUPLICATE - PLEASE IGNORE!!!,,,8.1,,,,Taylor,NE,
+CEHL,MDIBL Dock,22G,9/20/2018,11:24,0.1,,14:25,8:20,15.4,15.8,3.9,33,Low,Partly Cloudy,Calm,pH: 8.40. Hit bottom.,,,,,,,Taylor,NE,1256
+CEHL,BH Town Pier,22D,9/26/2018,9:00,1.5,,6:10,12:17,13.4,20.9,2.3,33,Medium,Overcast,Waves,Major swells from the NE,,,8.2,,,,Farrell,S,1260
+CEHL,MDIBL Dock,22G,9/26/2018,13:05,1.5,,6:10,12:17,14.6,20.5,3.9,32,Low,Overcast,Ripple,,,,8.8,,,,Farrell/Taylor,SW,1261
+CEHL,BH Town Pier,22D,10/4/2018,9:01,0.36,,12:52,6:44,13.5,13.6,,32,,,,pH: 8.4; vial number:1262,,,8.2,,,,Taylor/Meyer,S,1262
+CEHL,MDIBL Dock,22G,10/4/2018,10:00,0.36,,12:52,6:44,13.8,15.5,3.7,32,Low,Overcast,Ripple,hit bottom,,,8.6,,,,Farrell/Taylor,S,1263
+CEHL,BH Town Pier,22D,10/11/2018,9:47,0.25,,19:16,12:55,13.3,9.9,2.55,31,,Drizzle,Waves,"Vial #1266, boats galore",,,8.2,,,,AF +  AT + AW,E,1266
+CEHL,MDIBL Dock,22G,10/11/2018,10:30,0.25,,19:16,12:55,13.5,9.5,2.9,33,,Drizzle,Waves,Nutrient vial# 1270,,,8.1,,,,Farrell,E,1270
+CEHL,BH Town Pier,22D,10/15/2018,9:28,0,,10:00,16:07,12.3,15,,32,,,,Forgot to do transparency,,,9.3,,,,Wolf,S,1271
+CEHL,MDIBL Dock,22G,10/17/2018,10:10,,,11:53,5:47,12.4,11.9,2.95,30,Low,Overcast,Ripple,,,,8.4,,,,,W,1272
+CEHL,BH Town Pier,22D,10/24/2018,10:05,0.05,,17:23,11:07,11,4.4,1.7,32,Medium,Overcast,Whitecaps,Cruise tenders moving in and out of the area. The water was very choppy and mixed up due to tender motors.,,,8.7,,,,Taylor/Farrell,N,1280
+CEHL,BH Town Pier,22D,10/31/2018,13:20,0.1,,10:26,4:19,10,7.8,2.85,33,Medium,Partly Cloudy,Calm,Vail # 1282,,,9.4,,,,Farrell + Taylor + Wolf,W,1282
+CEHL,MDIBL Dock,22G,10/31/2018,14:20,0.1,,10:26,4:19,9.6,11.3,,32,Low,Overcast,Calm,pH = 8.66. Taken off beach - wading in. Not many phytoplankton/not too concentrated.,,,9.8,,,,Wolf + Taylor,N,1281
+CEHL,BH Town Pier,22D,11/7/2018,14:30,1.25,,16:25,10:04,10.6,13.8,,31,,,,SW swells. pH: 8.48. Vial number 901. Nutrient sample was emptied out for some reason.,,,9,,,,Farrell,SW,901
+CEHL,BH Town Pier,22D,3/26/2019,16:52,0,,9:50,16:02,2.5,2.4,,31,Medium,Partly Cloudy,Waves,,,,,,,,aef,NW,1283
+CEHL,MDIBL Dock,22G,3/26/2019,16:15,,,9:50,16:02,3.6,1.9,,31,Low,Fog,Ripple,Sampled from Emery Cove because the dock isn't in. Waded out thigh deep to obtain sample.,,,,,,,aef,N,1284
+CEHL,BH Town Pier,22D,4/1/2019,9:06,,,15:31,9:11,2.3,2.1,,31,Medium,Partly Cloudy,Whitecaps,Very windy (15 kts).,,,,,,,Farrell/Durand,NW,1285
+CEHL,MDIBL Dock,22G,4/2/2019,11:36,,,16:15,9:59,3.2,7.5,,31,Low,Clear,Waves,Sampled in the cove. Lots of ctenophores in the water.,,,,,,,Farrell,SW,1286
+CEHL,BH Town Pier,22D,4/9/2019,13:20,,,8:12,14:22,2.6,0.2,3.15,31,Medium,Overcast,Whitecaps,,,,11.7,,,,Farrell/Durand,SE,1287
+CEHL,MDIBL Dock,22G,4/10/2019,13:17,,,8:57,15:09,3.9,3.5,,31,Low,Overcast,Ripple,Snow flurries. Deer carcass up shore. Sampled in the cove.,,,11.8,,,,,NE,1288
+CEHL,BH Town Pier,22D,4/16/2019,13:35,0.01,,15:02,8:40,4.5,8,2.1,31,,,,"Transparency disc hit bottom. Filtered 5L, not 10.",,,11.8,,,,"Faye Durand, Anna Farrell",N,1289
+CEHL,MDIBL Dock,22G,4/17/2019,10:02,0,,15:59,9:42,4.2,6.2,,30,,,,Very windy (15-20 mph). Samples in the cove. Lots of seaweed on the beach and cloudy water. Filter took an hour to filter 5 L. A lot of junk in the slide.,,,11.1,,,,Farrell + Wolf,N,1290
+CEHL,BH Town Pier,22D,4/23/2019,13:22,,,8:32,14:45,5.9,5.9,1.8,29,Medium,Drizzle,Waves,There was still quite a bit of phytoplankton on the filter that didn't get backwashed into the Falcon tube. 10L was very slow to filter.,,,11,,,,"Wolf, Farrell, Durand",W,1291
+CEHL,MDIBL Dock,22G,4/24/2019,13:22,,,9:23,15:36,6.1,6,,27,Low,Overcast,Ripple,Sampled in the cove. Hard rain just before sampling. No transparency.,,,11.5,,,,Farrell and Wolf,NW,1292
+CEHL,BH Town Pier,22D,4/29/2019,9:00,,,14:00,7:39,5.7,5.2,2.7,31,Medium,Clear,Whitecaps,"Secchi Disk hit bottom. Barge at dock, so we filtered off the south side. Was slow to filter.",,,9.9,,,,,NW,1293
+CEHL,MDIBL Dock,22G,5/1/2019,9:24,,,15:32,9:19,6.1,6.8,,30,,Clear,,MDIBL Cove,,,,,,,Farrell and Wolf,N,1294
+CEHL,MDIBL Dock,22G,5/6/2019,14:52,0,,18:37,12:37,9.7,19,,30,Low,Clear,Calm,,,,10.9,,,,Wolf,N,1295
+CEHL,BH Town Pier,22D,5/7/2019,13:44,0,,13:18,19:19,7.4,16.9,4.45,31,Medium,Overcast,Ripple,Wind was about 17-20 mph,,,11.5,,,,Wolf,NW,1296
+CEHL,BH Town Pier,22D,5/13/2019,9:17,,,12:43,6:18,7.8,9.4,4,32,Low,Clear,Ripple,Secchi disk hit bottom.,,,10.5,,,,Farrell/Durand,E,1297
+CEHL,MDIBL Dock,22G,5/13/2019,16:08,,,12:43,18:59,9.5,10.3,,31,None,Clear,Ripple,,,,9.6,,,,Wolf/Farrell,W,1298
+CEHL,BH Town Pier,22D,5/20/2019,10:19,0,,18:48,12:45,6.8,11.7,3.85,32,Low,Drizzle,Ripple,Several cruise tenders. 558 Pseudo-Nitzchia in 6 slides.,,,9.9,,,,Wolf,SE,1299
+CEHL,MDIBL Dock,22G,5/21/2019,13:15,,,7:21,13:32,10.5,14.9,,30,,Partly Cloudy,Ripple,Sample ful of gunk. Lots of things look like pseudo-nitzschia. Sampled in cove. Lots of sediment in water.,,,9.8,,,,Farrell + Aries,N,1300
+CEHL,MDIBL Dock,22G,5/29/2019,,0.2,,13:56,7:43,11,10.5,,30,None,Overcast,Ripple,"Sampled in the cove. Dock not in yet. Tons of pollen…the water was visibly yellow. DO not taken, meter was in use in Bar Harbor.",,,,,,,Wolf,N,1302
+CEHL,BH Town Pier,22D,5/29/2019,8:53,0.2,,13:56,7:43,8.3,7.3,4.65,30,Low,Overcast,Ripple,Mother's Nightmare II and Emily Catherine were docked at the pier. Miss Samantha went by. Lots of natural debris in the water.,,,9.4,,,,Farrell/Aries,NE,1301
+CEHL,BH Town Pier,22D,6/4/2019,10:13,0,,6:06,12:15,9.5,15.3,3.3,32,,,,"""Next Watch"" tied up on float. Stiff wind. Cat being washed at whale watch pier. Lots of mussel larvae! Winkler titration: 9.0/9.3",,,9.15,,,,Farrell,NW,1303
+CEHL,MDIBL Dock,22G,6/4/2019,14:20,0,,18:14,12:15,11.9,18.6,,31,,,,Sampled in cove. Winkler titration: 9.2/9.6,,,9.4,,,,Farrell,W,1304
+CEHL,MDIBL Dock,22G,6/10/2019,9:41,0,,4:59,11:23,11.5,14.7,2.4,31,Low,Clear,Ripple,"secchi disk hit bottom, started sampling from dock, D. acuminata: 26, D. norvegica: 267",,,11.4,,,,Analise Wittenberg,NW,1305
+CEHL,BH Town Pier,22D,6/11/2019,9:02,0,,12:24,6:04,9.6,15.5,3.85,31,Low,Overcast,Waves,Nature cruise steamed by. Switched to 10 um filter with 20 um cod end.,,,11.2,,,,Analise Wittenberg,SE,1306
+CEHL,BH Town Pier,22D,6/17/2019,10:09,0,,5:34,11:45,11.6,19.3,2.75,28,Medium,Clear,Waves,Nutrient vial was resting in the 5L bucket and was in bucket during first draw of water. Tender vessels coming in and out.,,,11.5,,,,Analise Wittenberg,NW,1307
+CEHL,MDIBL Dock,22G,6/19/2019,10:51,0,,7:01,13:10,13.3,23.5,3.95,30,Low,Clear,Ripple,,,,11,,,,Wittenberg,E,1308
+CEHL,BH Town Pier,22D,6/24/2019,14:10,1,,10:36,16:51,12.6,22.4,,30,Low,Clear,Calm,Tender vessels moving in and out of port.,,,11.5,,,,wittenberg and Howard,N,1316
+CEHL,MDIBL Dock,22G,6/25/2019,9:40,0,,11:22,5:04,13.1,16.6,,29,Low,Clear,Ripple,Lots of pollen on the water surface and sampled in pollen dense water near dock. Secchi disk hit the bottom at 3m. Wind direction gusts ranged from NW to E but primarily NE,,,10.6,,,,"Skye Howard, Analise Wittenberg",NE,1317
+CEHL,BH Town Pier,22D,7/1/2019,9:32,0.22,,4:06,10:15,14.3,16.9,3.45,30,Medium,Clear,Waves,"nutrient appartus was a little leaky. Acadia explorer, second wind stirred up water.",,,10.3,,,,"Skye Howard, Analise Wittenberg",NW,1318
+CEHL,MDIBL Dock,22G,7/2/2019,10:09,0,,4:54,11:03,15.3,21.7,4.5,31,Low,Clear,Ripple,"Filter was unproperly cleaned previously so cleaned with dock hose which is land supplied, water has a pink tint",,,9.8,,,,"Analise Wittenberg, Skye Howard",SE,1319
+CEHL,BH Town Pier,22D,7/8/2019,13:45,0,,10:06,16:21,14.5,22.4,2.3,30,Low,Clear,Ripple,many boast entering and leaving the harbor by the pier,,,11.4,,,,"Analise Wittenberg, Skye Howard",SE,1320
+CEHL,MDIBL Dock,22G,7/9/2019,14:05,0,,11:03,17:21,16.4,26.6,4,27,Low,Clear,Waves,secchi hit bottom,,,10.2,,,,"Skye Howard, Analise Wittenberg",NW,1321
+CEHL,BH Town Pier,22D,7/15/2019,10:18,1,,16:39,10:38,14.7,20.9,3.3,31,Medium,Clear,Waves,Boats moving in and out of harbor. Whale watch and tender vessles,,,10.8,,,,"Analise, Skye",NW,1322
+CEHL,MDIBL Dock,22G,7/16/2019,,0,,17:24,11:24,16.1,26.9,4,30,Low,Clear,Ripple,,,,10,,,,"Skye Howard, Analise Wittenberg",NE,1323
+CEHL,BH Town Pier,22D,7/22/2019,14:21,0,,9:12,15:23,16.1,23.7,2.7,30,Low,Overcast,Ripple,"whale watch was tendering, boats in and out at all times. DO meter not working",,,,,,,"Wittenberg, Farrell",NE,1324
+CEHL,BH Town Pier,22G,7/23/2019,13:09,0.2,,9:53,16:06,16.5,22.3,3.2,30,Low,Overcast,Ripple,"D. Norvegica: 409, D. Acuminata: 139, only 5 liters filtered.",,,10.3,,,,"Wittenberg, Farrell",E,1325
+CEHL,BH Town Pier,22D,7/29/2019,,0,,14:54,8:54,15.9,23.1,3.9,30,Medium,Clear,Waves,"Oil film on water. Private vessels, whale watches, and tender vessels moving around the harbor, extreme tender backwash, 3 ducks. D.Norvegica: 126, D.acuminata: 18",,,10.3,,,,"wittenberg, howard",,1326
+CEHL,MDIBL Dock,22G,7/31/2019,9:05,0,,15:46,9:47,17.2,23.3,2.95,32,Low,Clear,Calm,,,,10.7,,,,"Howard, Wittenberg",E,1327
+CEHL,MDIBL Dock,22G,8/5/2019,14:15,0,,8:48,15:02,17.2,24.1,4.5,30,Low,Clear,Ripple,,,,10,,,,"Analise Wittenberg, Skye Howard",E,1334
+CEHL,BH Town Pier,22D,8/7/2019,13:35,0,,10:39,10:54,14.1,24.8,4.3,31,Low,Overcast,Ripple,"Boat trafic, Seechi disck hit bottom.",,,10.2,,,,"Analise Wittenberg, Skye Howard",SE,1335
+CEHL,MDIBL Dock,22G,8/12/2019,9:30,,,3:21,9:34,16,21.6,5.4,32,,,,"breezy, secchi disk hit bottom",,,8.7,,,,Farrell,W,1336
+CEHL,BH Town Pier,22D,8/13/2019,9:39,,,4:11,10:23,14.7,22.4,5.1,31,,,,acadia explorer docked with engines running,,,9.6,,,,Farrell,W,1337
+CEHL,MDIBL Dock,22D,8/19/2019,13:35,,,7:58,14:05,16.2,19.3,5.1,33,Low,Clear,Calm,,,,9.8,,,,"farrell, wittenberg",N,1338
+CEHL,BH Town Pier,22D,8/20/2019,13:30,,,8:33,14:42,15.5,26.4,4.9,30,Medium,Clear,Ripple,"dead grasshopper in the water, lots of dead photosynthetic matter in the foot off the dock.",,,10.9,,,,"Wittenberg, Wolf",N,1339
+CEHL,MDIBL Dock,22G,8/26/2019,10:42,0,,13:28,7:25,15.8,20,3.5,30,None,Clear,Calm,"Calm wind, slight occasional breeze from the E. Secchi disk hit bottom.",,,9.3,,,,Farrell,None,1347
+CEHL,BH Town Pier,22D,8/27/2019,9:25,0,,14:29,8:26,14.8,20.5,4.45,32,Low,Partly Cloudy,Waves,No cage weight on the DO meter,,,10.1,,,,Analise and David Wittenberg,W,1348
+CEHL,BH Town Pier,22D,9/3/2019,13:23,,,8:24,14:36,13.7,21.3,4.2,32,Medium,Partly Cloudy,Waves,"Bay king III has engines running, cruise tenders running back and forth, queen mary 2 and adventure of the seas cruise ships are in.",,,8.5,,,,"Wittenberg, Farrell",W,1349
+CEHL,MDIBL Dock,22G,9/4/2019,13:50,,,9:17,15:29,14.6,20.9,4.5,33,Low,Partly Cloudy,Calm,dock had lots of bird poop.,,,7.2,,,,Analise Wittenberg,W,1350
+CEHL,MDIBL Dock,22G,9/9/2019,10:32,0,,8:16,14:21,14.8,17.4,4.1,33,Low,Clear,Ripple,Secchi disk hit bottom.,,,8.5,,,,Farrell,NW,1351
+CEHL,BH Town Pier,22D,9/10/2019,7:45,,,2:29,9:08,13.4,12.2,3.4,33,Medium,Clear,Waves,"Brown slimey film on top of water, no tenders running, Julie B. at dock",,,7.9,,,,Analise Wittenberg,NW,1352
+CEHL,MDIBL Dock,22G,9/16/2019,10:11,,,6:51,12:57,13.8,15.2,3.9,33,Medium,Partly Cloudy,Whitecaps,breezy. Sampled off the shore side of the dock. Clumps of seaweed near sampling area.,,,9.6,,,,Farrell/Durand,N,1353
+CEHL,BH Town Pier,22D,9/16/2019,13:07,,,18:40,12:55,13.9,16.9,2.75,33,Low,Partly Cloudy,Waves,"Whale watch boats tendering, many boats entering and exiting the port. Major stirring up of the water",,,10.1,,,,Wittenberg,NW,1354
+CEHL,BH Town Pier,22D,9/24/2019,7:35,,,13:04,6:56,13.7,18.8,4.55,33,,,,"Tenders running, slo. Elena Jane at dock.",,,8.4,,,,A. Wittenberg,W,1355
+CEHL,MDIBL Dock,22G,9/25/2019,11:20,1.25,,14:11,8:04,14.3,14.6,3.7,32,Low,Overcast,Waves,Secchi hit bottom,,,8.7,,,,A. Farrell,NE,1356
+CEHL,MDIBL Dock,22G,9/30/2019,12:57,0,,18:45,12:29,13.7,14.6,4.25,32,Low,Clear,Ripple,,,,7.7,,,,Farrell,N,1357
+CEHL,BH Town Pier,22D,9/30/2019,13:35,0,,18:45,12:29,13.2,14.7,3.45,32,,,,Whale watches tendering. Floating pine needles and loose algae floating in the water.,,,8.9,,,,Analise Wittenberg,NW,1358
+CEHL,BH Town Pier,22D,10/8/2019,7:00,,,1:31,7:47,12.2,12.4,3.65,32,,Overcast,,Lobster boats fueling. Whale watch backwash. Tenders starting to run. PS: chains of 7+ to 12  half filled chlorophyll.,,,7.5,,,,A. Wittenberg,SW,1359
+CEHL,MDIBL Dock,22G,10/8/2019,9:44,,,13:53,7:47,12.6,14.6,14.6,33,Low,Partly Cloudy,Ripple,,,,7.3,,,,A. Farrell,N,1360
+CEHL,BH Town Pier,22D,10/14/2019,12:40,,,18:06,11:49,12.5,16.5,3.7,32,,Fog,,Cruise ship tenders constantly running. Lobster boats always at dock. Foggy weather. Ducks crowd the dock. Lots of floating algae.,,,9.1,,,,Analise Wittenberg,SE,1361
+CEHL,MDIBL Dock,22G,10/15/2019,12:20,,,6:17,12:23,12.7,14.5,3.15,33,Medium,Clear,Waves,,,,10.1,,,,Durand/Farrell,N,1362
+CEHL,MDIBL Dock,22G,10/21/2019,13:43,,,10:37,16:52,12.4,16.3,2.95,33,Low,Clear,Calm,,,,10.1,,,,Farrell,E,1363
+CEHL,BH Town Pier,22D,10/22/2019,6:45,,,11:40,5:45,11.6,6.9,3.6,32,Low,Clear,Waves,"Fuel morning, 4 lobster boats in and tubby, sampled off of end of dock to avoid boats, tenders running, potent plankton/algae smell in sample.",,,9.6,,,,Wittenberg,S,1364
+CEHL,MDIBL Dock,22G,10/28/2019,10:09,,,5:07,11:18,11.5,9.8,3.55,33,Low,Overcast,Waves,It rained over the weekend.,,,9.4,,,,Farrell,E,1365
+CEHL,BH Town Pier,22D,10/29/2019,10:45,,,5:56,12:06,11.5,11.6,2.05,32,,,,,,,9.2,,,,Wittenberg,S,1366
+CEHL,MDIBL Dock,22G,11/4/2019,10:08,0,,10:18,4:12,11.3,7.8,2.8,32,Low,Partly Cloudy,Ripple,Secchi Disk hit bottom. Collected wholewater sample in 4 250 mL bottles.,,,9.5,,,,Durand,N,1367
+CEHL,BH Town Pier,22D,11/4/2019,14:10,0,,10:18,16:27,11.5,10.6,3.35,33,Low,Clear,Ripple,,,,10.6,,,,Wittenberg,SW,1368
+CEHL,BH Town Pier,22D,11/12/2019,10:15,,,16:35,10:15,9,5.5,3,31,Medium,Overcast,Waves,"leaves in the water, several rafts of ducks around the harbor.",,,9.1,,,,Wittenberg,E,1369
+CEHL,MDIBL Dock,22G,11/18/2019,10:14,,,8:22,14:34,7.2,3.8,,31,Low,Overcast,Waves,"Dock is out, so we sampled from the beach. Did not filter water for live count; too much sediment in the water.",,,11.1,,,,Durand,N,1370
+CEHL,BH Town Pier,22D,11/18/2019,13:40,,,8:22,14:34,8.7,4.5,2.75,31,,Overcast,Whitecaps,Aquascope not used; too windy.,,,9.1,,,,Wittenberg,N,1371
+CEHL,BH Town Pier,22D,11/26/2019,10:20,,,16:21,9:58,7.8,10,3.25,32,Low,Clear,Ripple,minimal boats moving in the harbor,,,9.5,,,,Wittenberg,SW,1372
+CEHL,BH Town Pier,22D,2/24/2020,10:28,,,5:13,11:21,1.9,2.1,5.7,34,Low,Clear,Ripple,Secchi disk hit bottom. Some fog off around the Porcupines.,,,11.8,,,,Durand/Farrell,W,1373
+CEHL,BH Town Pier,22D,3/9/2020,10:17,,,4:55,11:07,2.7,11.6,5.45,33,Low,Partly Cloudy,Ripple,,,,12.3,,,,Farrell/Durand,E,1374
+CEHL,BH Town Pier,22D,3/25/2020,13:09,,,18:40,12:32,3.8,10.6,2.95,34,Medium,Partly Cloudy,Whitecaps,,,,11,,,,Farrell,SE,1375
+CEHL,BH Town Pier,22D,4/1/2020,15:45,,,11:16,17:30,4.2,5.6,4.9,31,Low,Overcast,Waves,Secchi hit bottom.,,,11.8,,,,Farrell,N,1376
+CEHL,BH Town Pier,22D,4/8/2020,12:18,,,17:51,11:39,5.1,10,5.85,,Medium,Clear,Waves,Did not take salinity - refractometer left in the lab.,,,10.7,,,,Farrell,SE,1377
+CEHL,BH Town Pier,22D,4/17/2020,10:03,,,14:04,7:41,5.2,5.9,4,,Low,Partly Cloudy,Waves,Secchi hit bottom. Tubby working on the next float over putting moorings in. Did not take salinity - refractometer left in the lab.,,,10.3,,,,Farrell,NW,1378
+CEHL,BH Town Pier,22D,4/24/2020,12:09,,,6:33,12:40,5.5,10,3.95,,Low,Partly Cloudy,Waves,"Catman tied up alongside. Engine and hose running (sewater, presumably). Did not take salinity - refractometer left in the lab.",,,11,,,,Farrell,SE,1379
+CEHL,BH Town Pier,22D,5/3/2020,9:24,,,13:53,7:33,6.9,8.8,2.7,,High,Overcast,Whitecaps,Stong current! NE swells ~1 ft. Did not take salinity - refractometer left in the lab.,,,12.2,,,,Farrell,W,1380
+CEHL,BH Town Pier,22D,5/6/2020,10:54,,,16:38,10:28,7.1,14,4.65,,Low,Clear,Waves,Julie B. tied up alongside - left halfway through sampling. Did not take salinity - refractometer left in the lab.,,,10.2,,,,Farrell,N,1381
+CEHL,BH Town Pier,22D,5/12/2020,5:41,,,9:33,3:03,6.5,7.1,3.5,33,Low,Overcast,Ripple,Forgot DO meter.,,,,,,,Farrell,S,1382
+CEHL,BH Town Pier,22D,5/21/2020,10:30,,,17:00,11:00,9.3,19.3,3.7,34,,Clear,Ripple,,,,10.6,,,,Farrell,W,1383
+CEHL,MDIBL Dock,22G,5/21/2020,11:49,,,17:00,11:00,10.6,23.1,3.9,34,,Clear,Ripple,,,,11.3,,,,Farrell,SW,1384
+CEHL,BH Town Pier,22D,5/28/2020,13:10,,,9:38,15:53,12.6,22.6,3.85,33,,Partly Cloudy,Waves,Windy! Sampled off the inside float. Outside float was occupied.,,,10.5,,,,Farrell,W,1385
+CEHL,MDIBL Dock,22G,5/29/2020,13:43,,,10:32,16:48,11.4,19.4,3.6,34,Low,Overcast,Ripple,No aquascope.,,,10.2,,,,Farrell,SW,1386
+CEHL,BH Town Pier,22D,6/3/2020,8:03,,,3:04,9:15,9.8,10.5,4.8,34,,Overcast,Ripple,Sampled from the east float. Construction on other side. Lots of poop on the dock.,,,9.6,,,,Farrell,E,1387
+CEHL,MDIBL Dock,22G,6/4/2020,14:14,,,16:16,10:12,10.7,22.8,2.8,33,,Partly Cloudy,Ripple,secchi hit bottom,,,9.5,,,,Farrell,NW,1388
+CEHL,BH Town Pier,22D,6/10/2020,10:10,,,9:08,15:22,11.3,15.3,2.6,33,,Partly Cloudy,Ripple,secchi hit bottom,,,10.1,,,,Farrell,E,1389
+CEHL,MDIBL Dock,22G,6/11/2020,14:51,0.75,,9:59,16:14,11.4,17.3,3.5,31,Low,Downpour,Ripple,,,,11,,,,Farrell,,1390
+CEHL,BH Town Pier,22D,6/17/2020,9:58,0,,14:59,8:56,13.1,16.1,4.15,33,Low,Clear,Ripple,DO probe not recording.,,,,,,,Farrell,NE,1391
+CEHL,MDIBL Dock,22G,6/18/2020,12:25,,,15:42,9:43,18.9,21.3,3.9,32,Low,Clear,Calm,Pollen and moon jellies. DO meter not recording. Secchi hit bottom.,,,,,,,Farrell/Wolf,N,1392
+CEHL,BH Town Pier,22D,6/25/2020,14:51,,,20:45,14:44,15.7,25,4.25,32,,Clear,Ripple,DO meter not working.,,,,,,,Farrell,S,1393
+CEHL,MDIBL Dock,22G,6/25/2020,16:25,,,20:45,14:44,16.3,25.1,3.1,33,,Clear,Ripple,,,,10.1,,,,Farrell,S,1394
+CEHL,BH Town Pier,22D,7/2/2020,12:46,,,15:05,9:00,15.3,25.4,3.35,32,,Clear,Ripple,Captain Collie unloading at pier. Friendship V's engines running. Bait slick on surface.,,,10.5,,,,Farrell,W,1395
+CEHL,MDIBL Dock,22G,7/2/2020,17:48,,,15:05,21:09,17.1,21.9,3.3,32,,Overcast,Ripple,No aquascope.,,,9.8,,,,Farrell,SW,1396
+CEHL,BH Town Pier,22D,7/8/2020,10:28,,,7:54,14:05,13.8,19.5,3.6,34,,Overcast,Ripple,Secchi hit bottom.,,,9.5,,,,Farrell,S,1397
+CEHL,MDIBL Dock,22G,7/8/2020,14:00,,,7:54,14:00,15.2,18,5.1,32,,Fog,Calm,,,,9.4,,,,Farrell/Wolf,SW,1398
+CEHL,MDIBL Dock,22G,7/15/2020,13:33,0,,13:22,7:18,17.3,22.3,2.9,32,,Clear,Ripple,Secchi hit bottom.,,,9,,,,Wolf,N,1400
+CEHL,BH Town Pier,22D,7/15/2020,13:49,0,,13:22,7:18,18.3,22.3,2.9,32,,Clear,Ripple,Secchi hit bottom,,,9.1,,,,Farrell,S,1399
+CEHL,BH Town Pier,22D,7/22/2020,10:14,0,,6:39,12:48,17.8,27,4.4,33,Low,Partly Cloudy,Calm,Lots of seaweed floating around dock.,,,9.2,,,,Anna Farrell,NW,1401
+CEHL,MDIBL Dock,22G,7/22/2020,13:38,0,,18:48,12:48,17.8,28,3.6,32,Low,Partly Cloudy,Calm,,,,9.5,,,,Amber Wolf,NW,1402
+CEHL,BH Town Pier,22D,7/30/2020,10:51,0,,13:51,7:46,15.9,31,4,32,Low,Clear,Calm,Secchi hit bottom,,,9.2,,,,Farrell,NE,1403
+CEHL,MDIBL Dock,22G,7/30/2020,11:01,0,,13:51,7:46,15.5,27.5,3.6,32,Low,Clear,Calm,Secchi hit bottom,,,9,,,,Wolf,W,1404
+CEHL,BH Town Pier,22D,8/5/2020,11:21,0.2,,6:45,12:53,14,28,3.55,34,Low,Clear,Ripple,Swells from the east. Breezy! Nutrient vial at lab -- kept syringe on ice. Forgot DO meter.,,,,,,,Farrell,S,1406
+CEHL,MDIBL Dock,22G,8/5/2020,11:30,,,6:45,12:53,16.1,25,3.65,33,Low,Clear,Calm,,,,8.2,,,,Wolf,SW,1405
+CEHL,MDIBL Dock,22G,8/11/2020,14:58,,,10:51,17:05,18.5,24,3.6,33,,Clear,Calm,Filter for nutrients was slightly off center in the housing.,,,11.1,,,,Amber Wolf,N,1408
+CEHL,BH Town Pier,22D,8/11/2020,14:42,,,10:51,17:05,16.8,28,3.9,33,Medium,Clear,Whitecaps,,,,11,,,,Farrell,SE,1407
+CEHL,BH Town Pier,22D,8/19/2020,10:03,,,5:28,11:37,16.5,19,3.65,33,Low,Clear,Waves,,,,9.8,,,,Farrell/Durand,NE,1409
+CEHL,MDIBL Dock,22G,8/19/2020,11:39,,,5:28,11:37,18.2,23.4,3.35,32,Low,Clear,Calm,,,,10.2,,,,Farrell/Wolf/Durand,SW,1410
+CEHL,BH Town Pier,22D,8/26/2020,14:55,0.5,,11:29,17:46,15.5,22,3.15,34,Medium,Clear,Whitecaps,Super choppy and windy.,,,10.4,,,,Farrell,N,1411
+CEHL,MDIBL Dock,22G,8/26/2020,16:31,0.5,,11:29,17:46,15.9,19.8,2.85,34,Low,Clear,Whitecaps,Very choppy and windy,,,11.8,,,,Farrell/Durand,N,1412
+CEHL,BH Town Pier,22D,9/2/2020,12:32,0,,17:56,11:50,13.4,22,3.65,34,,Partly Cloudy,Ripple,"Lots of lobstering activity. Poseidon, Mother's Nightmare (boats).",,,,,,12.1,Farrell and Durand,E,1414
+CEHL,MDIBL Dock,22G,9/2/2020,13:36,0,,17:56,11:50,13.8,18,4.05,35,,Partly Cloudy,Ripple,,,,,,,13,"Durand, Wolf, Farrell",S,1413
+CEHL,BH Town Pier,22D,9/9/2020,14:49,,,10:05,16:17,15.3,22,3.4,33,Low,Partly Cloudy,Waves,"Foggy, but not overly so.",,,12.7,,,,Durand/Farrell,SE,1416
+CEHL,MDIBL Dock,22G,9/9/2020,15:26,,,10:05,16:17,16.4,25.4,4.4,34,Low,Partly Cloudy,Ripple,,,,12.2,,,,Durand/Farrell,SE,1415
+CEHL,BH Town Pier,22D,9/16/2020,13:18,,,16:29,10:22,13.9,18.7,3.65,33,High,Clear,Whitecaps,Very windy - 22 mph sustained with gusts. Friendship V steamed by. DO meter battery dead.,,,,,,,Durand/Farrell,SW,1417
+CEHL,MDIBL Dock,22G,9/16/2020,13:57,,,16:29,10:22,13.9,19.3,3.2,35,Medium,Clear,Whitecaps,Gusty! Secchi hit bottom.,,,10.4,,,,Durand/Farrell,SW,1418
+CEHL,MDIBL Dock,22G,9/24/2020,13:08,,,11:12,17:27,14,24.4,,34,,Partly Cloudy,Ripple,Secchi hit bottom.,,,3.2,,,,Farrell,W,1420
+CEHL,BH Town Pier,22D,9/24/2020,11:42,,,11:12,17:27,13.7,20.3,,34,,Clear,Waves,Secchi hit bottom.,,,2.7,,,,Farrell,W,1419
+CEHL,BH Town Pier,22D,10/1/2020,13:00,,,17:31,11:20,14.1,18.8,3.55,34,Medium,Clear,Ripple,Breezy! Underlying swells.,,,10.6,,,,Durand/Farrell,W,1424
+CEHL,MDIBL Dock,22G,10/1/2020,13:33,,,17:31,11:20,,,,,,,,,,,,,,,Durand/Farrell,,0
+CEHL,BH Town Pier,22D,10/7/2020,15:28,,,21:15,14:50,13.1,16.9,4.25,34,Low,Overcast,Ripple,Brooke Shannon tied up alongside.,,,11.2,,,,Durand/Farrell,S,1424
+CEHL,MDIBL Dock,22G,10/7/2020,14:30,,,8:42,14:50,14.1,18.5,4.55,33,Low,Overcast,Ripple,A seal swam under the dock and was breathing a lot. Many seastars in the hole-cage.,,,10.7,,,,Durand/Farrell,W,1423
+CEHL,MDIBL Dock,22G,10/15/2020,14:10,,,9:52,16:05,12.7,19.2,2.6,35,,Clear,Calm,Secchi hit bottom.,,,12.3,,,,Farrell/Durand,NW,1426
+CEHL,BH Town Pier,22D,10/15/2020,10:03,,,9:52,16:05,12.2,15.9,3.75,34,Low,Partly Cloudy,Ripple,Swells coming out of the East.,,,12,,,,Farrell,SW,1425
+CEHL,BH Town Pier,22D,10/21/2020,14:22,,,8:46,14:56,12.2,13.5,3.55,35,Low,Drizzle,Calm,Beth Said Yes.,,,12.3,,,,Farrell/Durand,SE,1427
+CEHL,MDIBL Dock,22G,10/21/2020,15:03,,,21:26,14:56,12.4,13.8,3.5,35,Low,Overcast,Calm,,,,12.4,,,,Farrell/Durand,SE,1428
+CEHL,BH Town Pier,22D,10/29/2020,13:29,,,16:27,10:13,11.1,9.7,3.6,33,,Overcast,Ripple,Secchi hit bottom.,,,12.3,,,,Durand,W,1429
+CEHL,MDIBL Dock,22G,10/29/2020,14:15,,,16:27,10:13,11.4,8.8,3.1,35,,Overcast,Ripple,Secchi hit bottom.,,,11.3,,,,Farrell,W,1430
+CEHL,BH Town Pier,22D,11/4/2020,13:25,,,19:05,12:39,10.1,3.9,5.5,35,,Overcast,Ripple,Rip Tide pulled up alongside. Freshwater running at opposite end of float. Secchi hit bottom.,,,12,,,,Farrell,W,1431
+CEHL,MDIBL Dock,22G,11/4/2020,14:00,,,19:05,12:39,9.7,5.3,4.65,34,,Partly Cloudy,Calm,,,,11.2,,,,Farrell,W,1432
+CEHL,BH Town Pier,22D,11/11/2020,12:39,,,12:52,6:39,11.1,16.8,,35,,Overcast,Waves,"Tubby, Bailey G. tied up. Did not do transparency.",,,11.9,,,,Farrell,SW,1433
+CEHL,BH Town Pier,22D,1/13/2021,14:34,,,16:55,10:26,4.1,4.5,2.5,34,Low,Partly Cloudy,Ripple,Secchi hit bottom. DO probe needs to be changed. 16.8 is way high.,,,16.8,,,,Faye and Anna,NW,1434
+CEHL,BH Town Pier,22D,1/21/2021,15:01,,,11:02,17:08,2.8,-3.4,4.5,34,,,Ripple,Weather: Snow,,,12.9,,,,Faye and Anna,NE,1435
+CEHL,BH Town Pier,22D,2/1/2021,13:08,,,19:26,13:06,1.4,0.3,5.2,35,Low,Partly Cloudy,Whitecaps,,,,13.7,,,,"Farrell, Jon, and Alexis",NE,1436
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,0

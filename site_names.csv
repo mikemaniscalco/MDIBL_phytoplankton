@@ -1,0 +1,22 @@
+site,locationID,eventDate,monitor_names
+SWH Beals,21A,2004-08-03T12:50:00Z,Danielle|Tifin|Sarah
+SWH Dysarts,21A,2005-07-22T12:20:00Z,Tifin
+Bass Harbor,21B,2004-08-03T12:15:00Z,Danielle|Tifin|Sarah
+Bernard,21B,2006-01-19T18:00:00Z,Turner T|Kubeck
+Northeast Harbor,21C,2005-01-11T14:10:00Z,not_recorded
+Anchorage Bravo,22,2004-10-15T15:54:00Z,Disney J|Van Gorder J|Benson H
+Anchorage Alpha,22C,2004-08-06T14:30:00Z,Danielle|Michelle|Lauren
+BH Town Pier,22D,2004-08-09T14:05:00Z,Bik|Danielle|Nicole|Tifin
+MDIBL Dock,22D,2018-09-20T15:24:00Z,Taylor A
+MDIBL Dock,22G,2004-08-02T17:30:00Z,Danielle|Nicole
+Berry Cove,NA,2013-06-18T13:20:00Z,Mogensen H
+eastern bay channel,NA,2009-07-13T15:30:00Z,Disney J
+Hadley Point,NA,2013-06-17T18:18:00Z,Mogensen H
+Jordan River,NA,2013-06-17T17:18:00Z,Mogensen H
+Lamoine Shore,NA,2013-06-18T13:33:00Z,Mogensen H
+Raccoon Cove,NA,2013-06-18T12:51:00Z,Mogensen H
+Skillings River,NA,2013-06-18T14:06:00Z,Mogensen H
+Stave,NA,2014-08-12T10:23:00Z,Farrell A
+The Hop,NA,2007-06-29T15:30:00Z,Aquino
+Thomas Island E.,NA,2013-06-17T17:57:00Z,Mogensen H
+Thomas Island W.,NA,2013-06-17T17:42:00Z,Mogensen H
