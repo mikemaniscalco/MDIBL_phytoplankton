@@ -1,0 +1,37 @@
+name	name_type	name_resolved	authority_system	authority_id
+Alexandrium	scientific	Alexandrium	World Register of Marine Species	109470
+Ceratium	scientific	Ceratium	World Register of Marine Species	109506
+Chaetoceros	scientific	Chaetoceros	World Register of Marine Species	148985
+Chaetoceros socialis	scientific	Chaetoceros socialis	World Register of Marine Species	149123
+Coscinodiscus	scientific	Coscinodiscus	World Register of Marine Species	148917
+Dictyocha	scientific	Dictyocha	World Register of Marine Species	157258
+Ditylum	scientific	Ditylum	World Register of Marine Species	149022
+Dinophysis	scientific	Dinophysis	World Register of Marine Species	109462
+Dinophysis acuminata	scientific	Dinophysis acuminata	World Register of Marine Species	109603
+Dinophysis norvegica	scientific	Dinophysis norvegica	World Register of Marine Species	109637
+Eucampia	scientific	Eucampia	World Register of Marine Species	149130
+Gonyaulax	scientific	Gonyaulax	World Register of Marine Species	109519
+Guinardia	scientific	Guinardia	World Register of Marine Species	149111
+Gymnodinium	scientific	Gymnodinium	World Register of Marine Species	109475
+Gyrosigma	scientific	Gyrosigma	World Register of Marine Species	149033
+Karenia	scientific	Karenia	World Register of Marine Species	231788
+Leptocylindrus	scientific	Leptocylindrus	World Register of Marine Species	149038
+Licmophora	scientific	Licmophora	World Register of Marine Species	149342
+Margalefidinium polykrikoides	scientific	Margalefidinium polykrikoides	World Register of Marine Species	990876
+Melosira	scientific	Melosira	World Register of Marine Species	149042
+Navicula	scientific	Navicula	World Register of Marine Species	149142
+Nitzschia	scientific	Nitzschia	World Register of Marine Species	149045
+Chromista	scientific	Chromista	World Register of Marine Species	7
+Pseudo-nitzschia delicatissima	scientific	Pseudo-nitzschia delicatissima	World Register of Marine Species	149153
+Pseudo-nitzschia seriata	scientific	Pseudo-nitzschia seriata	World Register of Marine Species	149152
+Phaeocystis	scientific	Phaeocystis	World Register of Marine Species	115088
+Pleurosigma	scientific	Pleurosigma	World Register of Marine Species	149181
+Prorocentrum	scientific	Prorocentrum	World Register of Marine Species	109566
+Prorocentrum lima	scientific	Prorocentrum lima	World Register of Marine Species	110301
+Protoperidinium	scientific	Protoperidinium	World Register of Marine Species	109553
+Pseudo-nitzchia	scientific	Pseudo-nitzchia	NA	NA
+Rhizosolenia	scientific	Rhizosolenia	World Register of Marine Species	149069
+Thalassionema	scientific	Thalassionema	World Register of Marine Species	149092
+Thalassiosira	scientific	Thalassiosira	World Register of Marine Species	148912
+Bacillariophyceae	scientific	Bacillariophyceae	World Register of Marine Species	148899
+Dinophyceae	scientific	Dinophyceae	World Register of Marine Species	19542

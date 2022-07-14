@@ -19,7 +19,7 @@ library(janitor)
 * Rename several columns into a more machine/human readable format
 * Concatenate various comments fields into one Column
 
-```{r load}
+```{r load, include=FALSE}
 anecdata_db <- read_csv("source_data/maine_phytoplankton_monitoring-2022-06-13_03.21.46.csv") %>%
   filter(!str_detect(username,"MarkWhiting")) %>%
   select(-license, 
@@ -88,17 +88,21 @@ anecdata_db <- read_csv("source_data/maine_phytoplankton_monitoring-2022-06-13_0
   unite(., eventRemarks, lab_comments,Comments,field_comments, sep = "|", remove = TRUE)
 ```
 
+### Normalize PN counts to proportion of grids counted
+* In many cases when counts of PN reached 500 cells the grid number was recorded and then only other cells were counted for the remainder of the slide. The number of grids counted needs to be used to extrapolate out to the total number of cells that would have been counted if the standard 200 grids were counted
+
+
+```{r drop}
+anecdata_db <- anecdata_db %>%
+  mutate(Pseudo_nitzschia_large=Pseudo_nitzschia_large*200/grids_counted,
+         Pseudo_nitzschia_small=Pseudo_nitzschia_small*200/grids_counted)
+```
+
 ### Fix any site name and locationID inconsistencies
 
-```{r}
-site_names <- anecdata_db %>%
-  mutate(site=str_replace(site, "MDIBL dock|mdibl dock|.*MDIBL.*","MDIBL Dock"))%>%
-  select( site, locationID, eventDate, monitor_names) %>%
-  distinct( site, locationID,.keep_all = T) %>%
-  arrange(locationID, site) 
-
-
+```{r siteIDs}
 anecdata_db <- anecdata_db %>%
+  select(-too_numerous_to_count_grid_num) %>% # the too numerous to count was no longer used after migration of database to anecdata
   mutate(site=str_replace(site, "MDIBL dock|mdibl dock|.*MDIBL.*","MDIBL Dock"))%>%
   mutate(site= str_replace(site, "eastern bay channel", "Eastern Bay Channel"),
          site= str_replace(site, "Surry - Town Landing", "Surry Town Pier"),
@@ -113,9 +117,10 @@ anecdata_db <- left_join(select(anecdata_db,-c(locationID,decimalLatitude,decima
   select(-locationID) %>%
   rename(locationID=suggested_locationID) %>%
   relocate(locationID:coordinateUncertaintyInMeters, .after=site)
+rm(site_names_corrected)
 ```
 
-### Convert rain to mm from inches
+### Convert rain from inches to millimeters for standard metric units
 
 ```{r rain}
 anecdata_db <- anecdata_db %>%
@@ -133,12 +138,11 @@ anecdata_db <- anecdata_db %>%
 ```
 
 ### Convert wind direction from text strings to degrees
-* Converting the single letter abbreviations into words and vis-versa with grep/stringr seemed prone to more problems/inconsistencies
+* Converting the single letter abbreviations into words and vis-versa with grep/stringr is prone to more problems/inconsistencies
 
 ```{r wind_direction}
 anecdata_db <- anecdata_db %>%
-  mutate(
-         wind_direction=str_replace(wind_direction, "-No Wind","999"),
+  mutate(wind_direction=str_replace(wind_direction, "-No Wind","999"),
          wind_direction=str_replace(wind_direction, "Northwest", "315"),
          wind_direction=str_replace(wind_direction, "Northeast", "35"),
          wind_direction=str_replace(wind_direction, "Southeast", "135"),
@@ -170,15 +174,15 @@ anecdata_db <- anecdata_db %>%
 
 ### Reformat monitor names
 
-```{r drop}
+```{r monitors}
 
 
 ```
 
 ### Join with historic data of filtered samples and rearrange columns
 
-```{r join}
-phyto_db <- read_csv("filtered_water/MDIBL_phyto_db_filter2007_2021.csv")
+```{r join, include=FALSE}
+phyto_db <- read_csv("intermediate/MDIBL_phyto_db_filter2007_2021.csv")
 phyto_full <- bind_rows(phyto_db, anecdata_db) %>%
   relocate(Dinophysis_acuminata:Margalefidinium_polykrikoides, .before="Dinophysis_spp") %>%
   relocate(Karenia, .after="Gyrosigma") %>%
@@ -187,8 +191,9 @@ phyto_full <- bind_rows(phyto_db, anecdata_db) %>%
   relocate(pH:Copepods, .before="water_filtered_L") %>%
   relocate(nutrient_vial_id:Copepods, .before="sampling_method") %>%
   select(-total_phytoplankton) %>%
-  relocate(too_numerous_to_count_grid_num, .after=grids_counted) %>%
   add_column(backwashed_volume= 0.015,.after = "grids_counted")
+
+rm(anecdata_db, phyto_db)
 ```
 
 ### Convert counts to counts per L
@@ -197,31 +202,31 @@ phyto_full <- bind_rows(phyto_db, anecdata_db) %>%
 * The default volume filtered was 10 L. If no number recorded than 10L was filtered.
 * The default resuspension volume  was 0.015 L. If no number recorded than 0.015 L was volume.
 
-```{r}
+```{r convert}
 ## counts are in cells/
-total_rafter_grids <- 100 # per slide
+total_rafter_grids <- 1000 # per slide
 volume_of_rafter <- .001
+
 phyto_full <- phyto_full %>%
-  mutate(grids_counted= ifelse(is.na(grids_counted)==T, too_numerous_to_count_grid_num, grids_counted),
-         grids_counted=ifelse(is.na(grids_counted)==T, 200, grids_counted),
+  mutate(grids_counted=ifelse(is.na(grids_counted)==T, 200, grids_counted),
          grids_counted=ifelse(grids_counted==0, NA, grids_counted),
          water_filtered_L=ifelse(is.na(water_filtered_L)==T, 10, water_filtered_L)) %>%
   mutate(across(Alexandrium:Other_phytoplankton, 
                 ~.x* ((1/grids_counted) *   #convert counts to counts per grid
                         (total_rafter_grids/volume_of_rafter) * # counts per grid to counts per L
                         (backwashed_volume/water_filtered_L)))) %>% # factor of concentration/dilution
-  select(-too_numerous_to_count_grid_num, -BOD_date,-date_emailed_to_DMR)
+  select(-BOD_date,-date_emailed_to_DMR)
+rm(volume_of_rafter, total_rafter_grids)
 ```
 
 ### Write 2007-present counts per L flat file
 
 ```{r write}
-write_csv(phyto_full,"filtered_water/phyto_db_filtered_2007_present.csv")
-colnames(phyto_full)
+write_csv(phyto_full,"source_data/phyto_db_filtered_2007_present_cells_L.csv")
+head(phyto_full)
+rm(phyto_full)
 ```
 
-```{r}
-```
 
 
 

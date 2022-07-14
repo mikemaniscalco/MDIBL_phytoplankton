@@ -1,0 +1,11 @@
+first_name	middle_in	last_name	organization	email	orcid
+Alexis	C	Garretson	MDI Biological Laboratory	agarretson@mdibl.org	https://orcid.org/0000-0002-7260-0131
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org	
+Anna		Farrell	MDI Biological Laboratory		
+Cait		Bailey	MDI Biological Laboratory		
+Jonathan		Matt	MDI Biological Laboratory		
+Uma		Arora	MDI Biological Laboratory		
+Madison		Armstrong	MDI Biological Laboratory		
+Samia		Pratt	MDI Biological Laboratory		
+Nathan		Dorn	MDI Biological Laboratory		
+Faye		Durand	MDI Biological Laboratory		

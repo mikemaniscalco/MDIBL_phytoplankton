@@ -1,0 +1,42 @@
+givenName	middleInitial	surName	organizationName	electronicMailAddress	userId	role	projectTitle	fundingAgency	fundingNumber
+Alexis	C	Garretson	MDI Biological Laboratory	agarretson@mdibl.org		Contact			
+Alexis	C	Garretson	MDI Biological Laboratory	agarretson@mdibl.org		Creator			
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		Creator			
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		Contact			
+		Anecdata.org	MDI Biological Laboratory	anecdata@mdibl.org		Contact			
+		Community Environmental Health Laboratory	MDI Biological Laboratory	CEHL@mdibl.org		Contact			
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Sea World and Busch Gardens Environmental Excellence Award 1998		
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Building capacity of the MDI Water Quality Coalition 2002	Maine Coastal Program 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Mount Desert Island Water Quality Coalition 2002-2004	Seventh Generation Fund	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Mount Desert Island Water Quality Coalition 2003-2005	United Way	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Mount Desert Island Water Quality Coalition 2000	New England Grassroots Environment Fund 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Mount Desert Island Water Quality Coalition 2003	New England Grassroots Environment Fund 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Mount Desert Island Water Quality Coalition 2004	New England Grassroots Environment Fund 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Community Environmental Health Laboratory 2003	Thomas H. Maren Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Community Environmental Health Laboratory 2004	Thomas H. Maren Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Community Environmental Health Laboratory 2005	Thomas H. Maren Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Community Environmental Health Laboratory 2006	Thomas H. Maren Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Instituting new educational models-students were involved in water quality monitoring and phytoplankton monitoring 2002	Robbins de Beaumont Foundation	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Instituting new educational models-students were involved in water quality monitoring and phytoplankton monitoring 2003	Robbins de Beaumont Foundation	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Instituting new educational models-students were involved in water quality monitoring and phytoplankton monitoring 2004	Robbins de Beaumont Foundation	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Water monitoring near cruise ships in Bar Harbor 2006	Cruise Industry Charitable Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Water monitoring near cruise ships in Bar Harbor 2007	Cruise Industry Charitable Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Water monitoring near cruise ships in the town of  Bar Harbor 	Town of Bar Harbor	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Environmental education through water monitoring 2010	Lynam Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Environmental education through water monitoring 2011	Lynam Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Environmental education through water monitoring 2012	Lynam Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Award for engaging inland teachers in environmental programs 2011	Center for Ocean Sciences Education Excellence	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Award for engaging inland teachers in environmental programs 2012	Center for Ocean Sciences Education Excellence	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of projects for education and citizen science 2002	Maine Community Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of projects for education and citizen science 2005	Maine Community Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of projects for education and citizen science 2010	Maine Community Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of projects for education and citizen science 2011	Maine Community Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of features on the citizen science data portal Anecdata 2013	Alex C. Walker Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of features on the citizen science data portal Anecdata 2014	Alex C. Walker Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of features on the citizen science data portal Anecdata 2015	Alex C. Walker Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of features on the citizen science data portal Anecdata 2016	Alex C. Walker Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of features on the citizen science data portal Anecdata 2017	Alex C. Walker Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of features on the citizen science data portal Anecdata 2018	Alex C. Walker Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of features on the citizen science data portal Anecdata 2019	Alex C. Walker Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	Development of features on the citizen science data portal Anecdata 2020	Alex C. Walker Foundation 	
+Jane		Disney	MDI Biological Laboratory	jdisney@mdibl.org		PI	"Phytoplankton, eelgrass, and water quality monitoring and Anecdata.org development 2022"	Long Cove Foundation	

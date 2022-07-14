@@ -1,0 +1,143 @@
+attributeName	code	definition
+basisOfRecord	HumanObservation	The specific nature of the data record.
+kingdom	Chromista	The full scientific name of the kingdom in which the taxon is classified.
+occurrenceStatus	absent	A statement about the presence or absence of a Taxon at a Location.
+occurrenceStatus	present	A statement about the presence or absence of a Taxon at a Location.
+organismName	Alexandrium	A textual name or label assigned to an Organism instance.
+organismName	Ceratium	A textual name or label assigned to an Organism instance.
+organismName	Chaetoceros_socialis	A textual name or label assigned to an Organism instance.
+organismName	Chaetoceros_spp	A textual name or label assigned to an Organism instance.
+organismName	Coscinodiscus	A textual name or label assigned to an Organism instance.
+organismName	Dictyocha	A textual name or label assigned to an Organism instance.
+organismName	Dinophysis_acuminata	A textual name or label assigned to an Organism instance.
+organismName	Dinophysis_norvegica	A textual name or label assigned to an Organism instance.
+organismName	Dinophysis_spp	A textual name or label assigned to an Organism instance.
+organismName	Ditylum	A textual name or label assigned to an Organism instance.
+organismName	Eucampia	A textual name or label assigned to an Organism instance.
+organismName	Gonyaulax	A textual name or label assigned to an Organism instance.
+organismName	Guinardia	A textual name or label assigned to an Organism instance.
+organismName	Gymnodinium	A textual name or label assigned to an Organism instance.
+organismName	Gyrosigma	A textual name or label assigned to an Organism instance.
+organismName	Karenia	A textual name or label assigned to an Organism instance.
+organismName	Leptocylindrus	A textual name or label assigned to an Organism instance.
+organismName	Licmophora	A textual name or label assigned to an Organism instance.
+organismName	Margalefidinium_polykrikoides	A textual name or label assigned to an Organism instance.
+organismName	Melosira	A textual name or label assigned to an Organism instance.
+organismName	Navicula	A textual name or label assigned to an Organism instance.
+organismName	Nitzschia	A textual name or label assigned to an Organism instance.
+organismName	Other_phytoplankton	A textual name or label assigned to an Organism instance.
+organismName	Phaeocystis	A textual name or label assigned to an Organism instance.
+organismName	Pleurosigma	A textual name or label assigned to an Organism instance.
+organismName	Prorocentrum_lima	A textual name or label assigned to an Organism instance.
+organismName	Prorocentrum_spp	A textual name or label assigned to an Organism instance.
+organismName	Protoperidinium	A textual name or label assigned to an Organism instance.
+organismName	Pseudo_nitzchia_spp	A textual name or label assigned to an Organism instance.
+organismName	Pseudo_nitzschia_large	A textual name or label assigned to an Organism instance.
+organismName	Pseudo_nitzschia_small	A textual name or label assigned to an Organism instance.
+organismName	Rhizosolenia	A textual name or label assigned to an Organism instance.
+organismName	Thalassionema	A textual name or label assigned to an Organism instance.
+organismName	Thalassiosira	A textual name or label assigned to an Organism instance.
+organismQuantityType	Cells per L	The type of quantification system used for the quantity of organisms.
+organismQuantityType	Relative Abundance	The type of quantification system used for the quantity of organisms.
+scientificName	Alexandrium	A textual name or label assigned to an Organism instance.
+scientificName	Ceratium	A textual name or label assigned to an Organism instance.
+scientificName	Chaetoceros	A textual name or label assigned to an Organism instance.
+scientificName	Chaetoceros socialis	A textual name or label assigned to an Organism instance.
+scientificName	Chromista	A textual name or label assigned to an Organism instance.
+scientificName	Coscinodiscus	A textual name or label assigned to an Organism instance.
+scientificName	Dictyocha	A textual name or label assigned to an Organism instance.
+scientificName	Dinophysis	A textual name or label assigned to an Organism instance.
+scientificName	Dinophysis acuminata	A textual name or label assigned to an Organism instance.
+scientificName	Dinophysis norvegica	A textual name or label assigned to an Organism instance.
+scientificName	Ditylum	A textual name or label assigned to an Organism instance.
+scientificName	Eucampia	A textual name or label assigned to an Organism instance.
+scientificName	Gonyaulax	A textual name or label assigned to an Organism instance.
+scientificName	Guinardia	A textual name or label assigned to an Organism instance.
+scientificName	Gymnodinium	A textual name or label assigned to an Organism instance.
+scientificName	Gyrosigma	A textual name or label assigned to an Organism instance.
+scientificName	Karenia	A textual name or label assigned to an Organism instance.
+scientificName	Leptocylindrus	A textual name or label assigned to an Organism instance.
+scientificName	Licmophora	A textual name or label assigned to an Organism instance.
+scientificName	Margalefidinium polykrikoides   	A textual name or label assigned to an Organism instance.
+scientificName	Melosira	A textual name or label assigned to an Organism instance.
+scientificName	Navicula	A textual name or label assigned to an Organism instance.
+scientificName	Nitzschia	A textual name or label assigned to an Organism instance.
+scientificName	Phaeocystis	A textual name or label assigned to an Organism instance.
+scientificName	Pleurosigma	A textual name or label assigned to an Organism instance.
+scientificName	Prorocentrum	A textual name or label assigned to an Organism instance.
+scientificName	Prorocentrum lima	A textual name or label assigned to an Organism instance.
+scientificName	Protoperidinium	A textual name or label assigned to an Organism instance.
+scientificName	Pseudo-nitzchia	A textual name or label assigned to an Organism instance.
+scientificName	Pseudo-nitzschia delicatissima	A textual name or label assigned to an Organism instance.
+scientificName	Pseudo-nitzschia seriata	A textual name or label assigned to an Organism instance.
+scientificName	Rhizosolenia	A textual name or label assigned to an Organism instance.
+scientificName	Thalassionema	A textual name or label assigned to an Organism instance.
+scientificName	Thalassiosira	A textual name or label assigned to an Organism instance.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149042)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109462)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109470)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109475)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109506)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109519)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109553)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109566)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109603)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:109637)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:110301)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:115088)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:148912)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:148917)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:148985)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149022)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149033)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149038)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149045)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149069)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149092)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149111)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149123)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149130)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149142)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149151)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149152)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149153)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149181)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149342)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:157258)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:231788)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:7)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:990876)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+taxonID	NCBI:txid120300	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid156229	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid163503	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid163515	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid186176	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid197752	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid197760	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid210597	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid216800	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid261839	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid2698737	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid2857	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid2912	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid2915	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid2924	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid2944	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid2955	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid3004	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid33641	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid33648	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid33656	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid35124	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid35127	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid35686	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid39448	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid41953	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid44447	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid47933	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid47934	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid49237	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid49248	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid49251	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid50949	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.
+taxonID	NCBI:txid77300	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.

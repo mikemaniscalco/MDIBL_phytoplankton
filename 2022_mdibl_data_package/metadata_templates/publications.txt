@@ -1,0 +1,2 @@
+Article DOI or URL (DOI is preferred)	Article title	Journal title
+https://doi.org/10.1016/j.hal.2019.101656	Pseudo-nitzschia bloom dynamics in the Gulf of Maine: 2012Ð2016	Harmful Algae

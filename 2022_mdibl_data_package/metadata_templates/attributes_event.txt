@@ -1,0 +1,13 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+id	Row identifier	character			NA	Missing value
+eventID	An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.	character			NA	Missing value
+eventDate	"The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context."	Date		YYYYMMDDThh:mm:ssZ	NA	Missing value
+geodeticDatum	"The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based."	categorical			NA	Missing value
+countryCode	The standard code for the country in which the Location occurs.	categorical			NA	Missing value
+locationID	An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.	categorical			NA	Missing value
+eventRemarks	Comments or notes about the Event.	character			NA	Missing value
+decimalLatitude	"The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive."	numeric	degree		NA	Missing value
+decimalLongitude	"The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive."	numeric	degree		NA	Missing value
+minimumDepthInMeters	"The lesser depth of a range of depth below the local surface, in meters."	numeric	meter		NA	Missing value
+maximumDepthInMeters	"The greater depth of a range of depth below the local surface, in meters."	numeric	meter		NA	Missing value
+coordinateUncertaintyInMeters	"The horizontal distance (in meters) from the given decimalLatitude and decimalLongitude describing the smallest circle containing the whole of the Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term."	numeric	meter		NA	Missing value

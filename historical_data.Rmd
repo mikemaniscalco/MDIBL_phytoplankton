@@ -1,5 +1,5 @@
 ---
-title: "MDIBL_access_data_to_csv"
+title: "MDIBL_access_data_to_csvs"
 author: "Michael Maniscalco"
 date: '2022-06-21'
 output: html_document
@@ -12,6 +12,8 @@ library(tidyverse)
 library(lubridate)
 library(janitor)
 ```
+
+### Load phytoplankton excel file and change column names
 
 ```{r load}
 phyto_db <- read_excel("phyto_access_db.xlsx") %>%
@@ -104,42 +106,40 @@ phyto_db <- phyto_db %>%
   add_column(decimalLongitude=NA,.after="decimalLatitude") 
 ```
 
+### Concatenate comment fields into the single "eventRemarks" Darwin core field
+
 ```{r comments}
 phyto_db <- phyto_db %>%
   unite(., eventRemarks, lab_comments,field_comments, sep = "|", remove = TRUE)
 ```
 
-### Tide height ft to meters
+### Convert tide height from ft to standard unit of meters
 
 ```{r tide height}
 phyto_db <- phyto_db %>%
   mutate(tide_height=tide_height*0.3048)
 ```
 
-### Drop unwanted columns
+### Drop uninformative columns
+* The "dominant phytoplankter columns are subjective and can not be incorporated into counts
 
 ```{r drop}
 phyto_db <- phyto_db %>%
-  select(
-    # -date_emailed_to_DMR,
-    -dominant_phytoplankter1,
-    -dominant_phytoplankter2,
-    -dominant_phytoplankter3,
-    -funding_source)
+  select(-dominant_phytoplankter1,
+         -dominant_phytoplankter2,
+         -dominant_phytoplankter3,
+         -funding_source)
 ```
 
 ### Time Conversions
-
--   3 sampling times before 2am--\> real or entered in 12 h instead of 24h time?
+-   Also check for strange sampling times in case some afternoon times were entered in as morning
 -   several occasions of no time entered
-    -   Use time of 23:59:59 to represent no time recorded
+-   Use time of 23:59:59 to represent no time recorded
 
-```{r}
-time_question<- phyto_db %>%
-  filter(between(hour(hms::as_hms(time)), 0, 5))
-## talked with Jane who assured me that the times earlier than 5am where meant to be input as time in PM --> corrected in excel file
+```{r time}
+time_question <- phyto_db %>%
+  filter(between(hour(hms::as_hms(time)), 0, 4))
 
-write_csv(time_question,"time_check.csv")
 rm(time_question)
 
 phyto_db <- phyto_db %>%
@@ -181,7 +181,7 @@ phyto_db <- phyto_db %>%
 
 -   First make a csv of unique names to create a key for later conversion of names into standardized version
 
-```{r monitor}
+```{r monitors1}
 monitor_name_df <-select(phyto_db, eventDate, monitor_names) %>%
   dplyr::rename(monitor = monitor_names) %>%
   drop_na() %>%
@@ -202,14 +202,14 @@ monitor_name_df <-select(phyto_db, eventDate, monitor_names) %>%
   distinct(monitor, .keep_all = T) %>%
   arrange(monitor)
 
-write_csv(monitor_name_df, "monitor_name_key_template.csv")
+write_csv(monitor_name_df, "intermediate/monitor_name_key_template.csv")
 rm(monitor_name_df)
 ```
 
 #### Use key to harmonize names of Monitors
 
-```{r }
-key_names <- read_csv("corrected_in_R/monitor_name_key.csv") %>%
+```{r monitors2}
+key_names <- read_csv("intermediate/monitor_name_key.csv") %>%
   select(-Date) %>%
   distinct(monitor, .keep_all = T) %>%
   # filter(., monitor!=monitor_unified) %>%
@@ -281,25 +281,26 @@ phyto_db <- phyto_db %>%
 ```
 
 ### Nutrient ID
+-   Values of 0 were introduced where no nutrient vial was taken. Changed value to NA\
 
-```{r wind direct}
+```{r nutrient ID}
 phyto_db <- phyto_db %>%  
   mutate(nutrient_vial_id =na_if(nutrient_vial_id, 0)) 
 ```
 
 ### Salinity
 
--   Change the three values \<15 to NA
+-   Three values were \<15 and considered to be outsided of possible range. Changed values to NA
 
-```{r wind direct}
+```{r salinity}
 phyto_db <- phyto_db %>%  
   mutate(salinity_ppt =ifelse(salinity_ppt<15,NA,salinity_ppt)) 
 ```
 
 ### Tide stage
-
--   change the values "high" "R" and "Alex" to NA (or any values other than "In" and "Out")
-    -   It as only one instance of each
+_   Looked over unique values in tide_stage variable and found some inconsistent strings.
+-   Changed the values "high" "R" and "Alex" to NA (or any values other than "In" and "Out")
+    -   It was only one instance of each
 
 ```{r tides}
 phyto_db <- phyto_db %>%
@@ -307,8 +308,8 @@ phyto_db <- phyto_db %>%
 ```
 
 ### Water current
-
--   Values should be "High", "Medium", "Low, "None", or NA --\> fix to get rid of "?"
+_   Looked over unique values in water_current variable and found some inconsistent strings.
+-   Values should be "High", "Medium", "Low, "None", or NA --\> other values changed to NA
 
 ```{r currents}
 phyto_db <- phyto_db %>%
@@ -324,17 +325,17 @@ phyto_db <- phyto_db %>%
 ### Water surface
 
 -   Unrestricted text field
--   data through 2021 February include: "Ripple" "Calm" "Whitecaps" "Waves" NA "31"
-    -   Value "31" does not fit
+-   Data through 2021 February include: "Ripple" "Calm" "Whitecaps" "Waves" NA "31"
+    -   Value "31" was removed
 
 ```{r water_surface}
 phyto_db <- phyto_db %>%
   mutate(water_surface=ifelse(water_surface=="31",NA,water_surface ))
 ```
 
-### Character vectors to numeric
+### Change character variables to numeric
 
-```{r}
+```{r numeric}
 phyto_db <- phyto_db %>%
   mutate(across(c(nitrate_plus_nitrite,
                   ammonium,
@@ -349,15 +350,13 @@ phyto_db <- phyto_db %>%
 
 ### Pseudo-nitzschia counts
 
--   2013-10-18 08:15:00 entry has PN small counts entered as 3.95, PN large entered at 105 and PN spp entered as 500. It seems clear that PN small count was 395 not 3.95
--   The "Small" and "Large" sub-types of PN were added at some point
--   Pseudo-nitzschia spp. is in some cases all PN cells that were counted, in other cases it is the sum of the large and the small (which is still all PN counted), but in other cases Pseudo-nitzschia spp does not equal the sum of PN small and large.... is that because they are medium sized? what is going on there?
--   I would like to have three unique columns, PN small, PN large, and PN Spp.
-    -   This would allow anyone using the data to easily sum them together without double counting cells
+-   Checked the various unique values for entries that do not fit. One value was a decimal rather than a whole number. Log sheet was pulled and value was corrected in database. 
+-   The "Small" and "Large" sub-types of PN were added at some point but are not present in the earliest entries
+-   Pseudo-nitzschia spp. in some cases equals PN cells that were counted  the sum of the large and the small PN (which is still all PN counted), but in other cases Pseudo-nitzschia spp. does not equal the sum of PN small and large. After talking with lab members and going through comments it was clear that in some cases "500" was recorded in the PN spp. subtotal when the max reporting threshold was hit, but sometimes the PN small and large cells were counted through the end of the grid rather than stopping at exactly 500. In several cases atypical volumes of water were filtered or used for resuspension, noted in the comments, but counts were not normalized at all. I went back and incorporated those differences as a dilution factor for the relevant, PN small, PN large or other taxa. I also made columns to note when only a specific taxa were counted on a given date to make it clear that the value of other taxa is "NA" and not "0" and allow the NAs to be removed from the long form of the data. In cases when the "too numerous to count" referred to taxa other than PN, I used that value as a dilution factor to normalize the counts of the taxa. This allows the TNTC column to be used to normalize the PN counts exclusively
+-   To have three unique columns, PN small, PN large, and PN spp to allow anyone using the data to easily sum them together when looking at relative abundance or species diversity without double counting cells. PN spp. should represent PN cells not classified as either large or small rather than a subtotal.
 
-```{r}
+```{r PN1}
 phyto_db <- phyto_db %>%
-  mutate(Pseudo_nitzschia_small= ifelse(Pseudo_nitzschia_small==3.95, 395, Pseudo_nitzschia_small)) %>%
   mutate(Pseudo_nitzschia_small= ifelse(eventDate=="2013-06-25 13:31:00", NA, Pseudo_nitzschia_small),
          Pseudo_nitzschia_large= ifelse(eventDate=="2013-06-25 13:31:00", NA, Pseudo_nitzschia_large), 
          Pseudo_nitzchia_spp=ifelse(eventDate== "2013-08-16 08:20:00", NA, Pseudo_nitzchia_spp),
@@ -365,22 +364,36 @@ phyto_db <- phyto_db %>%
          Pseudo_nitzchia_spp=ifelse(eventDate== "2013-10-11 06:00:00", NA, Pseudo_nitzchia_spp),
          Pseudo_nitzchia_spp=ifelse(eventDate== "2014-05-28 10:37:00", NA, Pseudo_nitzchia_spp))
 
-PN <-select(phyto_db,
-            eventDate,
-            Pseudo_nitzschia_small,
-            Pseudo_nitzschia_large, 
-            Pseudo_nitzchia_spp) %>%
-  mutate(PN_sm_plus_lg= (Pseudo_nitzschia_small+Pseudo_nitzschia_large)) %>%
-  # prevent double counting of PN small/large in PN spp. column
-  mutate(Pseudo_nitzchia_spp=ifelse(Pseudo_nitzchia_spp==PN_sm_plus_lg,
-                                    0, 
-                                    Pseudo_nitzchia_spp))
-rm(PN)
+# PN <-select(phyto_db,
+#             eventDate,
+#             Pseudo_nitzschia_small,
+#             Pseudo_nitzschia_large, 
+#             Pseudo_nitzchia_spp) %>%
+#   mutate(PN_sm_plus_lg= (Pseudo_nitzschia_small+Pseudo_nitzschia_large)) %>%
+#   # prevent double counting of PN small/large in PN spp. column
+#   mutate(Pseudo_nitzchia_spp=ifelse(Pseudo_nitzchia_spp==PN_sm_plus_lg,
+#                                     0, 
+#                                     Pseudo_nitzchia_spp))
+# rm(PN)
+```
+
+### Normalize PN counts to proportion of grids counted
+* In many cases when counts of PN reached 500 the PN cells the grid number was recorded and then only other cells were counted for the remainder of the slide
+
+```{r PN2}
+phyto_db <- phyto_db %>%
+  mutate(Pseudo_nitzschia_large=Pseudo_nitzschia_large*200/too_numerous_to_count_grid_num,
+         Pseudo_nitzschia_small=Pseudo_nitzschia_small*200/too_numerous_to_count_grid_num,
+         Pseudo_nitzchia_spp=Pseudo_nitzchia_spp*200/too_numerous_to_count_grid_num,
+         too_numerous_to_count_grid_num=200 ) %>% # the PN TNTC number can be changed to grids_counted and set to 200 )
+  rename(grids_counted=too_numerous_to_count_grid_num)
 ```
 
 ### Total phytoplankton
+-   Original total phyto column appears to have errors or inconsistencies necessitating the summing of the taxa prorgramattically from the recorded counts data
 
-```{r}
+
+```{r totals}
 counts <- phyto_db %>%
   select(eventDate, sampling_method,maximumDepthInMeters,Alexandrium:Other_phytoplankton,Pseudo_nitzchia_spp,Pseudo_nitzschia_large,Pseudo_nitzschia_small,Gymnodinium,total_phytoplankton) %>%
   mutate(across(Alexandrium:Gymnodinium,~replace_na(.x, 0))) %>%
@@ -403,7 +416,7 @@ rm(counts, sum_less_than_total, sum_more_than_total)
 
 -   Cruise ship file uses different coordinates for "bar harbor pier" that are further from land incongruous with description or incorrect coordinates?
 
-```{r}
+```{r site names}
 site_names <- phyto_db %>%
   mutate(site=str_replace(site, "MDIBL dock|mdibl dock|.*MDIBL.*","MDIBL Dock"))%>%
   select( site, locationID, eventDate, monitor_names) %>%
@@ -433,21 +446,10 @@ rm(site_names_corrected)
 ```
 
 ### Sampling methods
-
--   What units are counts in at different points in time
--   Do we want to separate into different data units?
+* Some tow samples did not have depth associated with them. In most cases the depth was able to be found on the log sheets and entered into the database. The few cases when it was not recorded "1m" will be used as depth
+* Can fill in missing sampling method based on date of sampling
 
 ```{r method}
-filtration_depth <- phyto_db %>%
-  filter(sampling_method=="Filter") %>%
-  drop_na(maximumDepthInMeters)
-write_csv(filtration_depth,"filter_depth.csv")
-
-tow_no_depth <- phyto_db %>%
-  filter(sampling_method=="Tow") %>%
-  filter(is.na(maximumDepthInMeters))
-write_csv(tow_no_depth,"tow_no_depth.csv")
-
 # Use 1m as default for the 3 samples where tow depth (maximumDepthInMeters) was not specified. Log sheets did not have depth recorded either.
 phyto_db <-phyto_db %>%
   mutate(maximumDepthInMeters= ifelse(sampling_method=="Tow" & is.na(maximumDepthInMeters)==T,
@@ -477,9 +479,8 @@ phyto_db <- phyto_db %>%
 ### Write static tables for historic data
 
 ```{r write historic}
-phyto_db <- phyto_db %>%
-  select(-c(nutrient_vial_id:silicate),
-         too_numerous_to_count_grid_num=too_numerous_to_count_grid_num) %>%
+phyto_db <- phyto_db %>%   
+  select(-c(nutrient_vial_id:silicate)) %>%
   relocate(minimumDepthInMeters, .before="maximumDepthInMeters") %>%
   relocate(transparency_depth_mean, .before="sampling_method") %>%
   relocate(rainfall_mm, .after="weather") %>% 
@@ -487,34 +488,32 @@ phyto_db <- phyto_db %>%
   relocate(id:eventID, .before="site") %>%
   relocate(countryCode, .after="decimalLongitude")
 
-phyto_db %>%
+tow_db <- phyto_db %>%
   filter(., sampling_method=="Tow") %>%
   filter(., eventDate <"2007-01-01T00:00:00UTC") %>%
-  write_csv(., "tow/MDIBL_phyto_db_tow2004_2006.csv")
+  select(-c(Pseudo_nitzschia_small:Pseudo_nitzchia_spp,
+              data_for_Kate:only_alexandrium_counted)) %>% # these columns are empty for tow data. PN not seen in area until later
+  rowwise() %>%
+  mutate(total_phytoplankton=sum(c_across((Alexandrium:Other_phytoplankton)))) %>%
+  mutate(across(Alexandrium:Other_phytoplankton, ~.x/total_phytoplankton)) %>%
+  pivot_longer(., cols=(Alexandrium:Other_phytoplankton),
+                 names_to = "organismName",
+               values_to = "organismQuantity"
+               ) %>%
+  filter(organismQuantity>0)
+write_csv(tow_db, "source_data/MDIBL_phyto_db_tow2004_2006_relative_abund.csv")
 
 phyto_db %>%
   filter(., sampling_method=="Tow") %>%
   filter(., eventDate >"2007-01-01T00:00:00UTC") %>%
-  write_csv(., "tow/MDIBL_phyto_db_tow2007.csv")
+  write_csv(., "source_data/MDIBL_phyto_db_tow2007.csv") ## these sample data are excluded from database/downstream analysis because they are only target species and not quantitative -limited utility
 
 phyto_db %>%
   filter(., sampling_method=="Filter") %>%
-  write_csv(., "filtered_water/MDIBL_phyto_db_filter2007_2021.csv")
-rm(phyto_db)
+  write_csv(., "intermediate/MDIBL_phyto_db_filter2007_2021.csv")
+rm(tow_db, phyto_db)
 ```
 
 
 ```{r }
-library(worrms)
-# Edit below chunk to adapt
-## Update taxonomic coverage
-# build emld list of taxonomic coverage
-dwc_o_records$authority <- "worms"
-taxon_coverage <- taxonomyCleanr::make_taxonomicCoverage(
-  taxa.clean = dwc_o_records$scientificname,
-  authority = dwc_o_records$authority,
-  authority.id = dwc_o_records$AphiaID,
-  write.file = FALSE)
-
-eml_doc$dataset$coverage$taxonomicCoverage <- taxon_coverage
 ```

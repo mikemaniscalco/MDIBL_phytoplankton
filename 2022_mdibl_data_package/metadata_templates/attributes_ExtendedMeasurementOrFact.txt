@@ -1,0 +1,8 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+id	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."	character			NA	Missing value
+measurementType	"The nature of the measurement, fact, characteristic, or assertion."	categorical			NA	Missing value
+measurementValue	Value for measured variable	character	number or string		NA	Missing value
+measurementID	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."	categorical			NA	Missing value
+measurementTypeID	The identifier of the measurementType as defined by a controlled vocabulary.	categorical			NA	Missing value
+measurementUnit	The units associated with the measurementValue.	categorical			NA	Missing value
+measurementUnitID	The identifier of the measurementUnit as defined by a controlled vocabulary.	character			NA	Missing value

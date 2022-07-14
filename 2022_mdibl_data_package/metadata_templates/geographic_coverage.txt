@@ -1,0 +1,2 @@
+geographicDescription	northBoundingCoordinate	eastBoundingCoordinate	southBoundingCoordinate	westBoundingCoordinate
+"Frenchman Bay, Maine"	44.43355	-68.1813	44.39152	-68.29037

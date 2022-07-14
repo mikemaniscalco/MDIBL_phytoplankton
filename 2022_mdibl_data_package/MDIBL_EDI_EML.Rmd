@@ -1,0 +1,434 @@
+---
+title: "Rat Capture Palatability"
+author: "Michael Maniscalco"
+date: "2022/07/06"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(EMLassemblyline)
+library(flextable)
+```
+
+The information in this document will be used to create the EML of the data package to be published on the [Environmental Data Initiative (EDI) repository](https://portal.edirepository.org/nis/home.jsp).
+
+## 1. Data Package Title
+
+```{r}
+Weekly Phytoplankton and Water Quality in Frenchman Bay, Maine and the surrounding areas
+```
+
+## 2. Dataset Title
+```{r}
+<!--_Include what, where, and when in the dataset title_-->
+```
+## 3. Abstract
+
+The Community Environmental Health Lab at the MDI Biological Laboratories has monitored phytoplankton and water quality in Frenchman's Bay for the past few decades. Our goal was to understand how climate change and local changes in anthropogenic activity, including cruise ship activity, have altered the water quality and phytoplankton dynamics in the bay. This data provides information on target harmful algae bloom species as well as a few measures of phytoplankton biodiversity. Our data were collected by a variety of field technicians and citizen scientists who perform weekly sampling throughout the year at Bar Harbor town pier and during the summer months at the MDIBL pier and cruise ship anchorages.
+
+[See example here](https://docs.google.com/document/d/1KdHJObHl5Bxxr9t0LISTwX0cCSVvx7NPUjz5T_P9JEc/edit#)
+
+## 4. Creators
+
+*These are the people who will show up as authors in the dataset citation. These are the individuals who have provided intellectual or other significant contributions to the creation of this dataset. **Please add a row with the information of each individual that should be part of the authorship of this dataset.***
+
+**Add information of anyone else besides you**
+
+```{r, creator table, echo = FALSE, message= FALSE, warning= FALSE, include=FALSE}
+creator_table <- read_csv("metadata_templates/creators.csv")
+```
+
+```{r, creators table export, echo=FALSE, message= FALSE, warning= FALSE, results = 'asis'}
+set_flextable_defaults(big.mark = " ", 
+  font.size = 10, 
+  theme_fun = theme_box)
+flextable::flextable(creator_table) %>% 
+  width(width = 1)
+  #autofit(add_w = 0.1, add_h = 0.1, part = c("body", "header"), unit = "in")
+```
+
+## 5. Other personnel names and roles
+
+```{r, personnel table, echo = FALSE, message= FALSE, warning= FALSE, include=FALSE}
+personnel_table <- read_csv("metadata_templates/personnel.csv")
+```
+
+```{r, personnel table export, echo=FALSE, message= FALSE, warning= FALSE}
+flextable::flextable(personnel_table) %>% 
+  width(width = 1)
+```
+
+## 6. License
+[CC BY](https://creativecommons.org/licenses/by/4.0/)
+Attribution is required. CC licenses require that those who reuse a work provide attribution to the work's creator by retaining "identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated)."
+**Message for user:** Data user is required to cite it appropriately in any publication that results from its use.
+
+## 7. Keywords
+* MDI Biological Laboratory, Organization of Biological Field Stations, Anecdata.org, phytoplankton, seawater, oceans, ecology, oceanography
+
+```{r keywords, include=FALSE}
+## Create updated list of keywords
+keywords <- list()
+
+keyword_set <- read_csv("metadata_templates/keywordSet.csv")
+for (i in 1:nrow(keyword_set)) {
+  keyword <- list(
+    keyword = keyword_set$keyword[[i]],
+    keywordThesaurus = keyword_set$keywordThesaurus[[i]]
+  )
+
+  keywords[[length(keywords)+1]] <- keyword
+}
+
+# Add keywordSet to eml
+eml_doc$dataset$keywordSet <- keywords
+
+## Create updated geographic_coverage
+geo_coverage <- read_csv(here("EML", "geographic_coverage.csv"))
+gc <- list(
+  geographicDescription = geo_coverage$geographicDescription[[1]],
+  boundingCoordinates = list(
+    northBoundingCoordinate = geo_coverage$northBoundingCoordinate[[1]],
+    southBoundingCoordinate = geo_coverage$southBoundingCoordinate[[1]],
+    eastBoundingCoordinate = geo_coverage$eastBoundingCoordinate[[1]],
+    westBoundingCoordinate = geo_coverage$westBoundingCoordinate[[1]]
+  )
+)
+
+```
+
+## 8. Funding of this work
+
+*List only the main PI of a grant that supported this project, starting with the main grant first. Add rows to the table if several grants were involved.*
+
+```{r funding table, echo = FALSE, message= FALSE, warning= FALSE}
+
+funding_table <- read_csv("/EDI_MDIBL_phytoplankton/2022_mdibl_data_package/metadata_templates/funding.csv")
+colnames(funding_table) <- fund_colnames
+```
+
+```{r, funding table export, echo=FALSE, message= FALSE, warning= FALSE}
+flextable::flextable(funding_table) %>% 
+  width(width = 1)
+```
+
+## 9. Timeframe
+
+```{r, timefram table, echo = FALSE, message= FALSE, warning= FALSE}
+Information <- c("Begin date", "End date", "Is data collection ongoing or completed?")
+Description <- c("2004-08-02", "2022-07-09", "Ongoing")
+timeframe_table <- tibble(Information, Description)
+flextable::flextable(timeframe_table) %>% 
+  autofit(add_w = 0.2, add_h = 0.1, part = c("body", "header"), unit = "in")
+```
+
+## 10. Geographic location
+
+**Verbal description:** **Frenchman Bay, Maine**
+
+```{r, geographic location table, echo = FALSE, message= FALSE, warning= FALSE}
+Directions <- c("Northbound", "Southbound", "Eastbound", "Westbound")
+
+Coordinate <- c(44.49391, 44.23474, -68.13523, -68.79685)
+geo_loc_table <- tibble(Directions, Coordinate)
+flextable(geo_loc_table) %>% 
+  autofit(add_w = 0.2, add_h = 0.1, part = c("body", "header"), unit = "in")
+```
+
+## 11. Methods
+
+**Air Temperature** Press the big button to turn the thermometer on. Hold the electric thermometer by the plastic body in the shade (you can use your body for shade). Wait for the numbers to stabilize. If they're the numbers are jumping between two numbers, just pick one.
+
+**D.O. and Water Temperature** Put the black cage on the YSI probe. Turn on the meter using the green button a couple minutes before you put it in the water. There are four readings on the screen. We use the top and bottom ones. Top: water temperature; Bottom: dissolved oxygen in ppm. Submerge the probe fully beneath the water surface while holding the meter in your hand. Wait a minute or so until the numbers stabilize. Write down each variable down on the data sheet. Troubleshooting: If the DO is above 13, try moving the probe around in the water or move it to a different spot. If it's still above 13, let Anna know. When it's time to change the probe, the DO readings skew high (as high as 16!).
+
+**Macronutrients** Rinse the syringe: Fill syringe with sea water and squeeze it out. Repeat two more times (The filter should not be on). Screw the filter casing on to the bottom of the syringe and slowly squeeze out a couple drops to ensure the casing is seated correctly. Rinse the vial: Open nutrient vial and fill ¼ of the way with filtered water. Hold the cap in your hand. You can pick up excess nutrients if it's placed on the dock/ground. Cap, shake, and dump water. Repeat two more times. Fill the sample bottle 2/3^rds^ full of filtered water from the syringe. Cap the bottle and immediately put it in the ice bath in the cooler.
+
+**Phytoplankton Sample** Spray bottle should be filled with filtered seawater (hold the sieve at an angle over the mouth of the spray bottle for ease of filling). You can use the same filtered water for multiple sites. Clean any remained particles from the sieve. Take your bucket and fill it up to the 5 L line. Pour 5L bucket sample through the 20 μm sieve. DO NOT OVERFLOW OR SPILL. Repeat with another 5L so you have filtered a total of 10 liters. When all water has drained, invert sieve over the funnel attached to the 50 mL centrifuge tube. Backwash using the spray bottle until you have 15ml in the centrifuge tube. If sample is over/under 15 mL, note this on the field sheet. Put sample in cooler, away from ice, and transport back to the lab.
+
+**Transparency** This is measured in meters. One volunteer slowly lowers the secchi disk into the water while another volunteer lays on his/her belly with the aquascope in the water watching the secchi disk descend. The volunteer with the aquascope tells the volunteer with the secchi disk when the disk disappears from view and measures the depth (descending depth). The secchi disk is then slowly raised and the volunteer with the aquascope reads where the secchi disk reappears (ascending depth). Write down both depths on the data sheet. If the disk hits bottom and you can still see it, mark that on the data sheet as an observation and note the depth at which the disk hit bottom.
+
+**Domoic acid whole-water samples** Take the two 500 mL brown Nalgenes and the 1000mL Nalgene. Fill and rinse each one three times. Fill to shoulder with seawater and cap.
+
+Find an example [in this link](https://docs.google.com/document/d/1KdHJObHl5Bxxr9t0LISTwX0cCSVvx7NPUjz5T_P9JEc/edit#)
+
+## 12. Data Provenance
+
+*Is this data derived from other data? If so, you will want to document this information, so users know where this data came from. Please specify the source datasets used in the below provenance table, preferably with their DOI or URL. [Here is an example of a dataset derived from several others](https://portal.edirepository.org/nis/mapbrowse?packageid=edi.101.3).*
+
+```{r, data provenance, echo = FALSE, message= FALSE, warning= FALSE}
+provenance_table <- read_csv("/EDI_MDIBL_phytoplankton/2022_mdibl_data_package/metadata_templates/provenance.csv")
+colnames(provenance_table) <- provenance_colnames
+```
+
+```{r, provence table, export, echo=FALSE, message= FALSE, warning= FALSE}
+flextable::flextable(provenance_table) %>% 
+  autofit(add_w = 0.2, add_h = 0.1, part = c("body", "header"), unit = "in")
+```
+
+## 13. Data Table
+
+Each row in the below table describes one column in your data table. Complete each row as follows:
+
+-   **Description:** Please give a specific definition of the column name. This can be lengthy.
+-   **Unit:** Identify units for all numeric variables. All rows where there is an \* under the unit column must be filled in with a unit.
+-   **Date format:** Please tell us exactly how the date and time are formatted: e.g., mm/dd/yyyy hh:mm:ss, plus the time zone and whether daylight savings were observed. ISO date format of YYYY-MM-DD or YYYY-MM-DD hh:mm:ss is preferred.
+-   **Missing value code:** If a code for 'no data' is used, please specify: e.g., -99999, NA
+-   **Missing value code Explanation:** Why are these values missing? e.g.: value not available, value not recorded.
+
+**Table name:** (Add a short name for this table) **Table description:** (Add brief description of table contents)
+**Table description:** (Add brief description of table contents)
+
+```{r, create data attributes tables, echo = FALSE, message= FALSE, warning= FALSE}
+## Location of datasets in the package
+path_templates <- here::here("metadata_templates")
+path_data <- here::here("data_objects")
+#-----------------------------------------------------------------#
+## If there is just one file in 7.clean_data run this code
+## **UPDATE NAMES**
+file1_name <- "palmyra_rat_capture_palatability_2010"
+## Creating the attribute .txt
+# EMLassemblyline::template_table_attributes(
+#   path = path_templates,
+#   data.path = path_data,
+#   data.table = paste0(file1_name, ".csv"))
+## reading text into a data frame
+data_attributes1 <- read.delim2(here::here(paste0("3.data_attributes/attributes_", file1_name, ".txt")))
+  #mutate(unit = case_when(unit == "!Add units here!" ~ "*"))
+#------------------------------------------------------------------#
+## If there is more than one data set in 7.clean_data, run this code
+## Create table with all the file names
+# files_names <- tibble(
+#   list.files(path_data, pattern = "csv")) %>% 
+#   rename(file_name = 1) %>% 
+#   mutate(file_name = str_remove(file_name, ".csv"),
+#          attribute_name = paste0("data_attributes", 1:n()),
+#          position = 1:n())
+# 
+# ## Creating the attribute .txt
+# 
+# for (i in files_names$file_name){
+# 
+#   EMLassemblyline::template_table_attributes(
+#   path = path_templates,
+#   data.path = path_data,
+#   data.table = paste0(i, ".csv"))
+# }
+# 
+# ## reading text into a data frame
+# 
+# ##General function
+# read_attribute <- function(test){
+#   
+#   read.delim2(here::here(paste0("3.data_attributes/attributes_", test, ".txt"))) %>% 
+#   mutate(unit = case_when(unit == "!Add units here!" ~ "*"))
+# }
+# 
+# ## Loop to read and name each file 
+# for (i in files_names$position){
+#   
+#   assign(files_names$attribute_name[i], read_attribute(files_names$file_name[i]))
+# 
+#   }
+```
+
+```{r, attribute table 1, echo=FALSE, message= FALSE, warning= FALSE}
+flextable::flextable(data_attributes1) %>% 
+  width(width = 1)
+```
+
+## 14. Attributes code
+
+*If you use codes in your column, please define each code in the following table. **Fill in only if necessary*
+
+```{r, attribute code, echo = FALSE, message= FALSE, warning= FALSE}
+## Note: there can only be one file with he prefix attribute_ in the data attribute folder.
+# EMLassemblyline::template_categorical_variables(
+#   path = path_templates,
+#   data.path = path_data)
+# **UPDATE NAMES**
+cat_vars <- read.delim2(here::here(paste0("3.data_attributes/catvars_", file1_name,".txt")))
+```
+
+```{r, categorical variables table, echo=FALSE, message= FALSE, warning= FALSE}
+flextable::flextable(cat_vars) %>%
+  autofit(add_w = 0.2, add_h = 0.1, part = c("body", "header"), unit = "in")
+  
+```
+
+## 15. Articles
+
+*List articles citing this dataset. Add as many rows as necessary*
+
+```{r, publications, echo = FALSE, message= FALSE, warning= FALSE}
+publications <- read_csv("/EDI_MDIBL_phytoplankton/2022_mdibl_data_package/metadata_templates/publications.csv")
+colnames(publications) <- publications_colnames
+```
+
+```{r, publications export, echo=FALSE, message= FALSE, warning= FALSE}
+flextable::flextable(publications) %>% 
+  autofit(add_w = 0.2, add_h = 0.1, part = c("body", "header"), unit = "in")
+```
+
+## Notes, Comments, and Questions
+
+*Please let us know if you have any additional comments or questions about your data or the EML information. THANK YOU!*
+
+### Make EML
+
+```{r eml}
+## Read in base EML template for HABs data
+eml_doc <- EML::read_eml(here::here("EML", "HABs_base_EML.xml"))
+
+## Create updated list for creators/contacts
+creators <- list()
+contacts <- list()
+
+personnel <- readr::read_csv(here::here("EML", "personnel.csv"))
+for (i in 1:nrow(personnel)) {
+  person <- list()
+  
+  person$individualName <- list(
+    givenName = personnel$givenName[[i]],
+    surName = personnel$surName[[i]]
+  )
+  
+  person$organizationName <- personnel$organizationName[[i]]
+  person$positionName <- personnel$positionName[[i]]
+  person$electronicMailAddress <- personnel$electronicMailAddress[[i]]
+  
+  if (personnel$role[[i]] == "creator") {
+    creators[[length(creators)+1]] <- person
+  } else if (personnel$role[[i]] == "contact") {
+    contacts[[length(contacts)+1]] <- person
+  }  else {
+    # other roles not supported
+  }
+}
+
+# Add creators/contacts to EML
+eml_doc$dataset$creator <- creators
+eml_doc$dataset$contact <- contacts
+
+## Create updated list of keywords
+keywords <- list()
+
+keyword_set <- readr::read_csv(here::here("EML", "keywords.csv"))
+for (i in 1:nrow(keyword_set)) {
+  keyword <- list(
+    keyword = keyword_set$keyword[[i]],
+    keywordThesaurus = keyword_set$keywordThesaurus[[i]]
+  )
+  
+  keywords[[length(keywords)+1]] <- keyword
+}
+
+# Add keywordSet to eml
+eml_doc$dataset$keywordSet <- keywords
+
+## Create updated geographic_coverage
+geo_coverage <- readr::read_csv(here::here("EML", "geographic_coverage.csv"))
+gc <- list(
+  geographicDescription = geo_coverage$geographicDescription[[1]],
+  boundingCoordinates = list(
+    northBoundingCoordinate = geo_coverage$northBoundingCoordinate[[1]],
+    southBoundingCoordinate = geo_coverage$southBoundingCoordinate[[1]],
+    eastBoundingCoordinate = geo_coverage$eastBoundingCoordinate[[1]],
+    westBoundingCoordinate = geo_coverage$westBoundingCoordinate[[1]]
+  )
+)
+
+# Add geographic coverage to EML
+eml_doc$dataset$coverage$geographicCoverage <- gc
+
+## Update title/abstract
+package <- readr::read_csv(here::here("EML", "general.csv"))
+eml_doc$dataset$title <- package$title[[1]]
+
+paragraphs = list()
+for (i in 1:nrow(package)) {
+  para <- package$abstract[[i]]
+  paragraphs[[length(paragraphs)+1]] <- para
+}
+
+eml_doc$dataset$abstract$para <- paragraphs
+
+## Update temporal coverage and pubDate
+
+# get min and max of data timespan
+min <- min(oneEvent$eventDate)
+max <- max(oneEvent$eventDate)
+
+# Add temporal range to EML
+eml_doc$dataset$coverage$temporalCoverage$rangeOfDates <- list(
+  beginDate = list(calendarDate = date(min)),
+  endDate = list(calendarDate = date(max))
+)
+
+# Add pubdate to EML
+eml_doc$dataset$pubDate <- lubridate::today()
+
+
+## Update numberofRecords for each dataTable (event, occurrence, extendedmeasurementorfact)
+# Add nrow for event
+eml_doc$dataset$dataTable[[1]]$numberOfRecords <- nrow(oneEvent)
+# Add nrow for occur
+eml_doc$dataset$dataTable[[2]]$numberOfRecords <- nrow(oneOccur)
+# Add nrow for mof
+eml_doc$dataset$dataTable[[3]]$numberOfRecords <- nrow(oneMoF)
+
+## Update taxonomic coverage
+# build emld list of taxonomic coverage
+dwc_o_records$authority <- "worms"
+taxon_coverage <- taxonomyCleanr::make_taxonomicCoverage(
+  taxa.clean = dwc_o_records$scientificname,
+  authority = dwc_o_records$authority,
+  authority.id = dwc_o_records$AphiaID,
+  write.file = FALSE)
+
+eml_doc$dataset$coverage$taxonomicCoverage <- taxon_coverage
+
+# Add physical distribution URLs for data files
+build_physical <- function(file_name, file_format) {
+  physical <- list()
+  
+  physical$objectName <- file_name
+  physical$size <- list(
+    size = file.info(here::here("DwC", "datapackage", file_name))$size,
+    unit = "bytes"
+  )
+  physical$dataFormat$externallyDefinedFormat$formatName <- file_format
+  physical$distribution$online$url <- list(
+    `function` = "download",
+    url = paste("https://raw.githubusercontent.com/sccoos/HABsDataPublish/master/DwC/datapackage/", file_name, sep="")
+  )
+  
+  return(physical)
+}
+
+eml_doc$dataset$dataTable[[1]]$physical <- build_physical("event.csv", "text/csv")
+eml_doc$dataset$dataTable[[2]]$physical <- build_physical("occurrence.csv", "text/csv")
+eml_doc$dataset$dataTable[[3]]$physical <- build_physical("extendedmeasurementorfact.csv", "text/csv")
+eml_doc$dataset$otherEntity$physical <- build_physical("meta.xml", "text/xml")
+
+## Validate eml
+isValid <- EML::eml_validate(eml_doc)
+
+## Write eml to file for inclusion in data package
+if (isValid) {
+  eml <- EML::write_eml(eml_doc, here::here("DwC", "datapackage", "eml.xml"))
+  print("Successfully built EML. Written")
+  print(here::here("DwC", "datapackage", "eml.xml"))
+} else {
+  print("EML construction failed with errors:")
+  print(isValid)
+  
+  throw("EML construction did not produce a valid result.")
+}
+
+```
+
+
+
+

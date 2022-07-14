@@ -1,0 +1,46 @@
+attributeName	code	definition
+measurementID	http://vocab.nerc.ac.uk/collection/P06/current/ULAA/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UPAA/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UPPM/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UPPT/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UUUU/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UXMM/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	NA	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementType	air_temp	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	bod	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	DO1_day5_ppm	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	DO1_ppm	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	DO2_day5_avg	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	DO2_day5_ppm	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	DO2_ppm	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	DOavg_ppm	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	eventRemarks	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	rainfall_mm	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	salinity_ppt	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	tide_height	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	tide_stage	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	transparency_depth_mean	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	water_current	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	water_surface	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	water_temp	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	weather	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	wind_direction	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	wind_speed_knots	"The nature of the measurement, fact, characteristic, or assertion."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/A05/current/EV_RAIN/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P01/current/ASLTZZ01/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P01/current/BODZZZZZ/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P01/current/SECCSDNX/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P02/current/DOXY/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P02/current/MBAN/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P06/current/UUUU/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P25/current/WTEMP/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	NA	The units associated with the measurementValue.
+measurementUnit	Celsius	The units associated with the measurementValue.
+measurementUnit	degrees	The units associated with the measurementValue.
+measurementUnit	dimensionless	The units associated with the measurementValue.
+measurementUnit	knots	The units associated with the measurementValue.
+measurementUnit	meters	The units associated with the measurementValue.
+measurementUnit	millimeters	The units associated with the measurementValue.
+measurementUnit	parts per thousand	The units associated with the measurementValue.
+measurementUnit	ppm	The units associated with the measurementValue.
+measurementUnit	NA	The units associated with the measurementValue.

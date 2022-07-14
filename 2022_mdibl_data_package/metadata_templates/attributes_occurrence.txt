@@ -1,0 +1,12 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+id	Row identifier	character			NA	Missing value
+basisOfRecord	The specific nature of the data record.	categorical			NA	Missing value
+organismName	A textual name or label assigned to an Organism instance.	categorical			NA	Missing value
+organismQuantity	A number or enumeration value for the quantity of organisms.	numeric	number		NA	Missing value
+organismQuantityType	The type of quantification system used for the quantity of organisms.	categorical			NA	Missing value
+occurrenceID	"An identifier for the Occurrence (as opposed to a particular digital record of the occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the occurrenceID globally unique."	character			NA	Missing value
+occurrenceStatus	A statement about the presence or absence of a Taxon at a Location.	categorical			NA	Missing value
+scientificName	"The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term."	categorical			NA	Missing value
+scientificNameID	An identifier for the nomenclatural (not taxonomic) details of a scientific name.	categorical			NA	Missing value
+taxonID	An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.	categorical			NA	Missing value
+kingdom	The full scientific name of the kingdom in which the taxon is classified.	categorical			NA	Missing value

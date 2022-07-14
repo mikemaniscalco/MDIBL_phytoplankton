@@ -1,0 +1,137 @@
+---
+title: "MDIBL phyto data into Darwin Core Archive format"
+author: "Michael Maniscalco"
+date: '2022-06-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readxl)
+library(tidyverse)
+library(lubridate)
+library(janitor)
+```
+
+### Load tow and filtered sample data sets
+
+```{r load, include=F}
+df_phyto <- read_csv("source_data/phyto_db_filtered_2007_present_cells_L.csv") %>%
+  arrange(eventDate) %>%
+  mutate(maximumDepthInMeters=ifelse(is.na(maximumDepthInMeters)==T,
+         1,
+         maximumDepthInMeters))
+  
+df_tow <- read_csv("source_data/MDIBL_phyto_db_tow2004_2006_relative_abund.csv") %>%
+  arrange(eventDate) 
+
+df_full <- full_join(df_phyto, df_tow)
+```
+
+### Create occurrence table and save as csv
+* Pivot phytoplankton count data to long 
+* Subset entries when only a subset of target species were counted and convert 0 counts to NA for other taxa and remove from long form data
+* Add additional Darwin core fields
+* Select columns to keep in desired order
+* Occurrence file
+
+```{r occur}
+tax_table <- read_csv("source_data/tax_table.csv") %>%
+  select(-names_originally_in_access_db,-names_in_anecdata)
+
+phyto_occurrence <- df_phyto %>%
+  rowwise() %>%
+  pivot_longer(., cols=(Alexandrium:Other_phytoplankton),
+                 names_to = "organismName",
+               values_to = "organismQuantity",) %>%
+  left_join(.,tax_table, by="organismName") %>%
+  add_column(basisOfRecord="HumanObservation", .after="id") %>%
+  add_column(organismQuantityType= "Cells per L", .after="organismQuantity") %>% 
+  mutate(organismQuantity=ifelse(is.na(organismQuantity)==T, 0, organismQuantity)) %>%
+  mutate(occurrenceID=paste(eventDate, organismName, sep="_")) %>%
+  mutate(occurrenceStatus= ifelse(organismQuantity>0, "present", "absent")) %>%
+  filter(only_dinophysis_counted==TRUE & str_detect(organismName,"Dinophysis")==T |only_alexandrium_counted==TRUE & str_detect(organismName,"Alexandrium")==T |only_PN_counted==TRUE & str_detect(organismName,"Pseudo_nit" )==T) %>%
+  filter(organismName != "Dinophysis_acuminata") %>%
+  filter(organismName != "Dinophysis_norvegica" )
+
+phyto_occurrence_b <- df_phyto %>%
+  rowwise() %>%
+  pivot_longer(., cols=(Alexandrium:Other_phytoplankton),
+                 names_to = "organismName",
+               values_to = "organismQuantity",) %>%
+  left_join(.,tax_table, by="organismName") %>%
+  add_column(basisOfRecord="HumanObservation", .after="id") %>%
+  add_column(organismQuantityType= "Cells per L", .after="organismQuantity") %>% 
+  mutate(organismQuantity=ifelse(is.na(organismQuantity)==T, 0, organismQuantity)) %>%
+  mutate(occurrenceID=paste(eventDate, organismName, sep="_")) %>%
+  mutate(occurrenceStatus= ifelse(organismQuantity>0, "present", "absent")) %>%
+  filter(is.na(only_dinophysis_counted)==T &
+           is.na(only_alexandrium_counted)==T & 
+           is.na(only_PN_counted)==T ) 
+
+phyto_occurrence <- bind_rows(phyto_occurrence, phyto_occurrence_b) %>%
+  select(id, basisOfRecord,organismName, organismQuantity, organismQuantityType,
+         occurrenceID, occurrenceStatus, scientificName, scientificNameID, taxonID, kingdom) %>%
+  mutate(occurrenceStatus=ifelse(occurrenceStatus=="absent" &
+                                   !str_detect(organismName,"Dinophysis|Pseudo_n|Alexandrium|Prorocentrum|Margalefidinium|Karenia"),
+                                 NA,
+                                 occurrenceStatus)) %>%
+  filter_at(vars(occurrenceStatus), all_vars(!is.na(.)))
+
+
+tow_occurrence <- df_tow %>%
+  left_join(.,tax_table, by="organismName") %>%
+  add_column(basisOfRecord="HumanObservation", .after="id") %>%
+  add_column(organismQuantityType= "Relative Abundance", .after="organismQuantity") %>% 
+  mutate(occurrenceID=paste(eventDate, organismName, sep="_")) %>%
+  add_column(occurrenceStatus="present") %>%
+  select(id, basisOfRecord,organismName, organismQuantity, organismQuantityType,
+         occurrenceID, occurrenceStatus, scientificName, scientificNameID, taxonID, kingdom)
+
+phyto_occurrence <- bind_rows(tow_occurrence,phyto_occurrence)
+
+write_csv(phyto_occurrence,"2022_mdibl_data_package/data_objects/occurrence.csv")
+rm(tax_table, phyto_occurrence, tow_occurrence, phyto_occurrence_b)
+```
+
+### Create event file
+
+```{r event}
+phyto_events <- df_full %>%
+  select(id, eventID,	eventDate, geodeticDatum,	countryCode, locationID, 
+         eventRemarks,	decimalLatitude,	decimalLongitude,	minimumDepthInMeters,
+         maximumDepthInMeters,	coordinateUncertaintyInMeters)%>%
+  arrange(eventDate)
+write_csv(phyto_events,"2022_mdibl_data_package/data_objects/event.csv")
+rm(phyto_events)
+```
+
+### Create ExtendedMeasurementOrFact table
+
+```{r extended}
+extended_base <- read_csv("source_data/columns_units.csv") %>%
+  filter(darwin_file=="all"|darwin_file=="ExtendedMeasurementOrFact")
+
+phyto_extended <- df_full %>%
+  select(-monitor_names, -c(Alexandrium:total_phytoplankton)) %>% 
+  mutate(across(air_temp:transparency_depth_mean, ~as.character(.x))) %>%
+  pivot_longer(., 
+               cols=(air_temp:transparency_depth_mean),
+               names_to = "measurementType",
+               values_to = "measurementValue") %>%
+  mutate(measurementValue=ifelse(measurementType=="rainfall_mm" & measurementValue=="0",
+                                 NA, 
+                                 measurementValue)) %>%
+  filter(!is.na(measurementValue)) %>%
+  left_join(., extended_base, by= "measurementType") %>%
+  select(.,id, measurementType,	measurementValue,	measurementID,
+         measurementTypeID,	measurementUnit,
+         measurementUnitID # is this one optional?
+         ) %>%
+  arrange(id)
+
+write_csv(phyto_extended,"2022_mdibl_data_package/data_objects/ExtendedMeasurementOrFact.csv")
+
+rm(phyto_extended, extended_base)
+```
+
