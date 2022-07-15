@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 historical_data.Rmd
-historical_data.Rmd
 phyto_anecdata.Rmd
+QC_outputs/
+intermediate/
