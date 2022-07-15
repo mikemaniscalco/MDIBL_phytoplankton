@@ -16,7 +16,7 @@ library(janitor)
 ### Load phytoplankton excel file and change column names
 
 ```{r load}
-phyto_db <- read_excel("phyto_access_db.xlsx") %>%
+phyto_db <- read_excel("source_data/phyto_access_db.xlsx") %>%
   filter_at(vars("Program",
                  "Site Name",
                  "Station Number"), 
@@ -48,7 +48,7 @@ phyto_db <- phyto_db %>%
     DOavg_ppm="DO Avg.",
     DO1_day5_ppm="DO(5) 1",
     DO2_day5_ppm="DO(5) 2",
-    DO2_day5_avg="DO(5) Avg.",
+    DO_day5_avg="DO(5) Avg.",
     BOD_date ="BOD Date",
     bod = "BOD",
     Chaetoceros_spp ="Chaetoceros",
@@ -139,7 +139,6 @@ phyto_db <- phyto_db %>%
 ```{r time}
 time_question <- phyto_db %>%
   filter(between(hour(hms::as_hms(time)), 0, 4))
-
 rm(time_question)
 
 phyto_db <- phyto_db %>%
@@ -163,7 +162,7 @@ phyto_db <- phyto_db %>%
                                       tz ="America/New_York")
          ) %>%
   relocate(eventDate,time_low_tide,time_high_tide, .after = time) %>%
-  select(-time, -date,-time_low_tide,-time_high_tide)
+  select(-time, -date)
 ```
 
 ### Rainfall
@@ -423,7 +422,7 @@ site_names <- phyto_db %>%
   distinct( site, locationID,.keep_all = T) %>%
   arrange(locationID, site) 
 
-write_csv(site_names,"site_names.csv")
+# write_csv(site_names,"site_names.csv")
 rm(site_names)
 
 phyto_db <- phyto_db %>%
@@ -435,7 +434,7 @@ phyto_db <- phyto_db %>%
          site= str_replace(site, "Lamoine Shore", "Lamoine Beach"),
          site= str_replace(site, "Brooksville Town Landing", "Brooksville Town Dock"))
 
-site_names_corrected <- read_csv("site_details.csv")
+site_names_corrected <- read_csv("source_data/site_details.csv")
 
 phyto_db <- left_join(select(phyto_db,-c(locationID,decimalLatitude,decimalLongitude)),
                       site_names_corrected, by="site") %>%
@@ -462,17 +461,19 @@ phyto_db <-phyto_db %>%
 # change maximumDepthInMeters value to 1 if NA but check lowest actual tow depth to make sure it differs
   add_column(minimumDepthInMeters= 0.5) # change value to 0.5 if NA 
 
-rm(tow_no_depth,filtration_depth)
 ```
 
 ### Add additional Darwin Core columns
 
 ```{r darwin columns}
 phyto_db <- phyto_db %>%
-  mutate(eventDate=strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z",tz = "Zulu")) %>%
   add_column(countryCode="US") %>%
-  mutate(eventID= paste(locationID,  eventDate, sep="_")) %>% 
-  mutate(id= paste("MDIBL-habs", locationID,  eventDate, sep="_")) %>% 
+  mutate(eventID= paste(locationID,
+                        strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z",tz = "Zulu"), 
+                        sep="_")) %>% 
+  mutate(id= paste("MDIBL-habs", locationID,  
+                   strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z",tz = "Zulu"), 
+                   sep="_")) %>% 
   add_column(geodeticDatum="EPSG:4326 WGS84")
 ```
 
@@ -490,22 +491,20 @@ phyto_db <- phyto_db %>%
 
 tow_db <- phyto_db %>%
   filter(., sampling_method=="Tow") %>%
-  filter(., eventDate <"2007-01-01T00:00:00UTC") %>%
+  filter(., eventDate <"2007-01-01 00:00:00") %>%
   select(-c(Pseudo_nitzschia_small:Pseudo_nitzchia_spp,
               data_for_Kate:only_alexandrium_counted)) %>% # these columns are empty for tow data. PN not seen in area until later
   rowwise() %>%
   mutate(total_phytoplankton=sum(c_across((Alexandrium:Other_phytoplankton)))) %>%
   mutate(across(Alexandrium:Other_phytoplankton, ~.x/total_phytoplankton)) %>%
-  pivot_longer(., cols=(Alexandrium:Other_phytoplankton),
-                 names_to = "organismName",
-               values_to = "organismQuantity"
-               ) %>%
-  filter(organismQuantity>0)
+  select(-total_phytoplankton, -grids_counted, -date_emailed_to_DMR, -BOD_date)
+
 write_csv(tow_db, "source_data/MDIBL_phyto_db_tow2004_2006_relative_abund.csv")
+googlesheets4::sheet_write(tow_db, ss="https://docs.google.com/spreadsheets/d/1bz9ZMGaARpJCBnHZB632ltLvTyscNlLQsaqxae6SWqQ/edit#gid=0", sheet = "Sheet1")
 
 phyto_db %>%
   filter(., sampling_method=="Tow") %>%
-  filter(., eventDate >"2007-01-01T00:00:00UTC") %>%
+  filter(., eventDate >"2007-01-01 00:00:00") %>%
   write_csv(., "source_data/MDIBL_phyto_db_tow2007.csv") ## these sample data are excluded from database/downstream analysis because they are only target species and not quantitative -limited utility
 
 phyto_db %>%

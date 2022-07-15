@@ -16,14 +16,14 @@ library(janitor)
 ### Load tow and filtered sample data sets
 
 ```{r load, include=F}
-df_phyto <- read_csv("source_data/phyto_db_filtered_2007_present_cells_L.csv") %>%
+df_phyto <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1gj44rb7tz8_Y43Io3aIVJaJfgN-Gr9mOGEokjDZpu5E/edit#gid=902631445") %>%
   arrange(eventDate) %>%
   mutate(maximumDepthInMeters=ifelse(is.na(maximumDepthInMeters)==T,
          1,
-         maximumDepthInMeters))
-  
-df_tow <- read_csv("source_data/MDIBL_phyto_db_tow2004_2006_relative_abund.csv") %>%
-  arrange(eventDate) 
+         maximumDepthInMeters)) 
+
+df_tow <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1bz9ZMGaARpJCBnHZB632ltLvTyscNlLQsaqxae6SWqQ/edit#gid=0") %>%
+  arrange(eventDate)
 
 df_full <- full_join(df_phyto, df_tow)
 ```
@@ -80,6 +80,10 @@ phyto_occurrence <- bind_rows(phyto_occurrence, phyto_occurrence_b) %>%
 
 
 tow_occurrence <- df_tow %>%
+    pivot_longer(., cols=(Alexandrium:Other_phytoplankton),
+               names_to = "organismName",
+               values_to = "organismQuantity") %>%
+  filter(organismQuantity>0) %>%
   left_join(.,tax_table, by="organismName") %>%
   add_column(basisOfRecord="HumanObservation", .after="id") %>%
   add_column(organismQuantityType= "Relative Abundance", .after="organismQuantity") %>% 

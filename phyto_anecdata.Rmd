@@ -91,11 +91,23 @@ anecdata_db <- read_csv("source_data/maine_phytoplankton_monitoring-2022-06-13_0
 ### Normalize PN counts to proportion of grids counted
 * In many cases when counts of PN reached 500 cells the grid number was recorded and then only other cells were counted for the remainder of the slide. The number of grids counted needs to be used to extrapolate out to the total number of cells that would have been counted if the standard 200 grids were counted
 
-
 ```{r drop}
 anecdata_db <- anecdata_db %>%
   mutate(Pseudo_nitzschia_large=Pseudo_nitzschia_large*200/grids_counted,
          Pseudo_nitzschia_small=Pseudo_nitzschia_small*200/grids_counted)
+```
+
+### Tide times unto UTC datetime for easier comparison with eventDate
+
+```{r drop}
+anecdata_db <- anecdata_db %>%
+  mutate(time_low_tide = as.POSIXct(paste(
+    lubridate::as_date(as.POSIXct(eventDate, tz ="America/New_York")),
+    time_low_tide), format="%Y-%m-%d %H:%M:%S", tz ="America/New_York"),
+    time_high_tide = as.POSIXct(paste(
+    lubridate::as_date(as.POSIXct(eventDate, tz ="America/New_York")),
+    time_high_tide), format="%Y-%m-%d %H:%M:%S", tz ="America/New_York")
+         )
 ```
 
 ### Fix any site name and locationID inconsistencies
@@ -110,9 +122,10 @@ anecdata_db <- anecdata_db %>%
          site= str_replace(site, "Lamoine Shore", "Lamoine Beach"),
          site= str_replace(site, "Brooksville Town Landing", "Brooksville Town Dock"))
 
-site_names_corrected <- read_csv("site_details.csv")
+site_names_corrected <- read_csv("source_data/site_details.csv")
 
-anecdata_db <- left_join(select(anecdata_db,-c(locationID,decimalLatitude,decimalLongitude)),
+anecdata_db <- left_join(select(anecdata_db,
+                                -c(locationID, decimalLatitude, decimalLongitude)),
                       site_names_corrected, by="site") %>%
   select(-locationID) %>%
   rename(locationID=suggested_locationID) %>%
@@ -133,7 +146,7 @@ anecdata_db <- anecdata_db %>%
 
 ```{r tide_stage}
 anecdata_db <- anecdata_db %>%
-  mutate(tide_stage=str_replace( tide_stage, pattern = "In \\(tide is rising\\)", replacement = "In"),
+  mutate(tide_stage=str_replace(tide_stage, pattern = "In \\(tide is rising\\)", replacement = "In"),
          tide_stage=str_replace(tide_stage, pattern="Out \\(tide is falling\\)", replacement = "Out"))
 ```
 
@@ -158,10 +171,13 @@ anecdata_db <- anecdata_db %>%
 
 ```{r darwin columns}
 anecdata_db <- anecdata_db %>%
-  mutate(eventDate=strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z",tz = "Zulu")) %>%
   add_column(countryCode="US") %>%
-  mutate(eventID= paste(locationID,  eventDate, sep="_")) %>% 
-  mutate(id= paste("MDIBL-habs", locationID,  eventDate, sep="_")) %>% 
+  mutate(eventID= paste(locationID, 
+                        strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z", tz = "Zulu"), 
+                        sep="_")) %>% 
+  mutate(id= paste("MDIBL-habs", locationID, 
+                   strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z",tz = "Zulu"), 
+                   sep="_")) %>% 
   add_column(geodeticDatum="EPSG:4326 WGS84")
 ```
 
@@ -189,7 +205,9 @@ phyto_full <- bind_rows(phyto_db, anecdata_db) %>%
   relocate(Dinophysis_norvegica, .after="Dinophysis_spp") %>% 
   relocate(wind_description, .before="water_filtered_L") %>% 
   relocate(pH:Copepods, .before="water_filtered_L") %>%
-  relocate(nutrient_vial_id:Copepods, .before="sampling_method") %>%
+  relocate(nutrient_vial_id:Copepods, .before="sampling_method") %>%  
+    relocate(Copepods, .before="Alexandrium") %>%  
+  relocate(time_low_tide:time_high_tide, .after="eventDate") %>%
   select(-total_phytoplankton) %>%
   add_column(backwashed_volume= 0.015,.after = "grids_counted")
 
@@ -215,7 +233,11 @@ phyto_full <- phyto_full %>%
                 ~.x* ((1/grids_counted) *   #convert counts to counts per grid
                         (total_rafter_grids/volume_of_rafter) * # counts per grid to counts per L
                         (backwashed_volume/water_filtered_L)))) %>% # factor of concentration/dilution
-  select(-BOD_date,-date_emailed_to_DMR)
+  select(-BOD_date, -date_emailed_to_DMR, 
+         -c("data_for_Kate", "only_PN_counted", "only_dinophysis_counted", 
+            "only_alexandrium_counted", "grids_counted", "backwashed_volume",
+            "water_filtered_L")) %>%
+  relocate(Margalefidinium_polykrikoides, .after="Melosira")
 rm(volume_of_rafter, total_rafter_grids)
 ```
 
@@ -223,12 +245,22 @@ rm(volume_of_rafter, total_rafter_grids)
 
 ```{r write}
 write_csv(phyto_full,"source_data/phyto_db_filtered_2007_present_cells_L.csv")
+googlesheets4::write_sheet(phyto_full, ss="https://docs.google.com/spreadsheets/d/1gj44rb7tz8_Y43Io3aIVJaJfgN-Gr9mOGEokjDZpu5E/edit#gid=0",sheet = "Sheet1")
 head(phyto_full)
 rm(phyto_full)
 ```
 
+### Convert to forward compatable format
+
+```{r }
+
+```
 
 
+
+```{r }
+
+```
 
 
 
