@@ -117,7 +117,7 @@ extended_base <- read_csv("source_data/columns_units.csv") %>%
   filter(darwin_file=="all"|darwin_file=="ExtendedMeasurementOrFact")
 
 phyto_extended <- df_full %>%
-  select(-monitor_names, -c(Alexandrium:total_phytoplankton)) %>% 
+  select(-monitor_names, -c(Alexandrium:Other_phytoplankton)) %>% 
   mutate(across(air_temp:transparency_depth_mean, ~as.character(.x))) %>%
   pivot_longer(., 
                cols=(air_temp:transparency_depth_mean),
@@ -139,3 +139,6 @@ write_csv(phyto_extended,"2022_mdibl_data_package/data_objects/ExtendedMeasureme
 rm(phyto_extended, extended_base)
 ```
 
+```{r }
+
+```

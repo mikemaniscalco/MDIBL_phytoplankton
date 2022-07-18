@@ -23,7 +23,7 @@ template_taxonomic_coverage(
   taxa.table="tax_table.csv",
   taxa.col="scientificName",
   taxa.name.type= "scientific",
-  taxa.authority=9,
+  taxa.authority=9, 
   empty = FALSE,
   write.file = TRUE
 )

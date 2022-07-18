@@ -70,16 +70,16 @@ Dissolved_Oxygen,DO Avg.,DOavg_ppm,,http://vocab.nerc.ac.uk/collection/P02/curre
 ,BOD,bod,,http://vocab.nerc.ac.uk/collection/P01/current/BODZZZZZ/,http://vocab.nerc.ac.uk/collection/P06/current/UPPM/,ppm,,Biological oxygen demand,ExtendedMeasurementOrFact,
 Phytoplanton_Sample_Method,Sample Method,sampling_method,,,,,,NULL,,
 Date_e_mailed_to_DMR,Date E-Mailed to DMR,date_emailed_to_DMR,,,,,,NULL,,
-__of_Alexandrium,Alexandrium,alexandrium,,,,,,organismName value,occurrence,organismName
-,Ceratium,ceratium,,,,,,organismName value,occurrence,organismName
-,Chaetoceros,chaetoceros_spp,,,,,,organismName value,occurrence,organismName
-,Chaetoceros socialis,chaetoceros_socialis,,,,,,organismName value,occurrence,organismName
-,Coscinodiscus,coscinodiscus,,,,,,organismName value,occurrence,organismName
-,Dictyocha,dictyocha,,,,,,organismName value,occurrence,organismName
-,Didylum,ditylum,,,,,,organismName value,occurrence,organismName
-__of_Dinophysis_spp__(unknown),Dinophysis,dinophysis_spp,,,,,,organismName value,occurrence,organismName
-__of_Dinophysis_acuminata,,dinophysis_acuminata,,,,,,organismName value,occurrence,organismName
-__of_Dinophysis_norvegica,,dinophysis_norvegica,,,,,,organismName value,occurrence,organismName
+__of_Alexandrium,Alexandrium,Alexandrium,,,,,,organismName value,occurrence,organismName
+,Ceratium,Ceratium,,,,,,organismName value,occurrence,organismName
+,Chaetoceros,Chaetoceros_spp,,,,,,organismName value,occurrence,organismName
+,Chaetoceros socialis,Chaetoceros_socialis,,,,,,organismName value,occurrence,organismName
+,Coscinodiscus,Coscinodiscus,,,,,,organismName value,occurrence,organismName
+,Dictyocha,Dictyocha,,,,,,organismName value,occurrence,organismName
+,Didylum,Ditylum,,,,,,organismName value,occurrence,organismName
+__of_Dinophysis_spp__(unknown),Dinophysis,Dinophysis_spp,,,,,,organismName value,occurrence,organismName
+__of_Dinophysis_acuminata,,Dinophysis_acuminata,,,,,,organismName value,occurrence,organismName
+__of_Dinophysis_norvegica,,Dinophysis_norvegica,,,,,,organismName value,occurrence,organismName
 ,Eucampia,eucampia,,,,,,organismName value,occurrence,organismName
 ,Gonyaulax,gonyaulax,,,,,,organismName value,occurrence,organismName
 ,Guinardia,guinardia,,,,,,organismName value,occurrence,organismName

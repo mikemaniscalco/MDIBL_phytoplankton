@@ -1,27 +1,27 @@
-site,locationID,suggested_locationID,decimalLatitude,decimalLongitude,coordinateUncertaintyInMeters
-SWH Beals,21A,21A,44.2749688,-68.31374237,10
-SWH Dysarts,21A,21A,44.27415296,-68.32196911,70
-Bass Harbor,21B,21B,44.2347384,-68.34908401,200
-Bernard,21B,21B,44.24062188,-68.35163709,15
-Northeast Harbor,21C,21C,44.29663082,-68.28161929,200
-Anchorage Bravo,22B,22B,44.40379014,-68.20522976,350
-Anchorage Alpha,22A,22A,44.39145975,-68.19188395,450
-Bar Harbor Town Pier,22D,22D,44.402771,-68.202588,5
-MDIBL Dock,22G,22G,44.39152,-68.192764,5
-Berry Cove,NA,99,44.46006397,-68.32131699,250
-Eastern Bay Channel,NA,99,44.44415848,-68.2883217,1000
-Hadley Point,NA,99,44.4448815,-68.31912539,150
-Jordan River,NA,99,44.4687784,-68.35578705,750
-Lamoine Beach,NA,99,44.45056128,-68.29989721,100
-Raccoon Cove,NA,99,44.46789417,-68.28379317,300
-Skillings River,NA,99,44.47337562,-68.25557322,700
-Stave Island,NA,99,44.43894636,-68.13522605,1000
-The Hop,NA,99,44.41317145,-68.15509966,10
-Thomas Island E.,NA,99,44.433387,-68.340555,150
-Thomas Island W.,NA,99,44.4318243,-68.34424557,500
-Blue Hill - Mill Pond,NA,99,44.3769051,-68.5634604,175
-Brooksville - Indian Bar,NA,99,44.37170483,-68.78452675,100
-Brooksville Town Dock,NA,99,44.38611316,-68.79685458,100
-Surry Town Pier,NA,99,44.49391302,-68.50082948,10
-Penobscot - Bagaduce Lunch,NA,99,44.39886359,-68.70377533,10
-Penobscot Town Landing,NA,99,44.4530266,-68.70588106,10
+site,region_id,locationID,decimalLatitude,decimalLongitude,coordinateUncertaintyInMeters
+SWH Beals,21A,SWH_Beals_21A,44.2749688,-68.31374237,10
+SWH Dysarts,21A,SWH_Dysarts_21A,44.27415296,-68.32196911,70
+Bass Harbor,21B,Bass_Harbor_21B,44.2347384,-68.34908401,200
+Bernard,21B,Bernard_21B,44.24062188,-68.35163709,15
+Northeast Harbor,21C,Northeast_Harbor_21C,44.29663082,-68.28161929,200
+Anchorage Bravo,22B,Anchorage_Bravo_22B,44.40379014,-68.20522976,350
+Anchorage Alpha,22A,Anchorage_Alpha_22A,44.39145975,-68.19188395,450
+Bar Harbor Town Pier,22D,Bar_Harbor_Town_Pier_22D,44.402771,-68.202588,5
+MDIBL Dock,22G,MDIBL_Dock_22G,44.39152,-68.192764,5
+Berry Cove,NA,Berry_Cove,44.46006397,-68.32131699,250
+Eastern Bay Channel,NA,Eastern_Bay_Channel,44.44415848,-68.2883217,1000
+Hadley Point,NA,Hadley_Point,44.4448815,-68.31912539,150
+Jordan River,NA,Jordan_River,44.4687784,-68.35578705,750
+Lamoine Beach,NA,Lamoine_Beach,44.45056128,-68.29989721,100
+Raccoon Cove,NA,Raccoon_Cove,44.46789417,-68.28379317,300
+Skillings River,NA,Skillings_River,44.47337562,-68.25557322,700
+Stave Island,NA,Stave_Island,44.43894636,-68.13522605,1000
+The Hop,NA,The_Hop,44.41317145,-68.15509966,10
+Thomas Island E.,NA,Thomas_Island_E,44.433387,-68.340555,150
+Thomas Island W.,NA,Thomas_Island_W,44.4318243,-68.34424557,500
+Blue Hill - Mill Pond,NA,Blue_Hill_Mill_Pond,44.3769051,-68.5634604,175
+Brooksville - Indian Bar,NA,Brooksville_Indian_Bar,44.37170483,-68.78452675,100
+Brooksville Town Dock,NA,Brooksville_Town_Dock,44.38611316,-68.79685458,100
+Surry Town Pier,NA,Surry_Town_Pier,44.49391302,-68.50082948,10
+Penobscot - Bagaduce Lunch,NA,Penobscot_Bagaduce_Lunch,44.39886359,-68.70377533,10
+Penobscot Town Landing,NA,Penobscot_Town_Landing,44.4530266,-68.70588106,10
