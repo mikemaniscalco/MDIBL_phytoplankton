@@ -1,20 +1,26 @@
 attributeName	code	definition
-measurementID	http://vocab.nerc.ac.uk/collection/P06/current/ULAA/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
-measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UPAA/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
-measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UPPM/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
-measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UPPT/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
-measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UUUU/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
-measurementID	http://vocab.nerc.ac.uk/collection/P06/current/UXMM/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
-measurementID	NA	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	Absolute salinity of the water body	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	air_temperature	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	Bathymetry and Elevation	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	BOD	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	Rainfall	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	Sea and swell scale	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	Secchi	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	Tide stage	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	Water movement	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	Water temperature	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	WC_O2	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	wind_from_direction	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	wind_speed	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementID	WMOPresWeath	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
 measurementType	air_temp	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	bod	"The nature of the measurement, fact, characteristic, or assertion."
+measurementType	DO_day5_avg	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	DO1_day5_ppm	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	DO1_ppm	"The nature of the measurement, fact, characteristic, or assertion."
-measurementType	DO2_day5_avg	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	DO2_day5_ppm	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	DO2_ppm	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	DOavg_ppm	"The nature of the measurement, fact, characteristic, or assertion."
-measurementType	eventRemarks	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	rainfall_mm	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	salinity_ppt	"The nature of the measurement, fact, characteristic, or assertion."
 measurementType	tide_height	"The nature of the measurement, fact, characteristic, or assertion."
@@ -30,17 +36,19 @@ measurementTypeID	http://vocab.nerc.ac.uk/collection/A05/current/EV_RAIN/	"An id
 measurementTypeID	http://vocab.nerc.ac.uk/collection/P01/current/ASLTZZ01/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
 measurementTypeID	http://vocab.nerc.ac.uk/collection/P01/current/BODZZZZZ/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
 measurementTypeID	http://vocab.nerc.ac.uk/collection/P01/current/SECCSDNX/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P01/current/WMOCPWXX/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
 measurementTypeID	http://vocab.nerc.ac.uk/collection/P02/current/DOXY/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
 measurementTypeID	http://vocab.nerc.ac.uk/collection/P02/current/MBAN/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
 measurementTypeID	http://vocab.nerc.ac.uk/collection/P06/current/UUUU/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P07/current/CFSN0036/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
+measurementTypeID	http://vocab.nerc.ac.uk/collection/P07/current/CFSN0038/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
 measurementTypeID	http://vocab.nerc.ac.uk/collection/P25/current/WTEMP/	"An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set."
-measurementTypeID	NA	The units associated with the measurementValue.
 measurementUnit	Celsius	The units associated with the measurementValue.
 measurementUnit	degrees	The units associated with the measurementValue.
+measurementUnit	descriptive	The units associated with the measurementValue.
 measurementUnit	dimensionless	The units associated with the measurementValue.
 measurementUnit	knots	The units associated with the measurementValue.
 measurementUnit	meters	The units associated with the measurementValue.
 measurementUnit	millimeters	The units associated with the measurementValue.
 measurementUnit	parts per thousand	The units associated with the measurementValue.
 measurementUnit	ppm	The units associated with the measurementValue.
-measurementUnit	NA	The units associated with the measurementValue.

@@ -1,23 +1,23 @@
 attributeName	code	definition
 countryCode	US	United States
 geodeticDatum	EPSG:4326 WGS84	code for date format
-locationID	21A	SWH Beals
-locationID	21B	SWH Dysarts
-locationID	21C	Northeast Harbor
-locationID	22A	Anchorage Alpha
-locationID	22B	Anchorage Bravo
-locationID	22D	Bar Harbor Town Pier
-locationID	22G	MDIBL Dock
-locationID	23A	Bass Harbor
-locationID	23B	Bernard
-locationID	24	Eastern Bay Channel
-locationID	24A	Berry Cove
-locationID	24B	Hadley Point
-locationID	24C	Lamoine Beach
-locationID	24D	Thomas Island E.
-locationID	24E	Thomas Island W.
-locationID	25	Jordan River
-locationID	26A	Skillings River
-locationID	26B	Raccoon Cove
-locationID	27A	Stave Island
-locationID	27B	The Hop
+locationID	Anchorage_Alpha_22A	Anchorage Alpha in Bar Harbor
+locationID	Anchorage_Bravo_22B	Anchorage Bravo in Bar Harbor
+locationID	Bar_Harbor_Town_Pier_22D	Bar Harbor Town Pier
+locationID	Bass_Harbor_21B	Bass Habor
+locationID	Bernard_21B	Bernard
+locationID	Berry_Cove	Berry Cove
+locationID	Eastern_Bay_Channel	Eastern Bay Channel
+locationID	Hadley_Point	Hadley Point
+locationID	Jordan_River	Jordan River
+locationID	Lamoine_Beach	Lamoine Beach
+locationID	MDIBL_Dock_22G	Mount Desert Island Biological Lab Dock
+locationID	Northeast_Harbor_21C	North East Harbor
+locationID	Raccoon_Cove	Raccoon Cove
+locationID	Skillings_River	Skillings River
+locationID	Stave_Island	Stave Island
+locationID	SWH_Beals_21A	South West Harbor Beals
+locationID	SWH_Dysarts_21A	South West Harbor Dysarts
+locationID	The_Hop	The Hop island
+locationID	Thomas_Island_E	Thomas Island East
+locationID	Thomas_Island_W	Thomas Island West

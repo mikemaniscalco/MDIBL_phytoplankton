@@ -6,3 +6,4 @@ measurementID	"An identifier for the MeasurementOrFact (information pertaining t
 measurementTypeID	The identifier of the measurementType as defined by a controlled vocabulary.	categorical			NA	Missing value
 measurementUnit	The units associated with the measurementValue.	categorical			NA	Missing value
 measurementUnitID	The identifier of the measurementUnit as defined by a controlled vocabulary.	character			NA	Missing value
+measurementRemarks	The dscription of measurementType	character			NA	Missing value

@@ -3,32 +3,32 @@ library(EMLassemblyline)
 library(flextable)
 library(data.table)
 setDTthreads(threads=1)
-setwd("/Users/m.maniscalco/Dropbox/EDI_fellowship/EDI_MDIBL_phytoplankton")
+setwd("/Users/m.maniscalco/Dropbox/EDI_fellowship/MDIBL_phytoplankton/2022_mdibl_data_package")
 
-template_table_attributes(path="./2022_mdibl_data_package/metadata_templates",
-                          data.path = "/2022_mdibl_data_package/data_objects",
-                          data.table = c("event.csv",
-                                         "occurrence.csv",
-                                         "ExtendedMeasurementOrFact.csv"),
-                          write.file = TRUE,
-                          x = NULL)
+# template_table_attributes(path="./metadata_templates",
+#                           data.path = "./data_objects",
+#                           data.table = c("event.csv",
+#                                          "occurrence.csv",
+#                                          "ExtendedMeasurementOrFact.csv"),
+#                           write.file = TRUE,
+#                           x = NULL)
+# 
+# template_categorical_variables(path="./metadata_templates",
+#                                data.path = "./data_objects",
+#                                write.file = TRUE)
 
-template_categorical_variables(path="/2022_mdibl_data_package/metadata_templates",
-                               data.path = "2022_mdibl_data_package/data_objects",
-                               write.file = TRUE)
+# template_taxonomic_coverage(
+#   path="./metadata_templates",
+#   data.path = "./source_data",
+#   taxa.table="tax_table.csv",
+#   taxa.col="scientificName",
+#   taxa.name.type= "scientific",
+#   taxa.authority=9, 
+#   empty = FALSE,
+#   write.file = TRUE
+# )
 
-template_taxonomic_coverage(
-  path="./2022_mdibl_data_package/metadata_templates",
-  data.path = "./source_data",
-  taxa.table="tax_table.csv",
-  taxa.col="scientificName",
-  taxa.name.type= "scientific",
-  taxa.authority=9, 
-  empty = FALSE,
-  write.file = TRUE
-)
-
-eml_doc <- make_eml(path="./2022_mdibl_data_package/metadata_templates",
+eml_doc <- make_eml(path="./metadata_templates",
                     data.path = "./data_objects",
                     data.table = c("event.csv","occurrence.csv","ExtendedMeasurementOrFact.csv"),
                     data.table.description= c("DwC-A Event Table","DwC-A Occurrence Table","DwC-A Extended Measurement Or Fact Table"),

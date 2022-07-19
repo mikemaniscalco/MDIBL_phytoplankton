@@ -31,9 +31,9 @@ organismName	Pleurosigma	A textual name or label assigned to an Organism instanc
 organismName	Prorocentrum_lima	A textual name or label assigned to an Organism instance.
 organismName	Prorocentrum_spp	A textual name or label assigned to an Organism instance.
 organismName	Protoperidinium	A textual name or label assigned to an Organism instance.
-organismName	Pseudo_nitzchia_spp	A textual name or label assigned to an Organism instance.
 organismName	Pseudo_nitzschia_large	A textual name or label assigned to an Organism instance.
 organismName	Pseudo_nitzschia_small	A textual name or label assigned to an Organism instance.
+organismName	Pseudo_nitzschia_spp	A textual name or label assigned to an Organism instance.
 organismName	Rhizosolenia	A textual name or label assigned to an Organism instance.
 organismName	Thalassionema	A textual name or label assigned to an Organism instance.
 organismName	Thalassiosira	A textual name or label assigned to an Organism instance.
@@ -58,7 +58,7 @@ scientificName	Gyrosigma	A textual name or label assigned to an Organism instanc
 scientificName	Karenia	A textual name or label assigned to an Organism instance.
 scientificName	Leptocylindrus	A textual name or label assigned to an Organism instance.
 scientificName	Licmophora	A textual name or label assigned to an Organism instance.
-scientificName	Margalefidinium polykrikoides   	A textual name or label assigned to an Organism instance.
+scientificName	Margalefidinium polykrikoides	A textual name or label assigned to an Organism instance.
 scientificName	Melosira	A textual name or label assigned to an Organism instance.
 scientificName	Navicula	A textual name or label assigned to an Organism instance.
 scientificName	Nitzschia	A textual name or label assigned to an Organism instance.
@@ -67,13 +67,12 @@ scientificName	Pleurosigma	A textual name or label assigned to an Organism insta
 scientificName	Prorocentrum	A textual name or label assigned to an Organism instance.
 scientificName	Prorocentrum lima	A textual name or label assigned to an Organism instance.
 scientificName	Protoperidinium	A textual name or label assigned to an Organism instance.
-scientificName	Pseudo-nitzchia	A textual name or label assigned to an Organism instance.
+scientificName	Pseudo-nitzschia	A textual name or label assigned to an Organism instance.
 scientificName	Pseudo-nitzschia delicatissima	A textual name or label assigned to an Organism instance.
 scientificName	Pseudo-nitzschia seriata	A textual name or label assigned to an Organism instance.
 scientificName	Rhizosolenia	A textual name or label assigned to an Organism instance.
 scientificName	Thalassionema	A textual name or label assigned to an Organism instance.
 scientificName	Thalassiosira	A textual name or label assigned to an Organism instance.
-scientificNameID	(urn:lsid:marinespecies.org:taxname:149042)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
 scientificNameID	(urn:lsid:marinespecies.org:taxname:109462)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
 scientificNameID	(urn:lsid:marinespecies.org:taxname:109470)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
 scientificNameID	(urn:lsid:marinespecies.org:taxname:109475)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
@@ -91,6 +90,7 @@ scientificNameID	(urn:lsid:marinespecies.org:taxname:148985)	An identifier for t
 scientificNameID	(urn:lsid:marinespecies.org:taxname:149022)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
 scientificNameID	(urn:lsid:marinespecies.org:taxname:149033)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
 scientificNameID	(urn:lsid:marinespecies.org:taxname:149038)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+scientificNameID	(urn:lsid:marinespecies.org:taxname:149042)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
 scientificNameID	(urn:lsid:marinespecies.org:taxname:149045)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
 scientificNameID	(urn:lsid:marinespecies.org:taxname:149069)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.
 scientificNameID	(urn:lsid:marinespecies.org:taxname:149092)	An identifier for the nomenclatural (not taxonomic) details of a scientific name.

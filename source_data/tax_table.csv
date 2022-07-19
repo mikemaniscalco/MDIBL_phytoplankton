@@ -18,7 +18,7 @@ Gyrosigma,,Gyrosigma,Gyrosigma,(urn:lsid:marinespecies.org:taxname:149033),NCBI:
 Leptocylindrus,,Leptocylindrus,Leptocylindrus,(urn:lsid:marinespecies.org:taxname:149038),NCBI:txid163515,Chromista
 Lycomorpha,,Licmophora,Licmophora,(urn:lsid:marinespecies.org:taxname:149342),NCBI:txid210597,Chromista
 ,__of_Margalefidinium_p_,Margalefidinium_polykrikoides,Margalefidinium polykrikoides,(urn:lsid:marinespecies.org:taxname:990876),NCBI:txid77300,Chromista
-Melosira,,Melosira,Melosira,Ê(urn:lsid:marinespecies.org:taxname:149042),NCBI:txid35124,Chromista
+Melosira,,Melosira,Melosira,(urn:lsid:marinespecies.org:taxname:149042),NCBI:txid35124,Chromista
 Navicula,,Navicula,Navicula,(urn:lsid:marinespecies.org:taxname:149142),NCBI:txid50949,Chromista
 Nitzchia,,Nitzschia,Nitzschia,(urn:lsid:marinespecies.org:taxname:149045),NCBI:txid2857,Chromista
 Other,,Other_phytoplankton,Chromista,(urn:lsid:marinespecies.org:taxname:7),NCBI:txid2698737,Chromista
@@ -29,7 +29,7 @@ Pleurosigma,,Pleurosigma,Pleurosigma,(urn:lsid:marinespecies.org:taxname:149181)
 Prorocentrum,,Prorocentrum_spp,Prorocentrum,(urn:lsid:marinespecies.org:taxname:109566),NCBI:txid2944,Chromista
 Prorocentrum lima,__of_Prorocentrum_lima,Prorocentrum_lima,Prorocentrum lima,(urn:lsid:marinespecies.org:taxname:110301),NCBI:txid39448,Chromista
 Protoperidinium,,Protoperidinium,Protoperidinium,(urn:lsid:marinespecies.org:taxname:109553),NCBI:txid261839,Chromista
-Pseudo-nitzchia,,Pseudo-nitzschia ,Pseudo-nitzchia,(urn:lsid:marinespecies.org:taxname:149151),NCBI:txid41953,Chromista
+Pseudo-nitzchia,,Pseudo_nitzschia_spp,Pseudo-nitzschia,(urn:lsid:marinespecies.org:taxname:149151),NCBI:txid41953,Chromista
 Rhizosolenia,,Rhizosolenia,Rhizosolenia,(urn:lsid:marinespecies.org:taxname:149069),NCBI:txid3004,Chromista
 Thalassionema,,Thalassionema,Thalassionema,(urn:lsid:marinespecies.org:taxname:149092),NCBI:txid33648,Chromista
 Thalassiosira,,Thalassiosira,Thalassiosira,(urn:lsid:marinespecies.org:taxname:148912),NCBI:txid35127,Chromista

@@ -29,7 +29,7 @@
       <organizationName>MDI Biological Laboratory</organizationName>
       <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
     </creator>
-    <pubDate>2022-07-11</pubDate>
+    <pubDate>2022-07-18</pubDate>
     <abstract>
       <para>The Community Environmental Health Lab at the MDI Biological Laboratories has monitored phytoplankton and water quality in Frenchman’s Bay for the past few decades. Our goal was to understand how climate change and local changes in anthropogenic activity, including cruise ship activity, have altered the water quality and phytoplankton dynamics in the bay. This data provides information on target harmful algae bloom species as well as a few measures of phytoplankton biodiversity. Our data were collected by a variety of field technicians and citizen scientists who perform weekly sampling throughout the year at Bar Harbor town pier and during the summer months at the MDIBL pier and cruise ship anchorages.
 </para>
@@ -1082,6 +1082,63 @@
             <taxonId provider="http://marinespecies.org">582419</taxonId>
             <taxonomicClassification>
               <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Alveolata</taxonRankValue>
+              <taxonId provider="http://marinespecies.org">536209</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+                <taxonRankValue>Myzozoa</taxonRankValue>
+                <taxonId provider="http://marinespecies.org">450030</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Subphylum</taxonRankName>
+                  <taxonRankValue>Dinozoa</taxonRankValue>
+                  <taxonId provider="http://marinespecies.org">562620</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Infraphylum</taxonRankName>
+                    <taxonRankValue>Dinoflagellata</taxonRankValue>
+                    <commonName>dinoflagellates</commonName>
+                    <taxonId provider="http://marinespecies.org">146203</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Class</taxonRankName>
+                      <taxonRankValue>Dinophyceae</taxonRankValue>
+                      <commonName>dinoflagellates</commonName>
+                      <taxonId provider="http://marinespecies.org">19542</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Order</taxonRankName>
+                        <taxonRankValue>Gymnodiniales</taxonRankValue>
+                        <taxonId provider="http://marinespecies.org">109392</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                          <taxonRankValue>Gymnodiniaceae</taxonRankValue>
+                          <taxonId provider="http://marinespecies.org">109410</taxonId>
+                          <taxonomicClassification>
+                            <taxonRankName>Genus</taxonRankName>
+                            <taxonRankValue>Margalefidinium</taxonRankValue>
+                            <taxonId provider="http://marinespecies.org">990875</taxonId>
+                            <taxonomicClassification>
+                              <taxonRankName>Species</taxonRankName>
+                              <taxonRankValue>Margalefidinium polykrikoides</taxonRankValue>
+                              <taxonId provider="http://marinespecies.org">990876</taxonId>
+                            </taxonomicClassification>
+                          </taxonomicClassification>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Chromista</taxonRankValue>
+          <taxonId provider="http://marinespecies.org">7</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Harosa</taxonRankValue>
+            <taxonId provider="http://marinespecies.org">582419</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
               <taxonRankValue>Heterokonta</taxonRankValue>
               <taxonId provider="http://marinespecies.org">368898</taxonId>
               <taxonomicClassification>
@@ -1868,10 +1925,6 @@
         <taxonomicClassification>
           <taxonRankValue>Pseudo-nitzchia</taxonRankValue>
         </taxonomicClassification>
-        <taxonomicClassification>
-          <taxonRankValue>Margalefidinium polykrikoides���</taxonRankValue>
-          <taxonId provider="worms"/>
-        </taxonomicClassification>
       </taxonomicCoverage>
     </coverage>
     <maintenance>
@@ -1922,7 +1975,7 @@
       </methodStep>
     </methods>
     <project>
-      <title>CEHL</title>
+      <title>Sea World and Busch Gardens Environmental Excellence Award 1998</title>
       <personnel>
         <individualName>
           <givenName>Jane</givenName>
@@ -1934,7 +1987,7 @@
       </personnel>
       <funding>No funding to report</funding>
       <relatedProject>
-        <title>MCLE</title>
+        <title>Building capacity of the MDI Water Quality Coalition 2002</title>
         <personnel>
           <individualName>
             <givenName>Jane</givenName>
@@ -1944,10 +1997,10 @@
           <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
           <role>Principal Investigator</role>
         </personnel>
-        <funding>No funding to report</funding>
+        <funding>Maine Coastal Program</funding>
       </relatedProject>
       <relatedProject>
-        <title>Tremont</title>
+        <title>Mount Desert Island Water Quality Coalition�2002-2004</title>
         <personnel>
           <individualName>
             <givenName>Jane</givenName>
@@ -1957,10 +2010,10 @@
           <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
           <role>Principal Investigator</role>
         </personnel>
-        <funding>No funding to report</funding>
+        <funding>Seventh Generation Fund</funding>
       </relatedProject>
       <relatedProject>
-        <title>Pemetic</title>
+        <title>Mount Desert Island Water Quality Coalition�2003-2005</title>
         <personnel>
           <individualName>
             <givenName>Jane</givenName>
@@ -1970,10 +2023,10 @@
           <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
           <role>Principal Investigator</role>
         </personnel>
-        <funding>No funding to report</funding>
+        <funding>United Way</funding>
       </relatedProject>
       <relatedProject>
-        <title>MDES</title>
+        <title>Mount Desert Island Water Quality Coalition�2000</title>
         <personnel>
           <individualName>
             <givenName>Jane</givenName>
@@ -1983,10 +2036,10 @@
           <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
           <role>Principal Investigator</role>
         </personnel>
-        <funding>No funding to report</funding>
+        <funding>New England Grassroots Environment Fund</funding>
       </relatedProject>
       <relatedProject>
-        <title>Cruise Ship Monitors</title>
+        <title>Mount Desert Island Water Quality Coalition�2003</title>
         <personnel>
           <individualName>
             <givenName>Jane</givenName>
@@ -1996,10 +2049,10 @@
           <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
           <role>Principal Investigator</role>
         </personnel>
-        <funding>No funding to report</funding>
+        <funding>New England Grassroots Environment Fund</funding>
       </relatedProject>
       <relatedProject>
-        <title>Conners Emerson</title>
+        <title>Mount Desert Island Water Quality Coalition�2004</title>
         <personnel>
           <individualName>
             <givenName>Jane</givenName>
@@ -2009,7 +2062,371 @@
           <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
           <role>Principal Investigator</role>
         </personnel>
-        <funding>No funding to report</funding>
+        <funding>New England Grassroots Environment Fund</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Community Environmental Health Laboratory 2003</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Thomas H. Maren Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Community Environmental Health Laboratory 2004</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Thomas H. Maren Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Community Environmental Health Laboratory 2005</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Thomas H. Maren Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Community Environmental Health Laboratory 2006</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Thomas H. Maren Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Instituting new educational models-students were involved in water quality monitoring and phytoplankton monitoring 2002</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Robbins de Beaumont Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Instituting new educational models-students were involved in water quality monitoring and phytoplankton monitoring 2003</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Robbins de Beaumont Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Instituting new educational models-students were involved in water quality monitoring and phytoplankton monitoring 2004</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Robbins de Beaumont Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Water monitoring near cruise ships in Bar Harbor 2006</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Cruise Industry Charitable Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Water monitoring near cruise ships in Bar Harbor 2007</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Cruise Industry Charitable Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Water monitoring near cruise ships in the town of  Bar Harbor</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Town of Bar Harbor</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Environmental education through water monitoring 2010</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Lynam Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Environmental education through water monitoring 2011</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Lynam Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Environmental education through water monitoring 2012</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Lynam Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Award for engaging inland teachers in environmental programs 2011</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Center for Ocean Sciences Education Excellence</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Award for engaging inland teachers in environmental programs 2012</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Center for Ocean Sciences Education Excellence</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of projects for education and citizen science 2002</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Maine Community Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of projects for education and citizen science 2005</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Maine Community Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of projects for education and citizen science 2010</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Maine Community Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of projects for education and citizen science 2011</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Maine Community Foundation</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of features on the citizen science data portal Anecdata 2013</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Alex C. Walker Foundation�</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of features on the citizen science data portal Anecdata 2014</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Alex C. Walker Foundation�</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of features on the citizen science data portal Anecdata 2015</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Alex C. Walker Foundation�</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of features on the citizen science data portal Anecdata 2016</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Alex C. Walker Foundation�</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of features on the citizen science data portal Anecdata 2017</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Alex C. Walker Foundation�</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of features on the citizen science data portal Anecdata 2018</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Alex C. Walker Foundation�</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of features on the citizen science data portal Anecdata 2019</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Alex C. Walker Foundation�</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Development of features on the citizen science data portal Anecdata 2020</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Alex C. Walker Foundation�</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Phytoplankton, eelgrass, and water quality monitoring and Anecdata.org development 2022</title>
+        <personnel>
+          <individualName>
+            <givenName>Jane</givenName>
+            <surName>Disney</surName>
+          </individualName>
+          <organizationName>MDI Biological Laboratory</organizationName>
+          <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>Long Cove Foundation</funding>
       </relatedProject>
     </project>
     <dataTable>
@@ -2017,8 +2434,8 @@
       <entityDescription>DwC-A Event Table</entityDescription>
       <physical>
         <objectName>event.csv</objectName>
-        <size unit="bytes">199899</size>
-        <authentication method="MD5">73f04c6c5ca497c0d81fb6fbbd6d798c</authentication>
+        <size unit="bytes">246501</size>
+        <authentication method="MD5">a11c67c8c37e51f4c0a7d494a6f1433a</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -2133,84 +2550,84 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>21A</code>
-                    <definition>SWH Beals</definition>
+                    <code>Anchorage_Alpha_22A</code>
+                    <definition>Anchorage Alpha in Bar Harbor</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>21B</code>
-                    <definition>SWH Dysarts</definition>
+                    <code>Anchorage_Bravo_22B</code>
+                    <definition>Anchorage Bravo in Bar Harbor</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>21C</code>
-                    <definition>Northeast Harbor</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>22A</code>
-                    <definition>Anchorage Alpha</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>22B</code>
-                    <definition>Anchorage Bravo</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>22D</code>
+                    <code>Bar_Harbor_Town_Pier_22D</code>
                     <definition>Bar Harbor Town Pier</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>22G</code>
-                    <definition>MDIBL Dock</definition>
+                    <code>Bass_Harbor_21B</code>
+                    <definition>Bass Habor</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>23A</code>
-                    <definition>Bass Harbor</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>23B</code>
+                    <code>Bernard_21B</code>
                     <definition>Bernard</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>24</code>
-                    <definition>Eastern Bay Channel</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>24A</code>
+                    <code>Berry_Cove</code>
                     <definition>Berry Cove</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>24B</code>
+                    <code>Eastern_Bay_Channel</code>
+                    <definition>Eastern Bay Channel</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Hadley_Point</code>
                     <definition>Hadley Point</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>24C</code>
-                    <definition>Lamoine Beach</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>24D</code>
-                    <definition>Thomas Island E.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>24E</code>
-                    <definition>Thomas Island W.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>25</code>
+                    <code>Jordan_River</code>
                     <definition>Jordan River</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>26A</code>
-                    <definition>Skillings River</definition>
+                    <code>Lamoine_Beach</code>
+                    <definition>Lamoine Beach</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>26B</code>
+                    <code>MDIBL_Dock_22G</code>
+                    <definition>Mount Desert Island Biological Lab Dock</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Northeast_Harbor_21C</code>
+                    <definition>North East Harbor</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Raccoon_Cove</code>
                     <definition>Raccoon Cove</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>27A</code>
+                    <code>Skillings_River</code>
+                    <definition>Skillings River</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Stave_Island</code>
                     <definition>Stave Island</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>27B</code>
-                    <definition>The Hop</definition>
+                    <code>SWH_Beals_21A</code>
+                    <definition>South West Harbor Beals</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SWH_Dysarts_21A</code>
+                    <definition>South West Harbor Dysarts</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>The_Hop</code>
+                    <definition>The Hop island</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Thomas_Island_E</code>
+                    <definition>Thomas Island East</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Thomas_Island_W</code>
+                    <definition>Thomas Island West</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -2362,12 +2779,12 @@
       <entityDescription>DwC-A Occurrence Table</entityDescription>
       <physical>
         <objectName>occurrence.csv</objectName>
-        <size unit="bytes">2394875</size>
-        <authentication method="MD5">2903f41f7cc2cadf2eb78f19b1ec4718</authentication>
+        <size unit="bytes">2554293</size>
+        <authentication method="MD5">353acccbe41a95be9d952257d0b9aa3f</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\r\n</recordDelimiter>
+            <recordDelimiter>\n</recordDelimiter>
             <attributeOrientation>column</attributeOrientation>
             <simpleDelimited>
               <fieldDelimiter>,</fieldDelimiter>
@@ -2536,15 +2953,15 @@
                     <definition>A textual name or label assigned to an Organism instance.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>Pseudo_nitzchia_spp</code>
-                    <definition>A textual name or label assigned to an Organism instance.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
                     <code>Pseudo_nitzschia_large</code>
                     <definition>A textual name or label assigned to an Organism instance.</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>Pseudo_nitzschia_small</code>
+                    <definition>A textual name or label assigned to an Organism instance.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Pseudo_nitzschia_spp</code>
                     <definition>A textual name or label assigned to an Organism instance.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -2581,7 +2998,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">75000</maximum>
+                  <maximum exclusive="false">750000</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -2744,7 +3161,7 @@
                     <definition>A textual name or label assigned to an Organism instance.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>Margalefidinium polykrikoides   </code>
+                    <code>Margalefidinium polykrikoides</code>
                     <definition>A textual name or label assigned to an Organism instance.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -2780,7 +3197,7 @@
                     <definition>A textual name or label assigned to an Organism instance.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>Pseudo-nitzchia</code>
+                    <code>Pseudo-nitzschia</code>
                     <definition>A textual name or label assigned to an Organism instance.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -2820,10 +3237,6 @@
             <nominal>
               <nonNumericDomain>
                 <enumeratedDomain>
-                  <codeDefinition>
-                    <code>(urn:lsid:marinespecies.org:taxname:149042)</code>
-                    <definition>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</definition>
-                  </codeDefinition>
                   <codeDefinition>
                     <code>(urn:lsid:marinespecies.org:taxname:109462)</code>
                     <definition>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</definition>
@@ -2890,6 +3303,10 @@
                   </codeDefinition>
                   <codeDefinition>
                     <code>(urn:lsid:marinespecies.org:taxname:149038)</code>
+                    <definition>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>(urn:lsid:marinespecies.org:taxname:149042)</code>
                     <definition>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3147,8 +3564,8 @@
       <entityDescription>DwC-A Extended Measurement Or Fact Table</entityDescription>
       <physical>
         <objectName>ExtendedMeasurementOrFact.csv</objectName>
-        <size unit="bytes">1722745</size>
-        <authentication method="MD5">b25b300bd3683f2b1e9739b6c0e85305</authentication>
+        <size unit="bytes">2436247</size>
+        <authentication method="MD5">07b8d3a70829b5ebefcfcd313efb5cd3</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -3196,15 +3613,15 @@
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
+                    <code>DO_day5_avg</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
                     <code>DO1_day5_ppm</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>DO1_ppm</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>DO2_day5_avg</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3217,10 +3634,6 @@
                   </codeDefinition>
                   <codeDefinition>
                     <code>DOavg_ppm</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>eventRemarks</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3303,27 +3716,59 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P06/current/ULAA/</code>
+                    <code>Absolute salinity of the water body</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P06/current/UPAA/</code>
+                    <code>air_temperature</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P06/current/UPPM/</code>
+                    <code>Bathymetry and Elevation</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P06/current/UPPT/</code>
+                    <code>BOD</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P06/current/UUUU/</code>
+                    <code>Rainfall</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P06/current/UXMM/</code>
+                    <code>Sea and swell scale</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Secchi</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Tide stage</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Water movement</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Water temperature</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WC_O2</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>wind_from_direction</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>wind_speed</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WMOPresWeath</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                 </enumeratedDomain>
@@ -3360,6 +3805,10 @@
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P01/current/WMOCPWXX/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
                     <code>http://vocab.nerc.ac.uk/collection/P02/current/DOXY/</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
@@ -3369,6 +3818,14 @@
                   </codeDefinition>
                   <codeDefinition>
                     <code>http://vocab.nerc.ac.uk/collection/P06/current/UUUU/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P07/current/CFSN0036/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P07/current/CFSN0038/</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3398,6 +3855,10 @@
                   </codeDefinition>
                   <codeDefinition>
                     <code>degrees</code>
+                    <definition>The units associated with the measurementValue.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>descriptive</code>
                     <definition>The units associated with the measurementValue.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3451,8 +3912,26 @@
             <codeExplanation>Missing value</codeExplanation>
           </missingValueCode>
         </attribute>
+        <attribute>
+          <attributeName>measurementRemarks</attributeName>
+          <attributeDefinition>The dscription of measurementType</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>The dscription of measurementType</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
       </attributeList>
-      <numberOfRecords>11237</numberOfRecords>
+      <numberOfRecords>10211</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>

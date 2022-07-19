@@ -48,7 +48,7 @@ phyto_occurrence <- df_phyto %>%
   add_column(basisOfRecord="HumanObservation", .after="id") %>%
   add_column(organismQuantityType= "Cells per L", .after="organismQuantity") %>% 
   mutate(organismQuantity=ifelse(is.na(organismQuantity)==T, 0, organismQuantity)) %>%
-  mutate(occurrenceID=paste(eventDate, organismName, sep="_")) %>%
+  mutate(occurrenceID=paste(strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z", tz = "Zulu"), organismName, sep="_")) %>%
   mutate(occurrenceStatus= ifelse(organismQuantity>0, "present", "absent")) %>%
   filter(only_dinophysis_counted==TRUE & str_detect(organismName,"Dinophysis")==T |only_alexandrium_counted==TRUE & str_detect(organismName,"Alexandrium")==T |only_PN_counted==TRUE & str_detect(organismName,"Pseudo_nit" )==T) %>%
   filter(organismName != "Dinophysis_acuminata") %>%
@@ -63,7 +63,7 @@ phyto_occurrence_b <- df_phyto %>%
   add_column(basisOfRecord="HumanObservation", .after="id") %>%
   add_column(organismQuantityType= "Cells per L", .after="organismQuantity") %>% 
   mutate(organismQuantity=ifelse(is.na(organismQuantity)==T, 0, organismQuantity)) %>%
-  mutate(occurrenceID=paste(eventDate, organismName, sep="_")) %>%
+  mutate(occurrenceID=paste(strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z", tz = "Zulu"), organismName, sep="_")) %>%
   mutate(occurrenceStatus= ifelse(organismQuantity>0, "present", "absent")) %>%
   filter(is.na(only_dinophysis_counted)==T &
            is.na(only_alexandrium_counted)==T & 
@@ -95,6 +95,8 @@ tow_occurrence <- df_tow %>%
 phyto_occurrence <- bind_rows(tow_occurrence,phyto_occurrence)
 
 write_csv(phyto_occurrence,"2022_mdibl_data_package/data_objects/occurrence.csv")
+googlesheets4::write_sheet(phyto_occurrence, ss="https://docs.google.com/spreadsheets/d/1BaCEGePEYx9wbduccHytb9uRVbz3447GEDCE8Hpm0I8/edit#gid=1550025152",sheet = "Occurrence")
+
 rm(tax_table, phyto_occurrence, tow_occurrence, phyto_occurrence_b)
 ```
 
@@ -107,6 +109,7 @@ phyto_events <- df_full %>%
          maximumDepthInMeters,	coordinateUncertaintyInMeters)%>%
   arrange(eventDate)
 write_csv(phyto_events,"2022_mdibl_data_package/data_objects/event.csv")
+googlesheets4::write_sheet(phyto_events, ss="https://docs.google.com/spreadsheets/d/1BaCEGePEYx9wbduccHytb9uRVbz3447GEDCE8Hpm0I8/edit#gid=0",sheet = "Event")
 rm(phyto_events)
 ```
 
@@ -117,7 +120,7 @@ extended_base <- read_csv("source_data/columns_units.csv") %>%
   filter(darwin_file=="all"|darwin_file=="ExtendedMeasurementOrFact")
 
 phyto_extended <- df_full %>%
-  select(-monitor_names, -c(Alexandrium:Other_phytoplankton)) %>% 
+  select(-monitor_names,-eventRemarks, -c(Alexandrium:Other_phytoplankton)) %>% 
   mutate(across(air_temp:transparency_depth_mean, ~as.character(.x))) %>%
   pivot_longer(., 
                cols=(air_temp:transparency_depth_mean),
@@ -130,12 +133,12 @@ phyto_extended <- df_full %>%
   left_join(., extended_base, by= "measurementType") %>%
   select(.,id, measurementType,	measurementValue,	measurementID,
          measurementTypeID,	measurementUnit,
-         measurementUnitID # is this one optional?
-         ) %>%
+         measurementUnitID, # is this one optional?
+         measurementRemarks) %>%
   arrange(id)
 
 write_csv(phyto_extended,"2022_mdibl_data_package/data_objects/ExtendedMeasurementOrFact.csv")
-
+googlesheets4::write_sheet(phyto_extended, ss="https://docs.google.com/spreadsheets/d/1BaCEGePEYx9wbduccHytb9uRVbz3447GEDCE8Hpm0I8/edit#gid=1448123747", sheet = "Extended")
 rm(phyto_extended, extended_base)
 ```
 
