@@ -101,7 +101,7 @@ phyto_occurrence <- bind_rows(tow_occurrence,phyto_occurrence)
 write_csv(phyto_occurrence,"2022_mdibl_data_package/data_objects/occurrence.csv")
 googlesheets4::write_sheet(phyto_occurrence, ss="https://docs.google.com/spreadsheets/d/1BaCEGePEYx9wbduccHytb9uRVbz3447GEDCE8Hpm0I8/edit#gid=1550025152",sheet = "Occurrence")
 
-rm(tax_table, phyto_occurrence, tow_occurrence, phyto_occurrence_b)
+rm(phyto_occurrence, tow_occurrence, phyto_occurrence_b)
 ```
 
 ### Create event file
@@ -124,7 +124,7 @@ extended_base <- read_csv("source_data/columns_units.csv") %>%
   filter(darwin_file=="all"|darwin_file=="ExtendedMeasurementOrFact")
 
 phyto_extended <- df_full %>%
-  select(-monitor_names,-eventRemarks, -nutrient_vial_id, 
+  select(-eventRemarks, -nutrient_vial_id, 
          -c(Alexandrium:Other_phytoplankton)) %>% 
   mutate(across(air_temp:transparency_depth_mean, ~as.character(.x))) %>%
   pivot_longer(., 
@@ -148,6 +148,92 @@ googlesheets4::write_sheet(phyto_extended, ss="https://docs.google.com/spreadshe
 rm(phyto_extended, extended_base)
 ```
 
-```{r }
+### Write temp phyto for Rshiny visualization
 
+```{r }
+ss <- googlesheets4::gs4_get("https://docs.google.com/spreadsheets/d/1JGXLAvG_U9dWn7Ya_NorUU3mcgpi7aX2uanszfhXP8c/edit#gid=641716790")
+
+
+phyto_occurrence <- df_phyto %>%
+  rowwise() %>%
+  pivot_longer(., cols=(Alexandrium:Other_phytoplankton),
+                 names_to = "organismName",
+               values_to = "organismQuantity",) %>%
+  left_join(.,tax_table, by="organismName") %>%
+  add_column(basisOfRecord="HumanObservation", .after="id") %>%
+  add_column(organismQuantityType= "Cells per L", .after="organismQuantity") %>% 
+  mutate(organismQuantity=ifelse(is.na(organismQuantity)==T, 0, organismQuantity)) %>%
+  mutate(occurrenceID=paste(strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z", tz = "Zulu"), 
+                            organismName, sep="_")) %>%
+  mutate(occurrenceStatus= ifelse(organismQuantity>0, "present", "absent")) %>%
+  filter(only_dinophysis_counted==TRUE & str_detect(organismName,"Dinophysis")==T |only_alexandrium_counted==TRUE & str_detect(organismName,"Alexandrium")==T |only_PN_counted==TRUE & str_detect(organismName,"Pseudo_nit" )==T) %>%
+  filter(organismName != "Dinophysis_acuminata") %>%
+  filter(organismName != "Dinophysis_norvegica" )
+
+phyto_occurrence_b <- df_phyto %>%
+  rowwise() %>%
+  pivot_longer(., cols=(Alexandrium:Other_phytoplankton),
+                 names_to = "organismName",
+               values_to = "organismQuantity",) %>%
+  left_join(.,tax_table, by="organismName") %>%
+  add_column(basisOfRecord="HumanObservation", .after="id") %>%
+  add_column(organismQuantityType= "Cells per L", .after="organismQuantity") %>% 
+  mutate(organismQuantity=ifelse(is.na(organismQuantity)==T, 0, organismQuantity)) %>%
+  mutate(occurrenceID=paste(strftime(eventDate , "%Y-%m-%dT%H:%M:%S%Z", tz = "Zulu"), organismName, sep="_")) %>%
+  mutate(occurrenceStatus= ifelse(organismQuantity>0, "present", "absent")) %>%
+  filter(is.na(only_dinophysis_counted)==T &
+           is.na(only_alexandrium_counted)==T & 
+           is.na(only_PN_counted)==T ) 
+
+phyto_occurrence <- bind_rows(phyto_occurrence, phyto_occurrence_b) %>%
+  mutate(occurrenceStatus=ifelse(occurrenceStatus=="absent" &
+                               !str_detect(organismName,"Dinophysis|Pseudo_n|Alexandrium|Prorocentrum|Margalefidinium|Karenia"),
+                                 NA,
+                                 occurrenceStatus)) %>%
+  filter_at(vars(occurrenceStatus), all_vars(!is.na(.)))
+
+
+tow_occurrence <- df_tow %>%
+  pivot_longer(., cols=(Alexandrium:Other_phytoplankton),
+               names_to = "organismName",
+               values_to = "organismQuantity") %>%
+  filter(organismQuantity>0) %>%
+  left_join(.,tax_table, by="organismName") %>%
+  add_column(basisOfRecord="HumanObservation", .after="id") %>%
+  add_column(organismQuantityType= "Relative Abundance", .after="organismQuantity") %>% 
+  mutate(occurrenceID=paste(eventDate, organismName, sep="_")) %>%
+  add_column(occurrenceStatus="present") 
+
+phyto_occurrence <- bind_rows(tow_occurrence,phyto_occurrence)%>%
+  filter(organismQuantityType=="Cells per L") %>%
+  dplyr::mutate(day=strftime(eventDate, "%Y-%m-%d", tz = "America/New_York")) %>%
+  dplyr::select(day, locationID,  organismName, organismQuantity)
+
+googlesheets4::write_sheet(ss, sheet = "occurrence_temp", data=phyto_occurrence)
+rm(tax_table, phyto_occurrence,phyto_occurrence_b, tow_occurrence)
+```
+
+### Write extended temporary
+
+```{r}
+phyto_extended <- df_full %>%
+  dplyr::relocate(.,c(salinity_ppt,DOavg_ppm,bod,transparency_depth_mean), .after="water_temp") %>%
+  dplyr::select(-eventRemarks, -nutrient_vial_id, 
+         -c(Alexandrium:only_alexandrium_counted)) %>% 
+  tidyr::pivot_longer(., 
+               cols=(water_temp:transparency_depth_mean),
+               names_to = "measurementType",
+               values_to = "measurementValue",
+               values_transform = list(measurementValue = as.character)) %>%
+  dplyr::filter(!is.na(measurementValue)) %>%
+  dplyr::mutate(day=strftime(eventDate, "%Y-%m-%d", tz = "America/New_York"), 
+                measurementValue=as.numeric(measurementValue)) %>%
+  dplyr::select(.,day, locationID,	measurementType, 
+         measurementValue) %>%
+  dplyr::arrange(day)
+googlesheets4::write_sheet(ss, sheet = "extended_temp", data=phyto_extended)
+rm( phyto_extended, ss, df_full, df_phyto, df_tow)
+```
+
+```{r}
 ```
