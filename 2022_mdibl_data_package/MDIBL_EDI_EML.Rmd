@@ -16,13 +16,13 @@ The information in this document will be used to create the EML of the data pack
 
 ## 1. Data Package Title
 
-```{r}
-Weekly Phytoplankton and Water Quality in Frenchman Bay, Maine and the surrounding areas
+```{r }
+#Weekly Phytoplankton and Water Quality in Frenchman Bay, Maine and the surrounding areas
 ```
 
 ## 2. Dataset Title
 ```{r}
-<!--_Include what, where, and when in the dataset title_-->
+# <!--_Include what, where, and when in the dataset title_-->
 ```
 ## 3. Abstract
 

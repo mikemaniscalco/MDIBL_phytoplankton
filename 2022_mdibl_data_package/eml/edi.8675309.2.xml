@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.2691234123.1" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.8675309.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>uid=mmaniscalco,o=EDI,dc=edirepository,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>uid=agarrets,o=EDI,dc=edirepository,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>uid=mohonkpreserve,o=EDI,dc=edirepository,dc=org</principal>
       <permission>all</permission>
     </allow>
     <allow>
@@ -11,7 +19,7 @@
     </allow>
   </access>
   <dataset>
-    <title>Harmful algal bloom monitoring data near Frenchmans Bay from 2004-2022</title>
+    <title>Harmful algal bloom monitoring data near Frenchman Bay from 2004-2022</title>
     <creator>
       <individualName>
         <givenName>Alexis</givenName>
@@ -29,9 +37,77 @@
       <organizationName>MDI Biological Laboratory</organizationName>
       <electronicMailAddress>jdisney@mdibl.org</electronicMailAddress>
     </creator>
-    <pubDate>2022-07-18</pubDate>
+    <creator>
+      <individualName>
+        <givenName>Michael</givenName>
+        <givenName>A</givenName>
+        <surName>Maniscalco</surName>
+      </individualName>
+      <organizationName>University of California Santa Barbara</organizationName>
+      <electronicMailAddress>m.maniscalco534@gmail.com</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Anna</givenName>
+        <surName>Farrell</surName>
+      </individualName>
+      <organizationName>MDI Biological Laboratory</organizationName>
+      <electronicMailAddress>afarrell@mdibl.org</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Cait</givenName>
+        <surName>Bailey</surName>
+      </individualName>
+      <organizationName>MDI Biological Laboratory</organizationName>
+      <electronicMailAddress>cait@mdibl.org</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Jonathan</givenName>
+        <surName>Matt</surName>
+      </individualName>
+      <organizationName>MDI Biological Laboratory</organizationName>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Uma</givenName>
+        <surName>Arora</surName>
+      </individualName>
+      <organizationName>MDI Biological Laboratory</organizationName>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Madison</givenName>
+        <surName>Armstrong</surName>
+      </individualName>
+      <organizationName>MDI Biological Laboratory</organizationName>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Samia</givenName>
+        <surName>Pratt</surName>
+      </individualName>
+      <organizationName>MDI Biological Laboratory</organizationName>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Nathan</givenName>
+        <surName>Dorn</surName>
+      </individualName>
+      <organizationName>MDI Biological Laboratory</organizationName>
+      <electronicMailAddress>ndorn@mdibl.org</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Faye</givenName>
+        <surName>Durand</surName>
+      </individualName>
+      <organizationName>MDI Biological Laboratory</organizationName>
+    </creator>
+    <pubDate>2022-08-05</pubDate>
     <abstract>
-      <para>The Community Environmental Health Lab at the MDI Biological Laboratories has monitored phytoplankton and water quality in Frenchman’s Bay for the past few decades. Our goal was to understand how climate change and local changes in anthropogenic activity, including cruise ship activity, have altered the water quality and phytoplankton dynamics in the bay. This data provides information on target harmful algae bloom species as well as a few measures of phytoplankton biodiversity. Our data were collected by a variety of field technicians and citizen scientists who perform weekly sampling throughout the year at Bar Harbor town pier and during the summer months at the MDIBL pier and cruise ship anchorages.
+      <para>The Community Environmental Health Lab at the MDI Biological Laboratories has monitored phytoplankton and water quality in Frenchman Bay for the past few decades. Our goal was to understand how climate change and local changes in anthropogenic activity, including cruise ship activity, have altered the water quality and phytoplankton dynamics in the bay. This data provides information on target harmful algae bloom species as well as a few measures of phytoplankton biodiversity. Our data were collected by a variety of field technicians and citizen scientists who perform weekly sampling throughout the year at Bar Harbor town pier and during the summer months at the MDIBL pier and cruise ship anchorages.
 </para>
     </abstract>
     <keywordSet>
@@ -67,7 +143,7 @@
             <calendarDate>2004-08-02</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2022-06-01</calendarDate>
+            <calendarDate>2022-07-13</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -1932,15 +2008,6 @@
     </maintenance>
     <contact>
       <individualName>
-        <givenName>Alexis</givenName>
-        <givenName>C</givenName>
-        <surName>Garretson</surName>
-      </individualName>
-      <organizationName>MDI Biological Laboratory</organizationName>
-      <electronicMailAddress>agarretson@mdibl.org</electronicMailAddress>
-    </contact>
-    <contact>
-      <individualName>
         <givenName>Jane</givenName>
         <surName>Disney</surName>
       </individualName>
@@ -2434,8 +2501,8 @@
       <entityDescription>DwC-A Event Table</entityDescription>
       <physical>
         <objectName>event.csv</objectName>
-        <size unit="bytes">246501</size>
-        <authentication method="MD5">a11c67c8c37e51f4c0a7d494a6f1433a</authentication>
+        <size unit="bytes">248944</size>
+        <authentication method="MD5">78dfd8d843fd187dcddc3a3e5dd2592c</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -2446,6 +2513,11 @@
             </simpleDelimited>
           </textFormat>
         </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/8675309/1/4119639092e62c55ea8be348e4d9260d</url>
+          </online>
+        </distribution>
       </physical>
       <attributeList>
         <attribute>
@@ -2772,15 +2844,15 @@
           </missingValueCode>
         </attribute>
       </attributeList>
-      <numberOfRecords>1026</numberOfRecords>
+      <numberOfRecords>1036</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>occurrence</entityName>
       <entityDescription>DwC-A Occurrence Table</entityDescription>
       <physical>
         <objectName>occurrence.csv</objectName>
-        <size unit="bytes">2554293</size>
-        <authentication method="MD5">353acccbe41a95be9d952257d0b9aa3f</authentication>
+        <size unit="bytes">2581001</size>
+        <authentication method="MD5">95864022be3a2a320c71b85bad75f351</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -2791,6 +2863,11 @@
             </simpleDelimited>
           </textFormat>
         </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/8675309/1/7ad56af78ac5f73d81f5e80293f1d6c9</url>
+          </online>
+        </distribution>
       </physical>
       <attributeList>
         <attribute>
@@ -3557,15 +3634,15 @@
           </missingValueCode>
         </attribute>
       </attributeList>
-      <numberOfRecords>10581</numberOfRecords>
+      <numberOfRecords>10691</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>ExtendedMeasurementOrFact</entityName>
       <entityDescription>DwC-A Extended Measurement Or Fact Table</entityDescription>
       <physical>
         <objectName>ExtendedMeasurementOrFact.csv</objectName>
-        <size unit="bytes">2436247</size>
-        <authentication method="MD5">07b8d3a70829b5ebefcfcd313efb5cd3</authentication>
+        <size unit="bytes">3372393</size>
+        <authentication method="MD5">a0ec82645eba536bc8212f09814b0737</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -3576,6 +3653,11 @@
             </simpleDelimited>
           </textFormat>
         </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/8675309/1/8d32e1a8d80e6db55fabf79b56a8979c</url>
+          </online>
+        </distribution>
       </physical>
       <attributeList>
         <attribute>
@@ -3605,27 +3687,99 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
+                    <code>tide_height</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>tide_stage</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>time_high_tide</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>time_low_tide</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>wind_direction</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>wind_description</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>wind_speed_knots</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>weather</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>water_surface</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>water_current</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>water_temp</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
                     <code>air_temp</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>bod</code>
+                    <code>salinity_ppt</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>DO_day5_avg</code>
+                    <code>bottom_depth_m</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>DO1_day5_ppm</code>
+                    <code>pH</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>nitrate_plus_nitrite</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ammonium</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>orthophosphate</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>silicate</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>transparency_depth_mean</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>descending_transparency</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ascending_transparency</code>
+                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>monitor_names</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>DO1_ppm</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>DO2_day5_ppm</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3637,47 +3791,19 @@
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>rainfall_mm</code>
+                    <code>DO1_day5_ppm</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>salinity_ppt</code>
+                    <code>DO2_day5_ppm</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>tide_height</code>
+                    <code>DO_day5_avg</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>tide_stage</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>transparency_depth_mean</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>water_current</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>water_surface</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>water_temp</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>weather</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>wind_direction</code>
-                    <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>wind_speed_knots</code>
+                    <code>bod</code>
                     <definition>The nature of the measurement, fact, characteristic, or assertion.</definition>
                   </codeDefinition>
                 </enumeratedDomain>
@@ -3716,35 +3842,39 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>Absolute salinity of the water body</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>air_temperature</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
                     <code>Bathymetry and Elevation</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>BOD</code>
+                    <code>Tide stage</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>Rainfall</code>
+                    <code>Time high tide</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Time low tide</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>wind_from_direction</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>beaufort_wind_force</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>wind_speed</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WMOPresWeath</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>Sea and swell scale</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>Secchi</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>Tide stage</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3756,19 +3886,47 @@
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
+                    <code>air_temperature</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Absolute salinity of the water body</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>pH</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>nitrate+nitrite</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ammonium</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>phosphate</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>silicate</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Secchi</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Personnel</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
                     <code>WC_O2</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>wind_from_direction</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>wind_speed</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>WMOPresWeath</code>
+                    <code>BOD</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                 </enumeratedDomain>
@@ -3789,30 +3947,6 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/A05/current/EV_RAIN/</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P01/current/ASLTZZ01/</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P01/current/BODZZZZZ/</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P01/current/SECCSDNX/</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P01/current/WMOCPWXX/</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>http://vocab.nerc.ac.uk/collection/P02/current/DOXY/</code>
-                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
                     <code>http://vocab.nerc.ac.uk/collection/P02/current/MBAN/</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
@@ -3825,11 +3959,59 @@
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P07/current/CFV7N45/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
                     <code>http://vocab.nerc.ac.uk/collection/P07/current/CFSN0038/</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                   <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P01/current/WMOCPWXX/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
                     <code>http://vocab.nerc.ac.uk/collection/P25/current/WTEMP/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P01/current/ASLTZZ01/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P01/current/PHXXPR01/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/S27/current/CS026905/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/S27/current/CS026908/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/S27/current/CS026904/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/S27/current/CS026903/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P01/current/SECCSDNX/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P02/current/DOXY/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/P01/current/BODZZZZZ/</code>
+                    <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>http://vocab.nerc.ac.uk/collection/A05/current/EV_RAIN/</code>
                     <definition>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</definition>
                   </codeDefinition>
                 </enumeratedDomain>
@@ -3850,15 +4032,15 @@
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>Celsius</code>
-                    <definition>The units associated with the measurementValue.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>degrees</code>
+                    <code>meters</code>
                     <definition>The units associated with the measurementValue.</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>descriptive</code>
+                    <definition>The units associated with the measurementValue.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>degrees</code>
                     <definition>The units associated with the measurementValue.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3870,11 +4052,7 @@
                     <definition>The units associated with the measurementValue.</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>meters</code>
-                    <definition>The units associated with the measurementValue.</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>millimeters</code>
+                    <code>Celsius</code>
                     <definition>The units associated with the measurementValue.</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -3882,7 +4060,15 @@
                     <definition>The units associated with the measurementValue.</definition>
                   </codeDefinition>
                   <codeDefinition>
+                    <code>micromoles per liter</code>
+                    <definition>The units associated with the measurementValue.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
                     <code>ppm</code>
+                    <definition>The units associated with the measurementValue.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>millimeters</code>
                     <definition>The units associated with the measurementValue.</definition>
                   </codeDefinition>
                 </enumeratedDomain>
@@ -3931,7 +4117,7 @@
           </missingValueCode>
         </attribute>
       </attributeList>
-      <numberOfRecords>10211</numberOfRecords>
+      <numberOfRecords>13545</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>

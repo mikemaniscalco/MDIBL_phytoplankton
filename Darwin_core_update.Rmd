@@ -7,17 +7,33 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(readxl)
-library(tidyverse)
-library(lubridate)
-library(janitor)
-library(googlesheets4)
+# List of packages for session
+.packages = c("googlesheets4", "readxl", "lubridate", "readr", "stringr", "janitor", "dplyr")
+
+# Installing CRAN packages (if not already installed)
+.inst <- .packages %in% installed.packages()
+if(length(.packages[!.inst]) > 0) install.packages(.packages[!.inst])
+
+# Loading packages into session 
+lapply(.packages, require, character.only = TRUE)
+sessionInfo()
 ```
 
-# This script will load remote data of darwin core files currently in EDI database along with new data and put it together into new darwin core files
+## This script will load remote data of darwin core format historic data (currently in EDI database) along with new data stored on Google drive and put it together into new darwin core files
+
+------------------------------------------------------------------------
+
+### Change name and file path for output files from the example_name\_\*.csv below
+
+```{r out_name}
+occurence_out_name<- "20220720occurence_example_name.csv"
+event_out_name<- "20220720event_example_name.csv"
+extended_out_name<- "20220720extended_example_name.csv"
+```
 
 ### Read in data
-* could change paths to EDI links rather than gdrive
+
+-   could change paths to EDI links rather than gdrive
 
 ```{r read }
 
@@ -36,27 +52,27 @@ df_envir <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1B
 
 ```{r format}
 df_phyto_wide <- df_phyto %>%
-  select(-c(occurrenceID:kingdom)) %>%
+  dplyr::select(-c(occurrenceID:kingdom)) %>%
   tidyr::pivot_wider(.,names_from = organismName,values_from = organismQuantity)
 
 df_envir_wide <- df_envir %>%
-  select(-c(measurementID:measurementRemarks)) %>%
+  dplyr::select(-c(measurementID:measurementRemarks)) %>%
   tidyr::pivot_wider(.,names_from = measurementType,values_from = measurementValue)
 
-historical_wide <- left_join(df_event,df_envir_wide) %>%
-  left_join(.,df_phyto_wide) %>%
-  relocate(monitor_names, .after="eventRemarks")%>%
-  relocate(descending_transparency:ascending_transparency, .before="transparency_depth_mean") %>%
-  mutate(across(c(air_temp:water_temp, wind_speed_knots,
+historical_wide <- dplyr::left_join(df_event,df_envir_wide) %>%
+  dplyr::left_join(.,df_phyto_wide) %>%
+  dplyr::relocate(monitor_names, .after="eventRemarks")%>%
+  dplyr::relocate(descending_transparency:ascending_transparency, .before="transparency_depth_mean") %>%
+  dplyr::mutate(across(c(air_temp:water_temp, wind_speed_knots,
                   tide_height:bod, pH, bottom_depth_m,
                    wind_direction), ~as.numeric(.x))) %>%
-  mutate(time_high_tide=as.POSIXct(time_high_tide,
+  dplyr::mutate(time_high_tide=as.POSIXct(time_high_tide,
                                    format="%Y-%m-%d %H:%M:%S",
                                    tz ="UTC"),
          time_low_tide=as.POSIXct(time_low_tide,
                                   format="%Y-%m-%d %H:%M:%S",
                                   tz ="UTC")) 
-tax_table <- read_csv("source_data/tax_table.csv")
+tax_table <- readr::read_csv("source_data/tax_table.csv")
 
 df_new <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1JGXLAvG_U9dWn7Ya_NorUU3mcgpi7aX2uanszfhXP8c/edit?sharingaction=ownershiptransfer#gid=0",
                                     sheet = "processed") %>%
@@ -73,7 +89,7 @@ df_new <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1JGX
                                             0.5,
                                             minimumDepthInMeters)) 
 ### wide
-df_full <- full_join(historical_wide,df_new)
+df_full <- dplyr::full_join(historical_wide,df_new)
 rm(df_new,historical_wide, df_event, df_phyto, df_envir, df_phyto_wide ,df_envir_wide)
 ```
 
@@ -81,7 +97,7 @@ rm(df_new,historical_wide, df_event, df_phyto, df_envir, df_phyto_wide ,df_envir
 
 ```{r Occur}
 df_full_occurrence <- df_full %>%
-  rowwise() %>%
+  dplyr::rowwise() %>%
   tidyr::pivot_longer(., cols=(Alexandrium:Total_phytoplankton),
                       names_to = "organismName",
                       values_to = "organismQuantity") %>%
@@ -93,53 +109,49 @@ df_full_occurrence <- df_full %>%
   dplyr::filter_at(vars(occurrenceStatus), all_vars(!is.na(.))) 
 
 ### add new file name/location
-write_csv(df_full_occurrence,"")
+readr::write_csv(df_full_occurrence,paste0(occurence_out_name))
 ```
 
 ### Darwin core Events
 
 ```{r event}
 df_full_events <- df_full %>%
-  select(id, eventID,	eventDate, geodeticDatum,	countryCode, locationID, 
+  dplyr::select(id, eventID,	eventDate, geodeticDatum,	countryCode, locationID, 
          eventRemarks,	decimalLatitude,	decimalLongitude,	minimumDepthInMeters,
          maximumDepthInMeters,	coordinateUncertaintyInMeters)%>%
-  arrange(eventDate)
+  dplyr::arrange(eventDate)
 
 ### add new file name/location
-write_csv(df_full_events,"")
+readr::write_csv(df_full_events,paste0(event_out_name))
 ```
 
 ### Make ExtendedMeasurementOrFact
 
 ```{r extended}
 ### Darwin core Extended
-extended_base <- read_csv("source_data/columns_units.csv") %>%
-  filter(darwin_file=="all"|darwin_file=="ExtendedMeasurementOrFact")
+extended_base <- readr::read_csv("source_data/columns_units.csv") %>%
+  dplyr::filter(darwin_file=="all"|darwin_file=="ExtendedMeasurementOrFact")
 
 phyto_extended <- df_full %>%
-  select(-eventRemarks, -nutrient_vial_id, 
+  dplyr::select(-eventRemarks, -nutrient_vial_id, 
          -c(Alexandrium:Other_phytoplankton)) %>% 
-  mutate(across(air_temp:transparency_depth_mean, ~as.character(.x))) %>%
-  pivot_longer(., 
+  dplyr::mutate(across(air_temp:transparency_depth_mean, ~as.character(.x))) %>%
+  tidyr::pivot_longer(., 
                cols=(time_low_tide:pH),
                names_to = "measurementType",
                values_to = "measurementValue",
                values_transform = list(measurementValue = as.character)) %>%
-  mutate(measurementValue=ifelse(measurementType=="rainfall_mm" & measurementValue=="0",
+  dplyr::mutate(measurementValue=ifelse(measurementType=="rainfall_mm" & measurementValue=="0",
                                  NA, 
                                  measurementValue)) %>%
-  filter(!is.na(measurementValue)) %>%
-  left_join(., extended_base, by= "measurementType") %>%
-  select(.,id, measurementType,	measurementValue,	measurementID,
+  dplyr::filter(!is.na(measurementValue)) %>%
+  dplyr::left_join(., extended_base, by= "measurementType") %>%
+  dplyr::select(.,id, measurementType,	measurementValue,	measurementID,
          measurementTypeID,	measurementUnit,
          measurementUnitID, # is this one optional?
          measurementRemarks) %>%
   arrange(id)
 
-### add new file name/location
-write_csv(phyto_extended,"")
+### add new file name/location here 
+readr::write_csv(phyto_extended, paste0(extended_out_name))
 ```
-
-
-
-

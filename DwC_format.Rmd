@@ -99,6 +99,8 @@ tow_occurrence <- df_tow %>%
 phyto_occurrence <- bind_rows(tow_occurrence,phyto_occurrence)
 
 write_csv(phyto_occurrence,"2022_mdibl_data_package/data_objects/occurrence.csv")
+
+googlesheets4::gs4_auth(path = '.secrets/enduring-coil-349821-3832e38b5b43.json')
 googlesheets4::write_sheet(phyto_occurrence, ss="https://docs.google.com/spreadsheets/d/1BaCEGePEYx9wbduccHytb9uRVbz3447GEDCE8Hpm0I8/edit#gid=1550025152",sheet = "Occurrence")
 
 rm(phyto_occurrence, tow_occurrence, phyto_occurrence_b)
@@ -113,6 +115,8 @@ phyto_events <- df_full %>%
          maximumDepthInMeters,	coordinateUncertaintyInMeters)%>%
   arrange(eventDate)
 write_csv(phyto_events,"2022_mdibl_data_package/data_objects/event.csv")
+
+googlesheets4::gs4_auth(path = '.secrets/enduring-coil-349821-3832e38b5b43.json')
 googlesheets4::write_sheet(phyto_events, ss="https://docs.google.com/spreadsheets/d/1BaCEGePEYx9wbduccHytb9uRVbz3447GEDCE8Hpm0I8/edit#gid=0",sheet = "Event")
 rm(phyto_events)
 ```
@@ -127,8 +131,9 @@ phyto_extended <- df_full %>%
   select(-eventRemarks, -nutrient_vial_id, 
          -c(Alexandrium:Other_phytoplankton)) %>% 
   mutate(across(air_temp:transparency_depth_mean, ~as.character(.x))) %>%
+  relocate(nitrate_plus_nitrite:silicate, .after=pH) %>%
   pivot_longer(., 
-               cols=(time_low_tide:pH),
+               cols=(time_low_tide:silicate ),
                names_to = "measurementType",
                values_to = "measurementValue",
                values_transform = list(measurementValue = as.character)) %>%
@@ -144,6 +149,8 @@ phyto_extended <- df_full %>%
   arrange(id)
 
 write_csv(phyto_extended,"2022_mdibl_data_package/data_objects/ExtendedMeasurementOrFact.csv")
+
+googlesheets4::gs4_auth(path = '.secrets/enduring-coil-349821-3832e38b5b43.json')
 googlesheets4::write_sheet(phyto_extended, ss="https://docs.google.com/spreadsheets/d/1BaCEGePEYx9wbduccHytb9uRVbz3447GEDCE8Hpm0I8/edit#gid=1448123747", sheet = "Extended")
 rm(phyto_extended, extended_base)
 ```
@@ -209,6 +216,7 @@ phyto_occurrence <- bind_rows(tow_occurrence,phyto_occurrence)%>%
   dplyr::mutate(day=strftime(eventDate, "%Y-%m-%d", tz = "America/New_York")) %>%
   dplyr::select(day, locationID,  organismName, organismQuantity)
 
+googlesheets4::gs4_auth(path = '.secrets/enduring-coil-349821-3832e38b5b43.json')
 googlesheets4::write_sheet(ss, sheet = "occurrence_temp", data=phyto_occurrence)
 rm(tax_table, phyto_occurrence,phyto_occurrence_b, tow_occurrence)
 ```
@@ -217,11 +225,13 @@ rm(tax_table, phyto_occurrence,phyto_occurrence_b, tow_occurrence)
 
 ```{r}
 phyto_extended <- df_full %>%
-  dplyr::relocate(.,c(salinity_ppt,DOavg_ppm,bod,transparency_depth_mean), .after="water_temp") %>%
+  dplyr::relocate(.,c(salinity_ppt, DOavg_ppm,bod, transparency_depth_mean, 
+                      orthophosphate, silicate, ammonium, nitrate_plus_nitrite),
+                  .after="water_temp") %>%
   dplyr::select(-eventRemarks, -nutrient_vial_id, 
          -c(Alexandrium:only_alexandrium_counted)) %>% 
   tidyr::pivot_longer(., 
-               cols=(water_temp:transparency_depth_mean),
+               cols=(water_temp:nitrate_plus_nitrite),
                names_to = "measurementType",
                values_to = "measurementValue",
                values_transform = list(measurementValue = as.character)) %>%
@@ -231,8 +241,10 @@ phyto_extended <- df_full %>%
   dplyr::select(.,day, locationID,	measurementType, 
          measurementValue) %>%
   dplyr::arrange(day)
+
+googlesheets4::gs4_auth(path = '.secrets/enduring-coil-349821-3832e38b5b43.json')
 googlesheets4::write_sheet(ss, sheet = "extended_temp", data=phyto_extended)
-rm( phyto_extended, ss, df_full, df_phyto, df_tow)
+rm(phyto_extended, ss, df_full, df_phyto, df_tow)
 ```
 
 ```{r}
