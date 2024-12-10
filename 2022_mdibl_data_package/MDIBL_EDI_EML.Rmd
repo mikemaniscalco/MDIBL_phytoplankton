@@ -1,5 +1,5 @@
 ---
-title: "Rat Capture Palatability"
+title: "MDIBL EDI Ecological Metadata Language"
 author: "Michael Maniscalco"
 date: "2022/07/06"
 output: word_document
